@@ -1,5 +1,3 @@
-// ChoiceLanguage.tsx
-import React from "react";
 import i18n from "../../i18n";
 import { FaGlobe } from "react-icons/fa";
 

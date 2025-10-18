@@ -1,29 +1,67 @@
-import LightRays from "../LightRays/LightRays";
-import {  useTheme } from "../../context/ThemeContext";
+import LightRays from "../../components/LightRays/LightRays";
+import { useTheme } from "../../context/ThemeContext";
+import fuse from "../../assets/images/fusé.png";
+import moon from "../../assets/images/moon.png"; 
+import sun from "../../assets/images/sun.png"; 
+import { motion } from "framer-motion";
+import { heroContainerVariants, fuseEntranceVariants,} from "../../utils/framerVariantsAnimation";
+import HeroButton from "./HeroButton";
+import HeroText from "./HeroText";
+
 
 export default function HeroSection() {
   const { theme } = useTheme();
+  const isDark = theme === "dark";
+  const isMobile = typeof window !== "undefined" && window.innerWidth < 768;
+
 
   return (
-    <div className="relative w-full h-screen bg-white dark:bg-[#060010]">
+    <motion.div
+      id="home"
+      className="relative w-full min-h-screen bg-white dark:bg-[#060010] overflow-hidden flex items-center justify-center pt-16 md:pt-0"
+      initial="hidden"
+      animate="visible"
+      variants={heroContainerVariants}
+    >
       <LightRays
         raysOrigin="top-center"
-        //9f7fff
-        raysColor={theme === "dark" ? "#ffffff" : "#00d4ff"} 
+        raysColor={theme === "dark" ? "#ffffff" : "#ffaa00"} 
         raysSpeed={1.5}
         rayLength={1.2}
-        followMouse
-        className="absolute inset-0 z-0"
+        followMouse={!isMobile}
+        className="absolute inset-0 z-0 will-change-transform opacity-60 dark:opacity-30"
       />
 
-      <div className="absolute inset-0 flex flex-col items-center justify-center z-10">
-        <h1 className="text-5xl font-bold text-black dark:text-white">
-          Bienvenue sur mon Portfolio
-        </h1>
-        <p className="mt-4 text-lg text-center text-gray-800 dark:text-gray-200">
-          Découvrez mes projets et mon parcours
-        </p>
+      <motion.img
+        src={isDark ? moon : sun}
+        alt={isDark ? "Moon illustration" : "Sun illustration"}
+        className="absolute top-10 left-10 md:top-20 md:left-20 w-16 h-16 md:w-32 md:h-32 z-10 opacity-70 dark:opacity-30"
+        initial={{ opacity: 0, scale: 0.8 }}
+        animate={isDark ? { opacity: 1, scale: 1 } : { opacity: 1, scale: [1, 1.05, 1], rotate: [0, 5, -5, 0] }}
+        transition={isDark ? { duration: 1.5, delay: 2 } : { duration: 6, repeat: Infinity, ease: "easeInOut" }}
+      />
+
+      <motion.div
+        className="absolute bottom-5 right-5 md:bottom-10 md:right-20 z-20 pointer-events-none"
+        variants={fuseEntranceVariants}
+        initial="initial"
+        animate="animate"
+      >
+        <div className="w-20 hidden lg:flex h-40 md:w-32 md:h-64 bg-transparent items-center justify-center">
+          <motion.img
+            src={fuse}
+            alt="Fusée décollant"
+            className="w-full h-full object-contain"
+            animate={{ y: [0, -5, 0] }} 
+            transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+          />
+        </div>
+      </motion.div>
+
+      <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-4 sm:p-6 z-30 max-w-6xl mx-auto">
+        <HeroText isDark={isDark} />
+        <HeroButton isDark={isDark} />
       </div>
-    </div>
+    </motion.div>
   );
 }
