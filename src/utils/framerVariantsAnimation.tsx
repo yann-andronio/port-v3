@@ -1,7 +1,9 @@
 import {  type Variants } from "framer-motion"; 
 
+/*** --- VARIANTS POUR LE navbar  ---*/
+
 export const navbarVariants: Variants = {
-  hidden: { y: -100, opacity: 0 },
+  hidden: { y: -150, opacity: 0 },
   visible: { 
     y: 0, 
     opacity: 1, 
@@ -12,6 +14,20 @@ export const navbarVariants: Variants = {
       delay: 0.2 
     }
   },
+};
+
+ export const dropdownChoiceLanguageVariants: Variants = { 
+  hidden: { opacity: 0, y: -10, scale: 0.95 },
+  visible: { 
+    opacity: 1, 
+    y: 0, 
+    scale: 1,
+    transition: { 
+      duration: 0.2,
+      ease: "easeOut"
+    } 
+  },
+  exit: { opacity: 0, y: -10, scale: 0.95, transition: { duration: 0.15 } } 
 };
 
 /*** --- VARIANTS POUR LA SECTION HERO (title, btn, desc) ---*/
@@ -53,4 +69,15 @@ export const fuseEntranceVariants: Variants = {
             stiffness: 50 
         } 
     },
+};
+
+
+
+export const timelineItemVariants = {
+  hidden: { opacity: 0, y: 50 },
+  visible: { 
+    opacity: 1, 
+    y: 0, 
+    transition: { type: "spring", stiffness: 100, damping: 10 } 
+  },
 };
