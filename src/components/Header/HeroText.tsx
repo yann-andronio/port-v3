@@ -9,7 +9,7 @@ interface HeroTextProps {
 }
 
 export default function HeroText({ isDark }: HeroTextProps): JSX.Element {
-  const auroraColors = isDark ? ["#7C3AED", "#10B981", "#3B82F6", "#FFEE58"] : ["#1D4ED8", "#4F46E5", "#059669", "#EF4444"];
+ const auroraColors = isDark ? ["#7C3AED", "#10B981", "#3B82F6", "#FFEE58"] : ["#1D4ED8", "#4F46E5", "#059669", "#EF4444"];
   const { t } = useTranslation();
   
 
@@ -42,16 +42,13 @@ export default function HeroText({ isDark }: HeroTextProps): JSX.Element {
         </span>
       </motion.h1>
 
+
       <motion.p
         className="mt-6 text-base sm:text-lg md:text-xl font-light max-w-3xl leading-relaxed text-gray-700 dark:text-gray-300 px-4"
         variants={heroItemSlideUpVariants}
       >
-        <span className="font-semibold block mb-2">
-          {t("hero_role")}
-        </span>
-        <span className="block">
-          {t("hero_slogan")}
-        </span>
+        <span className="font-semibold block mb-2">{t("hero_role")}</span>
+        <span className="hidden lg:block">{t("hero_slogan")}</span>
       </motion.p>
     </>
   );
