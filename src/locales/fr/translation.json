@@ -13,5 +13,23 @@
   "hero_slogan": "J’allie design et performance pour donner vie à vos idées.",
 
   "cta_projects": "Voir mes projets",
-  "cta_download_cv": "Télécharger CV"
+  "cta_download_cv": "Télécharger CV",
+  "cta_contact": "Me contacter",
+
+  "about_title_line1": "DÉVELOPPEUR FULL-STACK",
+  "about_title_line2": "JAVASCRIPT & SPECIALISTE",
+  "about_title_line3": "FRONT-END",
+
+  "about_paragraph_intro": "Développeur Full-Stack passionné, spécialisé dans le",
+  "about_paragraph_stack": "MERN Stack",
+  "about_paragraph_idea": "J’aime transformer vos idées en",
+  "about_paragraph_solutions": "solutions web performantes",
+  "about_paragraph_interface": "avec des",
+  "about_paragraph_experience": "interfaces élégantes et intuitives qui marquent les esprits.",
+
+  "my_expertise_universe": "Mon Univers d’Expertise",
+
+  "experience_months": "Mois d'Expérience",
+  "personal_projects": "Projets Personnels",
+  "client_projects": "Projets Clients"
 }

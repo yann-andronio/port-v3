@@ -30,7 +30,7 @@ export default function About() {
           </div>
         </div>
         <div>
-                    <AboutStats isDark={isDark} />
+        <AboutStats isDark={isDark} />
         </div>
       </div>
     </section>

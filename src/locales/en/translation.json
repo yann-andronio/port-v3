@@ -1,5 +1,4 @@
 {
-  
   "home": "Home",
   "about": "About",
   "projects": "Projects",
@@ -14,5 +13,23 @@
   "hero_slogan": "I blend design and performance to bring ideas to life with React, Tailwind, and creativity.",
 
   "cta_projects": "View my projects",
-  "cta_download_cv": "Download CV"
+  "cta_download_cv": "Download CV",
+  "cta_contact": "Contact me",
+
+  "about_title_line1": "FULL-STACK DEVELOPER",
+  "about_title_line2": "JAVASCRIPT & SPECIALIST",
+  "about_title_line3": "FRONT-END",
+
+  "about_paragraph_intro": "Passionate Full-Stack Developer, specialized in the",
+  "about_paragraph_stack": "MERN Stack",
+  "about_paragraph_idea": "I love turning ideas into",
+  "about_paragraph_solutions": "high-performance web solutions",
+  "about_paragraph_interface": "with",
+  "about_paragraph_experience": "elegant and intuitive interfaces that leave an impact.",
+
+  "my_expertise_universe": "My Universe of Expertise",
+
+  "experience_months": "Months of Experience",
+  "personal_projects": "Personal Projects",
+  "client_projects": "Client Projects"
 }

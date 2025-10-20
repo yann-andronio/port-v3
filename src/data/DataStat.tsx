@@ -11,16 +11,16 @@ export const DataStat: StatItemType[] = [
   {
     icon: FaTrophy,
     main: 2,
-    unit: "Mois d'Expérience",
+    unit: "experience_months",
   },
   {
     icon: FaCodeBranch,
     main: 17,
-    unit: "Projets Personnels",
+    unit: "personal_projects",
   },
   {
     icon: FaStar,
     main: 2,
-    unit: "Projets Clients",
+    unit: "client_projects",
   },
 ];
