@@ -81,3 +81,5 @@ export const timelineItemVariants = {
     transition: { type: "spring", stiffness: 100, damping: 10 } 
   },
 };
+
+
