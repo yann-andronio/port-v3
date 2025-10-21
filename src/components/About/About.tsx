@@ -1,6 +1,7 @@
 import { useTheme } from "../../context/ThemeContext";
 import AboutText from "./AboutText";
 import AboutStats from "./AboutStats";
+import AboutSkills from "./AboutSkills";
 
 const photoProfil1 = "./images/fin.png";
 const photoProfil2 = "./images/fin2b.png";
@@ -12,8 +13,11 @@ export default function About() {
   const currentPhoto = isDark ? photoProfil2 : photoProfil1;
 
   return (
-    <section id="about" className={`relative w-full min-h-screen  bg-white dark:bg-[#060010] py-28 overflow-hidden flex items-center`}>
-      <div className=" mx-auto px-4 sm:px-6 lg:px-8 lg:mx-6 relative z-10 w-full">
+    <section
+      id="about"
+      className={`relative w-full min-h-screen  bg-white dark:bg-[#060010] py-28 overflow-hidden flex items-center`}
+    >
+      <div className=" mx-auto sm:px-6 lg:px-8 lg:mx-6 relative z-10 w-full">
         <div className="grid  grid-cols-1 lg:grid-cols-3 gap-10 items-center">
           <div className="lg:col-span-2 lg:order-none order-2 space-y-6 text-center lg:text-left justify-center md:text-center">
             <AboutText isDark={isDark} />
@@ -29,8 +33,11 @@ export default function About() {
             </div>
           </div>
         </div>
+        <div className="mt-24">
+          <AboutStats isDark={isDark} />
+        </div>
         <div>
-        <AboutStats isDark={isDark} />
+          <AboutSkills />
         </div>
       </div>
     </section>

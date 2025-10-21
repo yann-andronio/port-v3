@@ -17,7 +17,7 @@ export default function AboutButton({ isDark, primaryColor }: AboutButtonI) {
   const secondaryButtonClass = `inline-flex justify-center items-center text-center w-full sm:w-auto px-8 sm:px-10 py-3 sm:py-4 rounded-full text-base sm:text-lg font-bold border-2 
                                 ${
                                   isDark ? "text-cyan-400" : "text-indigo-600"
-                                } border-${primaryColor}-600 
+                                } border-${primaryColor}-600  
                                 hover:border-${primaryColor}-500 
                                 hover:text-${primaryColor}-500 
                                 transition duration-300 ml-0 sm:ml-6 mt-3 sm:mt-0 bg-transparent 

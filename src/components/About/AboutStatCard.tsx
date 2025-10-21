@@ -14,7 +14,7 @@ export default function AboutStatCard({ stat, isDark, ind }: AboutStatCardI) {
   const accentColor = isDark ? "text-cyan-400" : "text-indigo-600";
   const primaryText = isDark ? "text-white" : "text-gray-900";
 
-  const cardBaseClass = `relative group p-8 rounded-3xl border text-center transition-all duration-500 transform hover:-translate-y-2`;
+  const cardBaseClass = `relative group py-4 px-4 rounded-3xl border text-center transition-all duration-500 transform hover:-translate-y-2`;
 
   const cardBgClass = isDark
     ? "bg-gradient-to-br from-[#0a0a12]/90 via-[#111122]/80 to-[#1a1a24]/80 border-indigo-800/40 backdrop-blur-xl"

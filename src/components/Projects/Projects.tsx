@@ -1,4 +1,5 @@
-export default function Project() {
+
+export default function Projects() {
   return (
     <div>Project</div>
   )

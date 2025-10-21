@@ -4,15 +4,11 @@ import Navbar from "../components/Navbar/Navbar";
 export default function PortfolioLayout() {
   return (
     <>
-    
-    
-        <Navbar />
-    
-      
-      <main className=""> 
+      <Navbar />
+
+      <main className="">
         <Outlet />
       </main>
-    
     </>
   );
 }

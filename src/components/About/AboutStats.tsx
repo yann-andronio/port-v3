@@ -16,7 +16,7 @@ export default function AboutStats({ isDark }: AboutStatsPropsI) {
   
   return (
     <div className={`font-sans py-20 lg:py-28 relative z-10 transition-colors duration-300`}>
-      <div className="max-w-6xl mx-auto px-6">
+      <div className="lg:max-w-[90%] mx-auto lg:px-6">
         <div className="text-center mb-16 lg:mb-20 max-w-4xl mx-auto">
           <h2
             className={`font-extrabold text-4xl sm:text-6xl lg:text-7xl tracking-tighter mb-4 
