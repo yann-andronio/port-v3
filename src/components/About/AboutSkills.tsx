@@ -23,8 +23,8 @@ export default function SkillsSection() {
         </h2>
       </div>
 
-      <div className="lg:max-w-[90%] mx-auto  grid grid-cols-1 lg:grid-cols-2  items-center">
-        <div className=" hidden lg:flex justify-center items-center order-1 lg:order-2">
+      <div className="lg:max-w-[100%] mx-auto  grid grid-cols-1 lg:grid-cols-2   items-center">
+        <div className=" hidden lg:flex justify-end items-center order-1 lg:order-2">
           <OrbitingSkills />
         </div>
 

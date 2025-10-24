@@ -1,0 +1,21 @@
+/* style.module.css */
+
+/*
+ * CORRECTION PRINCIPALE : Utilisation de :global pour que le sélecteur Webkit
+ * fonctionne même si la classe est renommée par le module CSS.
+ * * Nous utilisons une seule classe : .custom-scroll
+ */
+
+.custom-scroll {
+    /* Cache pour Firefox */
+    scrollbar-width: none;
+    /* Cache pour IE et Edge (propriété non standard) */
+    -ms-overflow-style: none;
+}
+
+/* RÈGLES SPÉCIFIQUES POUR WEBKIT (Chrome, Safari, Nouveaux Edge) */
+/* Cible le pseudo-élément Webkit À L'INTÉRIEUR des éléments qui portent la classe custom-scroll */
+.custom-scroll:global(::-webkit-scrollbar) {
+    /* Cache la scrollbar visuellement */
+    display: none; 
+}

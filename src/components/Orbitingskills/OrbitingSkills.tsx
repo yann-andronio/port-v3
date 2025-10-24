@@ -178,7 +178,7 @@ export default function OrbitingSkills() {
   const handleMouseLeave = useCallback(() => setIsPaused(false), []);
 
   return (
-    <main className="w-full flex items-center justify-center overflow-hidden">
+    <main className="w-full flex items-center justify-end overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute  opacity-10">
         <div
