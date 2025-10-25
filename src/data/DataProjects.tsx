@@ -1,5 +1,5 @@
 export type ProjectCategory = "Web" | "Mobile" | "Desktop" | "Jeux Vidéo" | "Outil";
-export type ProjectType = "Solo" | "Collaboratif" | "Open Source" | "Expérimental";
+export type ProjectType = "Solo" | "Collaboratif" | "Open Source" ;
 
 export interface ProjectImageI {
   url: string;
@@ -12,7 +12,7 @@ export interface CollaboratorI {
   link?: string;
 }
 
-export interface BestProjectI {
+export interface ProjectI {
   id: string;
   text: string;
   description: string;
@@ -25,17 +25,16 @@ export interface BestProjectI {
   githubLink?: string;
   detailPageLink?: string;
   langage: string[];
-  // isFeatured?: boolean; <-- CHAMP RETIRÉ
+  // isFeatured?: boolean;
 }
 
-// =========================================================================
 
-export const DataProjects: BestProjectI[] = [
+export const DataProjects: ProjectI[] = [
   {
     id: "proj-ecommerce-u",
     text: "Super U E-commerce (Web)",
     description: "Plateforme de vente en ligne moderne et fluide, optimisée pour la conversion, avec filtrage avancé, recherche instantanée et un panier interactif sans rechargement.",
-    category: "Web",
+    category: "Mobile",
     projectType: "Collaboratif",
     mainImage: {
       url: "1",
@@ -46,8 +45,12 @@ export const DataProjects: BestProjectI[] = [
       { url: "2", alt: "Page produit" },
       { url: "3", alt: "Page de checkout" },
       { url: "4", alt: "Interface utilisateur" },
+      { url: "5", alt: "Vue du panier" },
+      { url: "2", alt: "Page produit" },
+      { url: "3", alt: "Page de checkout" },
+      { url: "4", alt: "Interface utilisateur" },
     ],
-    collaborators: [ // AJOUT DES COLLABORATEURS
+    collaborators: [ 
       { name: "Alice Dupont", role: "Designer UX/UI", link: "#" },
       { name: "Bob Martin", role: "Dev Backend (Node.js)", link: "#" },
       { name: "Alice Dupont", role: "Designer UX/UI", link: "#" },
@@ -56,7 +59,6 @@ export const DataProjects: BestProjectI[] = [
     liveLink: "https://superu-ecommerce.com",
     githubLink: "https://github.com/monprofil/super-u-ecommerce",
     langage: ["React.js", "TypeScript", "Tailwind CSS", "Redux", "UX/UI"],
-    // isFeatured: true, <-- CHAMP RETIRÉ
     detailPageLink: "/projects/ecommerce-u"
   },
   {
@@ -75,7 +77,7 @@ export const DataProjects: BestProjectI[] = [
       { url: "3", alt: "Page de checkout" },
       { url: "4", alt: "Interface utilisateur" },
     ],
-    collaborators: [ // AJOUT DES COLLABORATEURS
+    collaborators: [ 
       { name: "Alice Dupont", role: "Designer UX/UI", link: "#" },
       { name: "Bob Martin", role: "Dev Backend (Node.js)", link: "#" },
       { name: "Alice Dupont", role: "Designer UX/UI", link: "#" },
@@ -86,7 +88,6 @@ export const DataProjects: BestProjectI[] = [
     liveLink: "https://superu-ecommerce.com",
     githubLink: "https://github.com/monprofil/super-u-ecommerce",
     langage: ["React.js", "TypeScript", "Tailwind CSS", "Redux", "UX/UI"],
-    // isFeatured: true, <-- CHAMP RETIRÉ
     detailPageLink: "/projects/ecommerce-u"
   },
   {
@@ -105,7 +106,7 @@ export const DataProjects: BestProjectI[] = [
       { url: "3", alt: "Page de checkout" },
       { url: "4", alt: "Interface utilisateur" },
     ],
-    collaborators: [ // AJOUT DES COLLABORATEURS
+    collaborators: [ 
       { name: "Alice Dupont", role: "Designer UX/UI", link: "#" },
       { name: "Bob Martin", role: "Dev Backend (Node.js)", link: "#" },
       { name: "Alice Dupont", role: "Designer UX/UI", link: "#" },
@@ -116,7 +117,6 @@ export const DataProjects: BestProjectI[] = [
     liveLink: "https://superu-ecommerce.com",
     githubLink: "https://github.com/monprofil/super-u-ecommerce",
     langage: ["React.js", "TypeScript", "Tailwind CSS", "Redux", "UX/UI"],
-    // isFeatured: true, <-- CHAMP RETIRÉ
     detailPageLink: "/projects/ecommerce-u"
   },
   {
@@ -135,7 +135,7 @@ export const DataProjects: BestProjectI[] = [
       { url: "3", alt: "Page de checkout" },
       { url: "4", alt: "Interface utilisateur" },
     ],
-    collaborators: [ // AJOUT DES COLLABORATEURS
+    collaborators: [ 
       { name: "Alice Dupont", role: "Designer UX/UI", link: "#" },
       { name: "Bob Martin", role: "Dev Backend (Node.js)", link: "#" },
       { name: "Alice Dupont", role: "Designer UX/UI", link: "#" },
@@ -146,7 +146,6 @@ export const DataProjects: BestProjectI[] = [
     liveLink: "https://superu-ecommerce.com",
     githubLink: "https://github.com/monprofil/super-u-ecommerce",
     langage: ["React.js", "TypeScript", "Tailwind CSS", "Redux", "UX/UI"],
-    // isFeatured: true, <-- CHAMP RETIRÉ
     detailPageLink: "/projects/ecommerce-u"
   },
   {
@@ -165,7 +164,7 @@ export const DataProjects: BestProjectI[] = [
       { url: "3", alt: "Page de checkout" },
       { url: "4", alt: "Interface utilisateur" },
     ],
-    collaborators: [ // AJOUT DES COLLABORATEURS
+    collaborators: [ 
       { name: "Alice Dupont", role: "Designer UX/UI", link: "#" },
       { name: "Bob Martin", role: "Dev Backend (Node.js)", link: "#" },
       { name: "Alice Dupont", role: "Designer UX/UI", link: "#" },
@@ -176,7 +175,6 @@ export const DataProjects: BestProjectI[] = [
     liveLink: "https://superu-ecommerce.com",
     githubLink: "https://github.com/monprofil/super-u-ecommerce",
     langage: ["React.js", "TypeScript", "Tailwind CSS", "Redux", "UX/UI"],
-    // isFeatured: true, <-- CHAMP RETIRÉ
     detailPageLink: "/projects/ecommerce-u"
   },
   {
@@ -197,5 +195,4 @@ export const DataProjects: BestProjectI[] = [
     langage: ["WebGL", "Three.js", "OGL", "Performance", "Créatif"],
     detailPageLink: "/projects/portfolio-3d"
   },
-  // ... autres projets
 ];

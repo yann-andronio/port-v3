@@ -10,7 +10,7 @@ import { navbarVariants } from "../../utils/framerVariantsAnimation";
 import { Menu, X } from "lucide-react";
 import NavbarMobile from "./NavbarMobile";
 
- export interface NavigationMenuesI {
+export interface NavigationMenuesI {
   name: string;
   link: string;
 }
@@ -113,14 +113,14 @@ export default function Navbar() {
           </button>
         </div>
       </div>
-
-<AnimatePresence>
+      <AnimatePresence>
         {isMenuOpen && (
-          <NavbarMobile 
-            NavigationMenues={NavigationMenues} 
-            closeMenu={() => setIsMenuOpen(false)} 
+          <NavbarMobile
+            NavigationMenues={NavigationMenues}
+            closeMenu={() => setIsMenuOpen(false)}
           />
         )}
-      </AnimatePresence>    </motion.header>
+      </AnimatePresence>{" "}
+    </motion.header>
   );
 }
