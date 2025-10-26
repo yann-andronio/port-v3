@@ -15,21 +15,22 @@ export const ModalHeader = ({ project, onClose, accent }: ModalHeaderProps) => {
   const accentBorder = `border-${accent}-500 dark:border-${accent}-400`;
   const ProjectTypeIcon =project.projectType === "Collaboratif"? Users: Code;
 
+/*   bg-gray-800/90  for first div*/
   return (
     <div
       className={`
         relative shrink-0 p-4 md:p-6 flex items-center justify-between
         lg:border-b-4 ${accentBorder}
-        bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm 
+        bg-white/90 dark:bg-[#060010] backdrop-blur-sm 
         shadow-lg z-10 
       `}
     >
       <div className="flex flex-col">
         <h2
-          className={`
+          className={`text-black/80
             text-xl sm:text-3xl font-extrabold leading-tight mb-1
-            text-transparent bg-clip-text bg-gradient-to-r ${headerGradientClass}
-            dark:text-white 
+           bg-clip-text bg-gradient-to-r ${headerGradientClass}
+            dark:text-white  
           `}
         >
           {project.text}

@@ -32,7 +32,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
 
  const isCollaborative: boolean = project.projectType === "Collaboratif" && !!(project.collaborators && project.collaborators.length > 0);
 
-  // Classes pour masquer la scrollbar (simplifiées si possible, sinon laisser les classes Tailwind)
+  // Classes pour masquer la scrollbar 
   const hideScrollbarClass = "scrollbar-hide [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]";
 
   return (
@@ -45,7 +45,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
         className={`
           relative w-[95vw] max-w-7xl
           h-[90vh] md:w-11/12 lg:h-[90vh]
-          bg-white dark:bg-gray-900 rounded-3xl shadow-2xl flex flex-col
+          bg-white dark:bg-[#060010] rounded-3xl shadow-2xl flex flex-col
           border border-gray-200 dark:border-gray-800
           overflow-hidden
         `}
@@ -62,7 +62,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
           />
         </div>
 
-        <div className={` hidden lg:flex justify-end items-center gap-4 p-5  border-t border-gray-300 dark:border-gray-700  bg-white/95 dark:bg-gray-900/95 shadow-2xl shrink-0 z-10 `}>
+        <div className={` hidden lg:flex justify-end items-center gap-4 p-5  border-t border-gray-300 dark:border-gray-700  bg-white/95 dark:bg-[#060010] shadow-2xl shrink-0 z-10 `}>
         
         {/*   {project.detailPageLink && (
             <a

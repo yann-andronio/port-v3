@@ -6,6 +6,7 @@ interface AboutSkillsCardProps {
   isDark: boolean;
 }
 
+/* bg-gray-800/60 for first div bg-card*/
 export default function AboutSkillsCard({ competences, isDark }: AboutSkillsCardProps) {
   
   return (
@@ -14,7 +15,7 @@ export default function AboutSkillsCard({ competences, isDark }: AboutSkillsCard
         relative group p-6 rounded-3xl border 
         overflow-hidden transition-all duration-500 ease-out 
         hover:scale-[1.02] hover:shadow-[0_8px_30px_rgba(0,0,0,0.1)] 
-        ${isDark ? "border-gray-800 bg-gray-800/60" : "border-gray-200 bg-white/80"}
+        ${isDark ? "border-gray-800 bg-[#060010]" : "border-gray-200 bg-white/80"}
       `}
     >
       {/* jiro kely in hover */}

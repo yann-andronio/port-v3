@@ -24,7 +24,8 @@ export default function ProjectCard({ project }: { project: ProjectI }) {
   const accentTextColor = `text-${colors.primary}-600 dark:text-${colors.primary}-400`;
   const hoverShadow = `hover:shadow-${colors.primary}-500/40 dark:hover:shadow-${colors.primary}-800/60`;
 
-  return (
+/*   gray-800/90 for first div color card */  
+return (
     <>
       <motion.div
         whileHover={{ y: -5, scale: 1.01 }}
@@ -33,7 +34,7 @@ export default function ProjectCard({ project }: { project: ProjectI }) {
         className={`
           group relative flex flex-col overflow-hidden rounded-3xl cursor-pointer 
           shadow-lg ${hoverShadow} transition-all duration-500
-          bg-white/90 dark:bg-gray-800/90 border border-gray-200 dark:border-gray-700/70
+          bg-white/90 dark:bg-[#060010] border border-gray-200 dark:border-gray-700/70
         `}
       >
         <ProjectCardImage project={project} colors={colors} ProjectIcon={ProjectIcon} />

@@ -1,4 +1,4 @@
-import { Users, ExternalLink, Github, MoreHorizontal } from "lucide-react";
+import { Users, ExternalLink, Github } from "lucide-react";
 import type { ProjectI } from "../../../data/DataProjects";
 import { CollaboratorItem } from "./CollaboratorItem"; 
 

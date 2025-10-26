@@ -3,6 +3,7 @@ import About from "../../components/About/About";
 import TechMarquee from "../../components/ui/TechMarquee";
 import Projects from "../../components/Projects/Projects";
 import ExperiencePro from "../../components/ExpériencePro/ExperiencePro";
+import Parcours from "../../components/Parcours/Parcours";
 export default function Home() {
   return (
     <>
@@ -21,9 +22,9 @@ export default function Home() {
       <div className="px-6 bg-white dark:bg-[#060010]">
         <ExperiencePro/>
       </div>
-  {/*     <div className="px-6 bg-white dark:bg-[#060010]">
+      <div className="px-6 bg-white dark:bg-[#060010]">
         <Parcours/>
-      </div> */}
+      </div>
      
     </>
   );
