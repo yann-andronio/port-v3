@@ -1,29 +1,28 @@
-import { StrictMode, useEffect } from "react"; 
+import { StrictMode, useEffect } from "react";
 import { createRoot } from "react-dom/client";
-import { RouterProvider } from "react-router-dom";
-import { router } from "./routes/AppRouter";
-import './index.css'
+import "./index.css";
 import { ThemeProvider } from "./context/ThemeContext";
+import App from "./App";
 
-import AOS from 'aos';
-import 'aos/dist/aos.css'; 
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Root = () => {
   useEffect(() => {
     AOS.init({
-      duration: 800, 
-      once: true,  
-      easing: 'ease-out', 
+      duration: 800,
+      once: true,
+      easing: "ease-out",
     });
-  }, []); 
+  }, []);
 
   return (
     <StrictMode>
       <ThemeProvider>
-        <RouterProvider router={router} />
+        <App />
       </ThemeProvider>
     </StrictMode>
   );
-}
+};
 
 createRoot(document.getElementById("root")!).render(<Root />);
