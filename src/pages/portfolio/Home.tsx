@@ -4,6 +4,8 @@ import TechMarquee from "../../components/ui/TechMarquee";
 import Projects from "../../components/Projects/Projects";
 import ExperiencePro from "../../components/ExpériencePro/ExperiencePro";
 import Parcours from "../../components/Parcours/Parcours";
+import Contact from "../../components/contact/Contact";
+import Footer from "../../components/footer/Footer";
 export default function Home() {
   return (
     <>
@@ -11,21 +13,27 @@ export default function Home() {
         <HeroSection />
       </div>
       <div className="bg-white dark:bg-[#060010] ">
-        <TechMarquee/>
+        <TechMarquee />
       </div>
       <div className="px-6 bg-white dark:bg-[#060010]">
-        <About/>
+        <About />
       </div>
       <div className="px-6 bg-white dark:bg-[#060010]">
-        <Projects/>
+        <Projects />
       </div>
       <div className="px-6 bg-white dark:bg-[#060010]">
-        <ExperiencePro/>
+        <ExperiencePro />
       </div>
       <div className="px-6 bg-white dark:bg-[#060010]">
-        <Parcours/>
+        <Parcours />
       </div>
-     
+      <div className="px-6 bg-white dark:bg-[#060010]">
+        <Contact />
+      </div>
+
+      <div className="px-6 bg-white dark:bg-[#060010]">
+        <Footer />
+      </div>
     </>
   );
 }

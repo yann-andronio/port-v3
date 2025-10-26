@@ -77,7 +77,7 @@ export default function Navbar() {
           </span>
         </h1>
 
-        <nav className="hidden md:flex items-center gap-8">
+        <nav className="hidden md:hidden lg:flex items-center gap-8">
           {NavigationMenues.map((item, index) => {
             const isActive = activeLink === item.link;
             
@@ -130,7 +130,7 @@ export default function Navbar() {
           />
 
           <button
-            className="md:hidden text-gray-800 dark:text-gray-200 p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition"
+            className="md:flex lg:hidden text-gray-800 dark:text-gray-200 p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Ouvrir le menu de navigation"
           >

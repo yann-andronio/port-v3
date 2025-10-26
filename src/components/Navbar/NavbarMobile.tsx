@@ -16,7 +16,7 @@ export default function NavbarMobile({ NavigationMenues, closeMenu }: NavbarMobi
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }} 
-          className="md:hidden mt-2 mx-4 bg-white/90 dark:bg-black/80 backdrop-blur-md rounded-xl shadow-xl border border-white/10 overflow-hidden max-h-[80vh] overflow-y-auto"
+          className="md:flex lg:hidden mt-2 mx-4 bg-white/90 dark:bg-black/80 backdrop-blur-md rounded-xl shadow-xl border border-white/10 overflow-hidden max-h-[80vh] overflow-y-auto"
         >
           <ul className="flex flex-col items-center gap-3 py-3">
             {NavigationMenues.map((item, index) => (
