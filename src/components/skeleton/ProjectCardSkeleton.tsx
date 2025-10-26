@@ -5,9 +5,9 @@ interface ProjectCardSkeletonProps {
   isDark?: boolean;
 }
 
-export const ProjectCardSkeleton = ({
-  isDark = false,
-}: ProjectCardSkeletonProps) => {
+export const ProjectCardSkeleton = ({isDark = false}: ProjectCardSkeletonProps) => {
+
+  
   const baseColor = isDark ? "#2c2c2c" : "#e5e5e5";
   const highlightColor = isDark ? "#444" : "#f5f5f5";
 

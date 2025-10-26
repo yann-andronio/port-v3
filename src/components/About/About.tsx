@@ -2,6 +2,8 @@ import { useTheme } from "../../context/ThemeContext";
 import AboutText from "./AboutText";
 import AboutStats from "./AboutStats";
 import AboutSkills from "./AboutSkills";
+import { useState } from "react";
+import AboutImageSkeleton from "../skeleton/AboutImageSkeleton";
 
 const photoProfil1 = "./images/fin.png";
 const photoProfil2 = "./images/fin2b.png";
@@ -11,6 +13,7 @@ export default function About() {
   const isDark = theme === "dark";
 
   const currentPhoto = isDark ? photoProfil2 : photoProfil1;
+  const [loaded, setLoaded] = useState(false);
 
   return (
     <section
@@ -22,6 +25,7 @@ export default function About() {
           <div className="lg:col-span-2 lg:order-none order-2 space-y-6 text-center lg:text-left justify-center md:text-center">
             <AboutText isDark={isDark} />
           </div>
+            {!loaded && <AboutImageSkeleton />}
 
           <div className=" order-1 lg:order-none lg:col-span-1 flex justify-center lg:justify-end flex-shrink-0 relative">
             <div className="w-full h-full">
@@ -29,6 +33,7 @@ export default function About() {
                 src={currentPhoto}
                 alt="Portrait professionnel de Yann Andronio, Développeur Full Stack"
                 className="w-full h-full object-cover transform hover:scale-105 transition-transform duration-700"
+                  onLoad={() => setLoaded(true)}
               />
             </div>
           </div>
