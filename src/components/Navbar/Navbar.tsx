@@ -1,4 +1,4 @@
-import  {useState, useEffect, useMemo } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { useTheme } from "../../context/ThemeContext";
 import { AnimatedThemeToggler } from "../ui/animated-theme-toggler";
 import { FaGlobe } from "react-icons/fa";
@@ -21,10 +21,9 @@ export default function Navbar() {
   const [openChoiceLanguage, setOpenChoiceLanguage] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  
-  const [activeLink, setActiveLink] = useState("home"); 
 
-  
+  const [activeLink, setActiveLink] = useState("home");
+
   useEffect(() => {
     const handleScroll = () => {
       const offset = window.scrollY;
@@ -39,22 +38,24 @@ export default function Navbar() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-  
+
   useEffect(() => {
-    scrollSpy.update();    
+    scrollSpy.update();
     return () => {};
   }, []);
 
- const NavigationMenues: NavigationMenuesI[] = useMemo(() => [
-  { name: "home", link: "home" },
-  { name: "about", link: "about" },
-  { name: "skills", link: "skills" },
-  { name: "projects", link: "projects" },
-  { name: "experiences", link: "experiences" },
-  { name: "parcours", link: "parcours" },
-  { name: "contact", link: "contact" },
-], []);
-
+  const NavigationMenues: NavigationMenuesI[] = useMemo(
+    () => [
+      { name: "home", link: "home" },
+      { name: "about", link: "about" },
+      { name: "skills", link: "skills" },
+      { name: "projects", link: "projects" },
+      { name: "experiences", link: "experiences" },
+      { name: "parcours", link: "parcours" },
+      { name: "contact", link: "contact" },
+    ],
+    []
+  );
 
   const navbarClasses = isScrolled
     ? "bg-white dark:bg-[#060010] border-b border-gray-200 dark:border-gray-800 shadow-xl py-2"
@@ -71,17 +72,18 @@ export default function Navbar() {
         className={`max-w-7xl mx-auto flex items-center justify-between
         rounded-full px-4 py-1 transition-all duration-300 ${navbarClasses}`}
       >
-        <h1 className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 dark:from-indigo-400 dark:to-pink-500 bg-clip-text text-transparent select-none cursor-pointer whitespace-nowrap">
-          Yann
-          <span className="font-extrabold text-gray-900 dark:text-white">
-            Andronio
-          </span>
-        </h1>
-
+        <ScrollLink smooth={true} duration={500} offset={-70} to={"home"}>
+          <h1 className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 dark:from-indigo-400 dark:to-pink-500 bg-clip-text text-transparent select-none cursor-pointer whitespace-nowrap">
+            Yann
+            <span className="font-extrabold text-gray-900 dark:text-white">
+              Andronio
+            </span>
+          </h1>
+        </ScrollLink>
         <nav className="hidden md:hidden lg:flex items-center gap-8">
           {NavigationMenues.map((item, index) => {
             const isActive = activeLink === item.link;
-            
+
             return (
               <ScrollLink
                 key={index}
@@ -89,13 +91,12 @@ export default function Navbar() {
                 duration={500}
                 offset={-70}
                 to={item.link}
-                spy={true}           
-                onSetActive={setActiveLink} 
-                
+                spy={true}
+                onSetActive={setActiveLink}
                 className={`relative font-medium transition-all duration-300 cursor-pointer 
                   ${
                     isActive
-                      ? "text-blue-600 dark:text-yellow-400 after:w-full" 
+                      ? "text-blue-600 dark:text-yellow-400 after:w-full"
                       : "text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-yellow-400 after:w-0 hover:after:w-full" // Styles inactifs
                   }
                   // Styles de la barre after:
