@@ -1,4 +1,4 @@
-import  {useState, useEffect } from "react";
+import  {useState, useEffect, useMemo } from "react";
 import { useTheme } from "../../context/ThemeContext";
 import { AnimatedThemeToggler } from "../ui/animated-theme-toggler";
 import { FaGlobe } from "react-icons/fa";
@@ -45,15 +45,16 @@ export default function Navbar() {
     return () => {};
   }, []);
 
-  const NavigationMenues: NavigationMenuesI[] = [
-    { name: "home", link: "home" },
-    { name: "about", link: "about" },
-    { name: "skills", link: "skills" },
-    { name: "projects", link: "projects" },
-    { name: "experiences", link: "experiences" },
-    { name: "parcours", link: "parcours" },
-    { name: "contact", link: "contact" },
-  ];
+ const NavigationMenues: NavigationMenuesI[] = useMemo(() => [
+  { name: "home", link: "home" },
+  { name: "about", link: "about" },
+  { name: "skills", link: "skills" },
+  { name: "projects", link: "projects" },
+  { name: "experiences", link: "experiences" },
+  { name: "parcours", link: "parcours" },
+  { name: "contact", link: "contact" },
+], []);
+
 
   const navbarClasses = isScrolled
     ? "bg-white dark:bg-[#060010] border-b border-gray-200 dark:border-gray-800 shadow-xl py-2"
