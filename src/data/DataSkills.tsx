@@ -1,4 +1,5 @@
-import { Code, Server, GitBranch, type LucideIcon } from "lucide-react";
+import { Code, Server, GitBranch,Figma, type LucideIcon } from "lucide-react";
+
 export interface DataSkillsI {
   icon: LucideIcon;      
   title: string;           
@@ -8,7 +9,7 @@ export interface DataSkillsI {
   textHover: string;        
 }
 
-export const DataSkills:DataSkillsI[] = [
+export const DataSkills: DataSkillsI[] = [
   {
     icon: Code,
     title: "Frontend & UI/UX",
@@ -32,5 +33,13 @@ export const DataSkills:DataSkillsI[] = [
     color: "indigo",
     iconBg: "bg-indigo-600",
     textHover: "hover:bg-indigo-700",
+  },
+  {
+    icon: Figma, // tu peux changer selon l’icône principale
+    title: "Design & Collaboration",
+    items: ["Figma", "Photoshop", "Jira", "GitHub", "Git"],
+    color: "orange",
+    iconBg: "bg-orange-600",
+    textHover: "hover:bg-orange-700",
   },
 ];

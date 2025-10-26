@@ -5,6 +5,7 @@ import ProjectModal from "../Modal/ProjectModal";
 import type { ProjectI } from "../../../data/DataProjects";
 import { ProjectCardImage } from "./ProjectCardImage";
 import { ProjectCardContent } from "./ProjectCardContent";
+import { ProjectCardSkeleton } from "../../skeleton/ProjectCardSkeleton";
 
 export const colorMap = {
     Web: { primary: "sky", secondary: "blue" },
@@ -17,6 +18,7 @@ export const colorMap = {
 
 export default function ProjectCard({ project }: { project: ProjectI }) {
   const [isOpen, setIsOpen] = useState(false);
+   const [isLoaded, setIsLoaded] = useState(false);
 
   const ProjectIcon = project.projectType === "Collaboratif" ? Users : Code;
 
@@ -27,6 +29,7 @@ export default function ProjectCard({ project }: { project: ProjectI }) {
 /*   gray-800/90 for first div color card */  
 return (
     <>
+     {!isLoaded && <ProjectCardSkeleton />}
       <motion.div
         whileHover={{ y: -5, scale: 1.01 }}
         transition={{ type: "spring", stiffness: 300, damping: 20 }}
@@ -37,7 +40,7 @@ return (
           bg-white/90 dark:bg-[#060010] border border-gray-200 dark:border-gray-700/70
         `}
       >
-        <ProjectCardImage project={project} colors={colors} ProjectIcon={ProjectIcon} />
+        <ProjectCardImage project={project} colors={colors} ProjectIcon={ProjectIcon}  onLoad={() => setIsLoaded(true)} />
 
         <ProjectCardContent project={project} accentTextColor={accentTextColor} />
         

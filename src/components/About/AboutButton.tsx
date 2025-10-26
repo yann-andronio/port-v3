@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { FaArrowRight, FaCode } from "react-icons/fa";
+import { Link as ScrollLink } from "react-scroll";
 
 interface AboutButtonI {
   isDark: boolean;
@@ -30,13 +31,23 @@ export default function AboutButton({ isDark, primaryColor }: AboutButtonI) {
 
   return (
     <div className="flex flex-col sm:flex-row items-start sm:items-center justify-center lg:justify-normal pt-6">
-      <button className={primaryButtonClass}>
+      <ScrollLink
+        to="projects"
+        offset={-70}
+        smooth={true}
+        duration={500}
+        className={primaryButtonClass}
+      >
         <FaCode className="mr-2" />
         {t("cta_projects")}
-      </button>
-      <button className={secondaryButtonClass}>
+      </ScrollLink>
+      <ScrollLink
+        to="contact"
+        offset={-70}
+        smooth={true}
+        duration={500} className={secondaryButtonClass}>
         {t("cta_contact")} <FaArrowRight className="ml-2" />
-      </button>
+      </ScrollLink>
     </div>
   );
 }
