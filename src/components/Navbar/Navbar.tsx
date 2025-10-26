@@ -40,8 +40,10 @@ export default function Navbar() {
   const NavigationMenues: NavigationMenuesI[] = [
     { name: "home", link: "home" },
     { name: "about", link: "about" },
-    { name: "projects", link: "projects" },
     { name: "skills", link: "skills" },
+    { name: "projects", link: "projects" },
+    { name: "experiences", link: "experiences" },
+    { name: "parcours", link: "parcours" },
     { name: "contact", link: "contact" },
   ];
 

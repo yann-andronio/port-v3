@@ -15,7 +15,7 @@ export default function ExperiencePro() {
 
   return (
     <section
-      id="experience"
+      id="experiences"
       className="py-12 sm:py-16 md:py-24 lg:py-32 text-gray-900 dark:text-white transition-colors bg-white dark:bg-[#060010]"
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
