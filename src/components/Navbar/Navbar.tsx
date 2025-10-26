@@ -1,10 +1,10 @@
+import  {useState, useEffect } from "react";
 import { useTheme } from "../../context/ThemeContext";
 import { AnimatedThemeToggler } from "../ui/animated-theme-toggler";
 import { FaGlobe } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
-import { useEffect, useState } from "react";
 import ChoiceLanguage from "../ui/ChoiceLangage";
-import { Link as ScrollLink } from "react-scroll";
+import { Link as ScrollLink, scrollSpy } from "react-scroll";
 import { AnimatePresence, motion } from "framer-motion";
 import { navbarVariants } from "../../utils/framerVariantsAnimation";
 import { Menu, X } from "lucide-react";
@@ -21,7 +21,10 @@ export default function Navbar() {
   const [openChoiceLanguage, setOpenChoiceLanguage] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  
+  const [activeLink, setActiveLink] = useState("home"); 
 
+  
   useEffect(() => {
     const handleScroll = () => {
       const offset = window.scrollY;
@@ -35,6 +38,11 @@ export default function Navbar() {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
+  }, []);
+  
+  useEffect(() => {
+    scrollSpy.update();    
+    return () => {};
   }, []);
 
   const NavigationMenues: NavigationMenuesI[] = [
@@ -59,7 +67,7 @@ export default function Navbar() {
       className="fixed top-0 left-0 w-full z-50 px-2 sm:px-4 py-2 transition-all duration-500"
     >
       <div
-        className={`max-w-7xl mx-auto flex items-center justify-between 
+        className={`max-w-7xl mx-auto flex items-center justify-between
         rounded-full px-4 py-1 transition-all duration-300 ${navbarClasses}`}
       >
         <h1 className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 dark:from-indigo-400 dark:to-pink-500 bg-clip-text text-transparent select-none cursor-pointer whitespace-nowrap">
@@ -70,18 +78,33 @@ export default function Navbar() {
         </h1>
 
         <nav className="hidden md:flex items-center gap-8">
-          {NavigationMenues.map((item, index) => (
-            <ScrollLink
-              key={index}
-              smooth={true}
-              duration={500}
-              offset={-70}
-              to={item.link}
-              className="relative text-gray-800 dark:text-gray-200 font-medium transition-all duration-300 hover:text-blue-600 dark:hover:text-yellow-400 cursor-pointer after:content-[''] after:block after:w-0 after:h-[2px] after:bg-blue-600 dark:after:bg-yellow-400 after:transition-all after:duration-300 hover:after:w-full"
-            >
-              {t(item.name)}
-            </ScrollLink>
-          ))}
+          {NavigationMenues.map((item, index) => {
+            const isActive = activeLink === item.link;
+            
+            return (
+              <ScrollLink
+                key={index}
+                smooth={true}
+                duration={500}
+                offset={-70}
+                to={item.link}
+                spy={true}           
+                onSetActive={setActiveLink} 
+                
+                className={`relative font-medium transition-all duration-300 cursor-pointer 
+                  ${
+                    isActive
+                      ? "text-blue-600 dark:text-yellow-400 after:w-full" 
+                      : "text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-yellow-400 after:w-0 hover:after:w-full" // Styles inactifs
+                  }
+                  // Styles de la barre after:
+                  after:content-[''] after:absolute after:bottom-[-2px] after:left-0 after:h-[2px] after:bg-blue-600 dark:after:bg-yellow-400 after:transition-all after:duration-300
+                `}
+              >
+                {t(item.name)}
+              </ScrollLink>
+            );
+          })}
         </nav>
 
         <div className="flex items-center gap-2 sm:gap-3">
