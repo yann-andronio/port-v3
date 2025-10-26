@@ -1,9 +1,7 @@
-"use client";
 import React, { useEffect, useState, memo, useMemo, useCallback } from 'react';
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaTerminal } from 'react-icons/fa';
 import { SiTailwindcss } from 'react-icons/si';
 
-// --- Types ---
 type IconType = 'html' | 'css' | 'javascript' | 'react' | 'node' | 'tailwind';
 type GlowColor = 'cyan' | 'purple';
 
@@ -31,7 +29,6 @@ interface GlowingOrbitPathProps {
   animationDelay?: number;
 }
 
-// --- Icon Mapping ---
 const iconComponents = {
   html: { component: FaHtml5, color: '#E34F26' },
   css: { component: FaCss3Alt, color: '#1572B6' },
@@ -41,8 +38,7 @@ const iconComponents = {
   tailwind: { component: SiTailwindcss, color: '#06B6D4' },
 };
 
-// --- Memoized Skill Icon ---
-// --- Memoized Skill Icon (taille uniforme) ---
+
 const SkillIcon = memo(({ type, color }: SkillIconProps) => {
   const IconComponent = iconComponents[type]?.component;
   return (
@@ -58,7 +54,6 @@ const SkillIcon = memo(({ type, color }: SkillIconProps) => {
 SkillIcon.displayName = 'SkillIcon';
 
 
-// --- Orbiting Skill ---
 const OrbitingSkill = memo(({ config, angle, isHovered, onHover, onLeave }: OrbitingSkillProps) => {
   const { orbitRadius, size, iconType, label } = config;
   const iconColor = iconComponents[iconType]?.color || '#FFFFFF';
@@ -96,7 +91,6 @@ const OrbitingSkill = memo(({ config, angle, isHovered, onHover, onLeave }: Orbi
 });
 OrbitingSkill.displayName = 'OrbitingSkill';
 
-// --- Glowing Orbit Path ---
 const GlowingOrbitPath = memo(({ radius, glowColor, animationDelay = 0 }: GlowingOrbitPathProps) => {
   const glowColors: Record<GlowColor, { primary: string; secondary: string; border: string }> = {
     cyan: { primary: 'rgba(6,182,212,0.4)', secondary: 'rgba(6,182,212,0.2)', border: 'rgba(6,182,212,0.3)' },
@@ -132,7 +126,6 @@ const GlowingOrbitPath = memo(({ radius, glowColor, animationDelay = 0 }: Glowin
 });
 GlowingOrbitPath.displayName = 'GlowingOrbitPath';
 
-// --- Skills Config ---
 const skillsConfig: SkillConfig[] = [
   { id: 'html', orbitRadius: 100, size: 40, speed: 1, iconType: 'html', phaseShift: 0, glowColor: 'cyan', label: 'HTML5' },
   { id: 'css', orbitRadius: 100, size: 45, speed: 1, iconType: 'css', phaseShift: (2 * Math.PI) / 3, glowColor: 'cyan', label: 'CSS3' },
@@ -142,7 +135,6 @@ const skillsConfig: SkillConfig[] = [
   { id: 'tailwind', orbitRadius: 180, size: 40, speed: -0.6, iconType: 'tailwind', phaseShift: (4 * Math.PI) / 3, glowColor: 'purple', label: 'Tailwind CSS' },
 ];
 
-// --- Main Component ---
 export default function OrbitingSkills() {
   const [time, setTime] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
@@ -153,7 +145,6 @@ export default function OrbitingSkills() {
     { radius: 180, glowColor: 'purple', delay: 1.5 },
   ], []);
 
-  // --- Animation Loop ---
   useEffect(() => {
     if (isPaused) return;
 
@@ -171,7 +162,6 @@ export default function OrbitingSkills() {
     return () => cancelAnimationFrame(animationFrameId);
   }, [isPaused]);
 
-  // --- Compute angles only once per frame ---
   const angles = useMemo(() => skillsConfig.map(skill => time * skill.speed + skill.phaseShift), [time]);
 
   const handleMouseEnter = useCallback(() => setIsPaused(true), []);
@@ -179,7 +169,6 @@ export default function OrbitingSkills() {
 
   return (
     <main className="w-full flex items-center justify-end overflow-hidden">
-      {/* Background Pattern */}
       <div className="absolute  opacity-10">
         <div
           className="absolute inset-0"
@@ -195,7 +184,6 @@ export default function OrbitingSkills() {
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        {/* Central Code Icon */}
         <div className="w-20 h-20 bg-gradient-to-br from-gray-700 to-gray-900 rounded-full flex items-center justify-center z-10 relative shadow-2xl">
           <div className="absolute inset-0 rounded-full bg-cyan-500/30 blur-xl animate-pulse"></div>
           <div className="absolute inset-0 rounded-full bg-purple-500/20 blur-2xl animate-pulse" style={{ animationDelay: '1s' }}></div>
@@ -204,7 +192,6 @@ export default function OrbitingSkills() {
           </div>
         </div>
 
-        {/* Orbit Paths */}
         {orbitConfigs.map((config) => (
           <GlowingOrbitPath
             key={`path-${config.radius}`}
@@ -214,7 +201,6 @@ export default function OrbitingSkills() {
           />
         ))}
 
-        {/* Orbiting Skills */}
         {skillsConfig.map((config, idx) => (
           <OrbitingSkill
             key={config.id}

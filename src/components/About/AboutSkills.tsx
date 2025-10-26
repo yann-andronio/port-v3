@@ -1,4 +1,3 @@
-"use client";
 import OrbitingSkills from "../Orbitingskills/OrbitingSkills";
 import AboutSkillsCard from "./AboutSkillsCard";
 import { DataSkills } from "../../data/DataSkills";

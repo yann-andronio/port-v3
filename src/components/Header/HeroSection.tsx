@@ -35,7 +35,7 @@ export default function HeroSection() {
       animate="visible"
       variants={heroContainerVariants}
     >
-     {/*  {isDark ? (
+      {isDark ? (
         <LightRays
           raysOrigin="top-center"
           raysColor={theme === "dark" ? "#ffffff" : "#ffaa00"}
@@ -46,7 +46,7 @@ export default function HeroSection() {
         />
       ) : (
         ""
-      )} */}
+      )}
 
       <motion.img
         src={isDark ? moon : sun}
