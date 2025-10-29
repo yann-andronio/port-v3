@@ -21,12 +21,12 @@ export default function Projects() {
       id="projects"
       className="py-24 md:py-36 text-gray-900 dark:text-white"
     >
-      <div className="lg:max-w-7xl max-w-[100%] mx-auto lg:px-4">
+      <div className="lg:max-w-7xl max-w-full mx-auto lg:px-4">
         <ProjectTitle />
 
         <div
           className={`
-            sticky z-40 top-[4.5rem] 
+            sticky z-40 top-18 
             rounded-b-lg py-3 mb-10 md:py-4 md:mb-16 
             bg-white/90 dark:bg-gray-900/90 backdrop-blur-md 
             shadow-md dark:shadow-xl dark:shadow-gray-900/50 
