@@ -1,5 +1,3 @@
-// ModalLittleImg.tsx
-
 import React, { useState } from "react";
 import Skeleton from "react-loading-skeleton";
 import "react-loading-skeleton/dist/skeleton.css";
@@ -8,15 +6,20 @@ interface ModalLittleImgProps {
   src: string;
   alt: string;
   className?: string;
+  onClick: (src: string) => void;
 }
 
-const ModalLittleImg: React.FC<ModalLittleImgProps> = ({ src, alt, className}) => {
+const ModalLittleImg: React.FC<ModalLittleImgProps> = ({ src, alt, className , onClick}) => {
   const [loaded, setLoaded] = useState(false);
+  
 
   const baseClasses ="w-full h-32 rounded-lg  dark:border-gray-700 cursor-zoom-in";
+  const handleClick = () => {
+      onClick(src);
+  };
 
   return (
-    <div className={`relative ${className} ${baseClasses}`}>
+    <div className={`relative ${className} ${baseClasses}`}  onClick={()=>handleClick()}>
       {!loaded && <Skeleton className="absolute h-full inset-0 rounded-lg" />}
       <img
         src={src}

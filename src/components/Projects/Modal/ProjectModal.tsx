@@ -37,7 +37,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
 
   return (
     <div
-      className="fixed inset-0 z-[60] flex items-center justify-center bg-black/80 backdrop-blur-2xl"
+      className="fixed inset-0 z-60 flex items-center justify-center bg-black/80 backdrop-blur-2xl"
       onClick={handleBackdropClick}
     >
       <div
@@ -52,7 +52,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
       >
         <ModalHeader project={project} onClose={onClose} accent={accent} />
 
-        <div className={`flex-grow overflow-y-auto p-4 md:p-6 lg:grid lg:grid-cols-3 lg:gap-8 xl:gap-12${hideScrollbarClass}`}>
+        <div className={`grow overflow-y-auto p-4 md:p-6 lg:grid lg:grid-cols-3 lg:gap-8 xl:gap-12${hideScrollbarClass}`}>
           <ModalContentSection project={project} accentText={accentText} />
 
           <ModalInfoSection

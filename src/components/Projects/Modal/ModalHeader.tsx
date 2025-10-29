@@ -29,7 +29,7 @@ export const ModalHeader = ({ project, onClose, accent }: ModalHeaderProps) => {
         <h2
           className={`text-black/80
             text-xl sm:text-3xl font-extrabold leading-tight mb-1
-           bg-clip-text bg-gradient-to-r ${headerGradientClass}
+           bg-clip-text bg-linear-to-r ${headerGradientClass}
             dark:text-white  
           `}
         >

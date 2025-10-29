@@ -5,7 +5,7 @@ export default function ProjectTitle() {
  
       <h2 className={`text-4xl sm:text-6xl md:text-7xl font-extrabold leading-tight tracking-tight mt-2 dark:text-gray-100 text-gray-900`}>
         Mes{" "}
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-indigo-500">
+        <span className="text-transparent bg-clip-text bg-linear-to-r from-sky-400 to-indigo-500">
           Réalisations
         </span>{" "}
         Mémorables

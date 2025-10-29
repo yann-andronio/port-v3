@@ -1,6 +1,9 @@
 import { MoreHorizontal } from "lucide-react";
 import type { ProjectI } from "../../../data/DataProjects";
 import ModalLittleImg from "./ModalLittleImg";
+import { ImageModal } from "./ImageModal";
+import { useState } from "react";
+import { cleanCloudinaryUrl } from "../../../utils/cloudinaryUtils";
 
 interface ModalContentSectionProps {
   project: ProjectI;
@@ -11,6 +14,14 @@ export const ModalContentSection = ({
   project,
   accentText,
 }: ModalContentSectionProps) => {
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const handleImageClick = (src: string) => {
+    const highResSrc = cleanCloudinaryUrl(src)
+    setSelectedImage(highResSrc);
+  };
+  const handleModalClose = () => {
+    setSelectedImage(null);
+  };
   return (
     <>
       <div className="lg:col-span-2 flex flex-col gap-5 sm:gap-7 lg:h-full">
@@ -48,12 +59,15 @@ export const ModalContentSection = ({
                   src={img.url}
                   alt={img.alt}
                   className="hover:scale-[1.02] cursor-pointer transition-transform duration-300"
+                  onClick={handleImageClick}
                 />
               ))}
             </div>
           </div>
         )}
       </div>
+
+      <ImageModal imageUrl={selectedImage} onClose={handleModalClose} />
     </>
   );
 };

@@ -52,7 +52,7 @@ export const ProjectCategoryFilters = ({
             
             ${
               activeCategory === category
-                ? "bg-indigo-600 border-indigo-600 text-white shadow-xl  transform -translate-y-[1px]"
+                ? "bg-indigo-600 border-indigo-600 text-white shadow-xl  transform -translate-y-px"
                 : "bg-transparent border-gray-300 text-gray-700 dark:border-gray-600 dark:text-gray-300 hover:bg-gray-100/50 dark:hover:bg-gray-700/50 hover:border-indigo-400 dark:hover:border-indigo-500"
             }
           `}
