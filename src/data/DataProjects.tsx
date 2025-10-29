@@ -31,7 +31,6 @@ export interface ProjectI {
 
 export const DataProjects: ProjectI[] = [
   {
-    // ID: "1" (Super U E-commerce - Mobile)
     id: "1", 
     text: "Super U E-commerce (Mobile)",
     description: "Conception et développement d'une **application e-commerce mobile** réactive et conviviale, offrant une expérience d'achat complète avec navigation par catégories, gestion de panier interactive et processus de paiement optimisé.",
@@ -61,7 +60,6 @@ export const DataProjects: ProjectI[] = [
     detailPageLink: "/projects/superu-mobile"
   },
   {
-    // ID: "2" (HKB tech - Blog)
     id: "2",
     text: "HKB Tech (Plateforme Blog)",
     description: "Plateforme de contenu et de blog axée sur la technologie. Interface utilisateur moderne et épurée, avec des fonctionnalités d'édition riche et une organisation des articles par catégories pour une navigation intuitive.",
@@ -89,7 +87,6 @@ export const DataProjects: ProjectI[] = [
     detailPageLink: "/projects/hkb-tech"
   },
   {
-    // ID: "3" (Hiaigny - Landing Page/Services)
     id: "3",
     text: "Hiaigny (Site de Services)",
     description: "Site vitrine professionnel mettant en avant des services avec des sections dédiées (À Propos, Services, Témoignages). Design soigné avec des transitions fluides et un focus sur la conversion et l'accessibilité mobile.",
@@ -120,7 +117,6 @@ export const DataProjects: ProjectI[] = [
     detailPageLink: "/projects/hiaigny-site"
   },
  {
-    // ID: "4" (Portfolio 2 - Site personnel)
     id: "4",
     text: "Portfolio Personnel V2",
     description: "Seconde version d'un portfolio mettant l'accent sur la clarté et la présentation des projets. Utilisation de cartes et de galeries pour un affichage dynamique et responsive.",
@@ -150,7 +146,6 @@ export const DataProjects: ProjectI[] = [
 
 
   {
-    // ID: "5" (Super U E-commerce - Web)
     id: "5",
     text: "Super U E-commerce (Web)",
     description: "Développement d'une plateforme de vente en ligne complète. Inclut des fonctionnalités de filtrage, un moteur de recherche performant et une expérience utilisateur sans rechargement de page pour le panier.",
@@ -178,7 +173,6 @@ export const DataProjects: ProjectI[] = [
   },
 
   {
-    // ID: "6" (Portfolio 1 - Site personnel)
     id: "6",
     text: "Portfolio Personnel V1",
     description: "Première itération d'un portfolio personnel, axée sur un design minimaliste et une présentation claire des compétences et des expériences passées. Site statique avec intégration de médias.",
@@ -204,7 +198,6 @@ export const DataProjects: ProjectI[] = [
     detailPageLink: "/projects/portfolio-v1"
   },
   {
-    // ID: "7" (QuizLang - Application Quiz)
     id: "7",
     text: "QuizLang (App de Quiz Langues)",
     description: "Application interactive de quiz conçue pour l'apprentissage et l'évaluation des compétences linguistiques. Comprend un système de scoring en temps réel et des différents niveaux de difficulté.",

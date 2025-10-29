@@ -1,15 +1,33 @@
 import type { ProjectCategory } from "../../data/DataProjects";
+import type { RefObject } from "react"; 
+
 interface ProjectCategoryFiltersProps {
   activeCategory: ProjectCategory | "Tous";
   setActiveCategory: (category: ProjectCategory | "Tous") => void;
   categoryFilters: (ProjectCategory | "Tous")[];
+  //  Référence au conteneur des projets à remonter
+  projectsContainerRef: RefObject<HTMLDivElement | null>; 
 }
 
 export const ProjectCategoryFilters = ({
   activeCategory,
   setActiveCategory,
   categoryFilters,
+  projectsContainerRef, 
 }: ProjectCategoryFiltersProps) => {
+
+  const handleFilterClick = (category: ProjectCategory | "Tous") => {
+    setActiveCategory(category); 
+
+    //  Faire défiler le conteneur des projets vers le haut
+    if (projectsContainerRef.current) {
+        projectsContainerRef.current.scrollIntoView({ 
+            behavior: "smooth",
+            block: "start"      
+        });
+    }
+  };
+
   return (
     <div
       className={`
@@ -25,9 +43,9 @@ export const ProjectCategoryFilters = ({
       {categoryFilters.map((category) => (
         <button
           key={category}
-          onClick={() => setActiveCategory(category)}
+          onClick={() => handleFilterClick(category)} 
           className={`
-            flex-shrink-0
+            shrink-0
             px-4 py-2 text-sm md:px-6 md:py-2.5 md:text-base
             rounded-full font-bold transition-all duration-300
             border-2

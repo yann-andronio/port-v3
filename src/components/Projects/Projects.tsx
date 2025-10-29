@@ -1,15 +1,26 @@
-import { useState, useMemo } from "react";
+import { useState, useMemo, useRef } from "react";
 import ProjectCard from "./Card/ProjectCard";
 import { DataProjects } from "../../data/DataProjects";
 import type { ProjectCategory } from "../../data/DataProjects";
-import { ProjectCategoryFilters } from "./ProjectCategoryFilters"; 
+import { ProjectCategoryFilters } from "./ProjectCategoryFilters";
 import { ProjectEmptyState } from "./ProjectEmptyState";
 import ProjectTitle from "./ProjectTitle";
 
-const categoryFilters: (ProjectCategory | "Tous")[] = [ "Tous", "Web", "Mobile", "Desktop", "Jeux Vidéo", "Outil"];
+const categoryFilters: (ProjectCategory | "Tous")[] = [
+  "Tous",
+  "Web",
+  "Mobile",
+  "Desktop",
+  "Jeux Vidéo",
+  "Outil",
+];
 
 export default function Projects() {
-  const [activeCategory, setActiveCategory] = useState<ProjectCategory | "Tous">("Tous");
+  const [activeCategory, setActiveCategory] = useState<
+    ProjectCategory | "Tous"
+  >("Tous");
+
+  const projectsListRef = useRef<HTMLDivElement>(null);
 
   const filteredProjects = useMemo(() => {
     if (activeCategory === "Tous") return DataProjects;
@@ -21,7 +32,10 @@ export default function Projects() {
       id="projects"
       className="py-24 md:py-36 text-gray-900 dark:text-white"
     >
-      <div className="lg:max-w-7xl max-w-full mx-auto lg:px-4">
+      <div
+        ref={projectsListRef}
+        className="lg:max-w-7xl max-w-full mx-auto lg:px-4"
+      >
         <ProjectTitle />
 
         <div
@@ -36,6 +50,7 @@ export default function Projects() {
             activeCategory={activeCategory}
             setActiveCategory={setActiveCategory}
             categoryFilters={categoryFilters}
+            projectsContainerRef={projectsListRef}
           />
         </div>
 
