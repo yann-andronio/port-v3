@@ -15,9 +15,9 @@ export const ProjectCardImage = ({ project, colors, ProjectIcon , onLoad }: Proj
   return (
     <div className="relative h-56 overflow-hidden">
       <img
-        src={`./images/projet/${project.mainImage.url}.png`}
+        src={`${project.mainImage.url}`}
         alt={project.mainImage.alt}
-        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 group-hover:brightness-[0.85]"
+        className="w-full h-full p-3 rounded-3xl transition-transform duration-700 group-hover:scale-105 group-hover:brightness-[0.85]"
         onLoad={onLoad}
       />
 
