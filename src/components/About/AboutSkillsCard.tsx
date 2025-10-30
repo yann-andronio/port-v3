@@ -21,7 +21,7 @@ export default function AboutSkillsCard({ competences, isDark }: AboutSkillsCard
       {/* jiro kely in hover */}
       <div
         className={`absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 
-        bg-gradient-to-br ${getGradientColor(competences.color)} to-transparent`}
+        bg-linear-to-br ${getGradientColor(competences.color)} to-transparent`}
       />
 
       <div className="flex items-center gap-4 mb-5 relative z-10">

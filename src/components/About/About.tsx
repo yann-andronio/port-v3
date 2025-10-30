@@ -20,8 +20,8 @@ export default function About() {
       id="about"
       className={`relative w-full min-h-screen  bg-white dark:bg-[#060010] py-28 overflow-hidden flex items-center`}
     >
-      <div className=" mx-auto sm:px-6 lg:px-8 lg:mx-6 relative z-10 w-full">
-        <div className="grid  grid-cols-1 lg:grid-cols-3 gap-10 items-center">
+      <div className=" mx-auto sm:px-6 relative z-10 w-full">
+        <div className="grid   grid-cols-1 lg:grid-cols-3 gap-10 items-center mx-auto sm:px-6 lg:px-6 lg:mx-6 relative z-10 w-full">
           <div className="lg:col-span-2 lg:order-0 order-2 space-y-6 text-center lg:text-left justify-center md:text-center">
             <AboutText isDark={isDark} />
           </div>

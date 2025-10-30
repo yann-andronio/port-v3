@@ -16,13 +16,13 @@ export default function SkillsSection() {
           }`}
         >
           Compétences &{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-indigo-500">
+          <span className="text-transparent bg-clip-text bg-linear-to-r from-cyan-400 to-indigo-500">
             Expertise
           </span>
         </h2>
       </div>
 
-      <div className="lg:max-w-[100%] mx-auto  grid grid-cols-1 lg:grid-cols-2   items-center">
+      <div className="lg:max-w-full mx-auto  grid grid-cols-1 lg:grid-cols-2   items-center">
         <div className=" hidden lg:flex justify-end items-center order-1 lg:order-2">
           <OrbitingSkills />
         </div>

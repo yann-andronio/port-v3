@@ -1,27 +1,37 @@
-import { Code, Server, GitBranch,Figma, type LucideIcon } from "lucide-react";
+// DataSkills.ts
+
+import { Code, Server, GitBranch, Figma, type LucideIcon } from "lucide-react";
 
 export interface DataSkillsI {
-  icon: LucideIcon;      
-  title: string;           
-  items: string[];         
-  color: string;          
-  iconBg: string;           
-  textHover: string;        
+  icon: LucideIcon;
+  title: string;
+  items: string[];
+  color: string;
+  iconBg: string;
+  textHover: string;
 }
 
 export const DataSkills: DataSkillsI[] = [
   {
     icon: Code,
     title: "Frontend & UI/UX",
-    items: ["React", "Next.js", "TypeScript", "Tailwind CSS", "Redux"],
+    items: [
+      "React.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Framer Motion",
+       "React Native", "Electron.js",
+      "Design Responsive",
+      "Intégration API"
+    ],
     color: "cyan",
     iconBg: "bg-cyan-600",
     textHover: "hover:bg-cyan-700",
   },
   {
     icon: Server,
-    title: "Backend & DB",
-    items: ["Node.js", "Express", "PostgreSQL", "MongoDB", "API REST"],
+    title: "Backend & Base de Données",
+    items: ["Node.js", "Express.js", "MongoDB", "PostgreSQL"],
     color: "emerald",
     iconBg: "bg-emerald-600",
     textHover: "hover:bg-emerald-700",
@@ -29,15 +39,15 @@ export const DataSkills: DataSkillsI[] = [
   {
     icon: GitBranch,
     title: "Outils & Workflow",
-    items: ["Git", "Docker", "VS Code", "CI/CD", "Jest/Vitest"],
+    items: ["Git", "GitHub", "VS Code", "Postman", "Vercel / Netlify"],
     color: "indigo",
     iconBg: "bg-indigo-600",
     textHover: "hover:bg-indigo-700",
   },
   {
-    icon: Figma, // tu peux changer selon l’icône principale
+    icon: Figma,
     title: "Design & Collaboration",
-    items: ["Figma", "Photoshop", "Jira", "GitHub", "Git"],
+    items: ["Figma", "Photoshop" ,"github projects", "jira" ],
     color: "orange",
     iconBg: "bg-orange-600",
     textHover: "hover:bg-orange-700",

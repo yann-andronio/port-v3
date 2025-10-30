@@ -10,12 +10,12 @@ export type StatItemType = {
 export const DataStat: StatItemType[] = [
   {
     icon: FaTrophy,
-    main: 2,
+    main: 1,
     unit: "experience_months",
   },
   {
     icon: FaCodeBranch,
-    main: 17,
+    main: 15,
     unit: "personal_projects",
   },
   {
