@@ -12,7 +12,7 @@ export default function About() {
   const { theme } = useTheme();
   const isDark = theme === "dark";
   const currentPhoto = isDark ? photoProfil2 : photoProfil1;
-  const [loaded, setLoaded] = useState(false);
+  const [loaded, setLoaded] = useState(true);
 
   return (
     <section
@@ -26,24 +26,25 @@ export default function About() {
             <AboutText isDark={isDark} />
           </div>
 
-          <div className="order-1 lg:order-0 lg:col-span-1 flex justify-center lg:justify-end shrink-0 relative">
-            <div className="w-full h-full relative">
-              {!loaded && (
-                <div className="absolute inset-0">
-                  <AboutImageSkeleton />
-                </div>
-              )}
+        <div className="order-1 lg:order-0 lg:col-span-1 flex justify-center lg:justify-end shrink-0 relative">
+  <div className="w-full h-full relative">
+    {!loaded && (
+      <div className="absolute inset-0 flex items-center justify-center">
+        <AboutImageSkeleton />
+      </div>
+    )}
 
-              <img
-                src={currentPhoto}
-                alt="Portrait professionnel de Yann Andronio, Développeur Full Stack"
-                className={`w-full h-full object-cover transform hover:scale-105 transition-transform duration-700 rounded-2xl ${
-                  loaded ? "opacity-100" : "opacity-0"
-                } transition-opacity duration-500`}
-                onLoad={() => setLoaded(true)}
-              />
-            </div>
-          </div>
+    <img
+      src={currentPhoto}
+      alt="Portrait professionnel de Yann Andronio, Développeur Full Stack"
+      className={`w-full h-full object-cover transform hover:scale-105 transition-transform duration-700 rounded-2xl ${
+        loaded ? "opacity-100" : "opacity-0"
+      } transition-opacity duration-500`}
+      onLoad={() => setLoaded(false)}
+    />
+  </div>
+</div>
+
         </div>
 
         {/* Stats + Skills */}
