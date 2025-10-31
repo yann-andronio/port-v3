@@ -1,64 +1,58 @@
+import { motion, AnimatePresence } from "framer-motion";
 import type { DataSkillsI } from "../../data/DataSkills";
-import { getGradientColor, getShadowColor } from "../../utils/colorSkillCard";
+import { getDescription } from "../../utils/getDescriptionSkillsCard";
 
-interface AboutSkillsCardProps {
-  competences: DataSkillsI;
-  isDark: boolean;
+interface AboutSkillsCardPropsI{
+activeSkill:DataSkillsI
 }
 
-/* bg-gray-800/60 for first div bg-card*/
-export default function AboutSkillsCard({ competences, isDark }: AboutSkillsCardProps) {
-  
+export default function AboutSkillsCard({ activeSkill }:AboutSkillsCardPropsI) {
   return (
-    <div
-      className={`
-        relative group p-6 rounded-3xl border 
-        overflow-hidden transition-all duration-500 ease-out 
-        hover:scale-[1.02] hover:shadow-[0_8px_30px_rgba(0,0,0,0.1)] 
-        ${isDark ? "border-gray-800 bg-[#060010]" : "border-gray-200 bg-white/80"}
-      `}
+    <motion.div
+      className="lg:col-span-2 relative min-h-[350px] flex flex-col justify-start p-8 rounded-3xl border border-gray-200 dark:border-gray-700 bg-linear-to-br from-white to-gray-50 
+                 dark:from-gray-800/80 dark:to-gray-900/80 
+                 shadow-lg dark:shadow-black/50"
+      initial={{ opacity: 0, scale: 0.9 }}
+      whileInView={{ opacity: 1, scale: 1 }}
+      transition={{ duration: 0.5 }}
+      viewport={{ once: true, amount: 0.1 }}
     >
-      {/* jiro kely in hover */}
-      <div
-        className={`absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 
-        bg-linear-to-br ${getGradientColor(competences.color)} to-transparent`}
-      />
-
-      <div className="flex items-center gap-4 mb-5 relative z-10">
-        <div
-          className={`p-4 rounded-2xl ${competences.iconBg} flex items-center justify-center shadow-md ${getShadowColor(
-            competences.color
-          )}`}
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={activeSkill.title}
+          initial={{ x: 50, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          exit={{ x: -50, opacity: 0 }}
+          transition={{ duration: 0.4 }}
         >
-          <competences.icon className="w-7 h-7 sm:w-8 sm:h-8 text-white" />
-        </div>
-        <h4
-          className={`text-xl sm:text-2xl font-bold tracking-tight ${
-            isDark ? "text-white" : "text-gray-900"
-          }`}
-        >
-          {competences.title}
-        </h4>
-      </div>
+          <h2 className="text-3xl md:text-4xl font-extrabold mb-4 text-gray-900 dark:text-white">
+            {activeSkill.title}
+          </h2>
 
-      <div className="flex flex-wrap gap-2 sm:gap-3 relative z-10">
-        {competences.items.map((skill, i) => (
-          <span
-            key={i}
-            className={`
-              px-3 py-1.5 rounded-full text-sm sm:text-base font-medium 
-              transition-all duration-300 cursor-default
-              ${
-                isDark
-                  ? "bg-gray-700/80 text-gray-200 hover:bg-cyan-600"
-                  : "bg-gray-100 text-gray-800 hover:bg-indigo-500 hover:text-white"
-              }
-            `}
-          >
-            {skill}
-          </span>
-        ))}
-      </div>
-    </div>
+          <p className="text-lg mb-6 text-gray-600 dark:text-gray-400 border-b pb-4 border-gray-200 dark:border-gray-700">
+            <strong>{getDescription(activeSkill.title)}</strong>
+          </p>
+
+          <div className="flex flex-wrap gap-3 mt-6">
+            {activeSkill.items.map((item, index) => (
+              <motion.span
+                key={item}
+                initial={{ scale: 0.8, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ delay: index * 0.05 }}
+                className="px-4 py-2 rounded-full text-base font-semibold border 
+                           bg-gray-100 dark:bg-gray-700/60 
+                           text-gray-800 dark:text-gray-200 
+                           border-gray-300 dark:border-gray-600 
+                           hover:bg-indigo-500 dark:hover:bg-cyan-600/80 
+                           hover:text-white transition-colors"
+              >
+                {item}
+              </motion.span>
+            ))}
+          </div>
+        </motion.div>
+      </AnimatePresence>
+    </motion.div>
   );
 }

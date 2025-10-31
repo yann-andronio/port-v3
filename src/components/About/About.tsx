@@ -21,30 +21,28 @@ export default function About() {
     >
       <div className="mx-auto sm:px-6 relative z-10 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 items-center mx-auto sm:px-6 lg:px-6 lg:mx-6 relative z-10 w-full">
-          
           <div className="lg:col-span-2 lg:order-0 order-2 space-y-6 text-center lg:text-left justify-center md:text-center">
             <AboutText isDark={isDark} />
           </div>
 
-        <div className="order-1 lg:order-0 lg:col-span-1 flex justify-center lg:justify-end shrink-0 relative">
-  <div className="w-full h-full relative">
-    {!loaded && (
-      <div className="absolute inset-0 flex items-center justify-center">
-        <AboutImageSkeleton />
-      </div>
-    )}
+          <div className="order-1 lg:order-0 lg:col-span-1 flex justify-center lg:justify-end shrink-0 relative">
+            <div className="w-full h-full relative">
+              {!loaded && (
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <AboutImageSkeleton />
+                </div>
+              )}
 
-    <img
-      src={currentPhoto}
-      alt="Portrait professionnel de Yann Andronio, Développeur Full Stack"
-      className={`w-full h-full object-cover transform hover:scale-105 transition-transform duration-700 rounded-2xl ${
-        loaded ? "opacity-100" : "opacity-0"
-      } transition-opacity duration-500`}
-      onLoad={() => setLoaded(true)}
-    />
-  </div>
-</div>
-
+              <img
+                src={currentPhoto}
+                alt="Portrait professionnel de Yann Andronio, Développeur Full Stack"
+                className={`w-full h-full object-cover transform hover:scale-105 transition-transform duration-700 rounded-2xl ${
+                  loaded ? "opacity-100" : "opacity-0"
+                } transition-opacity duration-500`}
+                onLoad={() => setLoaded(true)}
+              />
+            </div>
+          </div>
         </div>
 
         {/* Stats + Skills */}
