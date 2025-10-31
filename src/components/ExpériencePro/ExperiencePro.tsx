@@ -18,7 +18,7 @@ export default function ExperiencePro() {
       id="experiences"
       className="py-12 sm:py-16 md:py-24 lg:py-32 text-gray-900 dark:text-white transition-colors bg-white dark:bg-[#060010]"
     >
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-6xl mx-auto  mt-32 px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 md:mb-20">
           <h2 className="mt-2 text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-gray-900 dark:text-white">
             Ma{" "}

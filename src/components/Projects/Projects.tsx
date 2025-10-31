@@ -30,7 +30,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="py-24 md:py-36 text-gray-900 dark:text-white"
+      className="py-5  text-gray-900 dark:text-white"
     >
       <div
         ref={projectsListRef}

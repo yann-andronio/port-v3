@@ -17,7 +17,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="relative w-full min-h-screen bg-white dark:bg-[#060010] py-28 overflow-hidden flex items-center"
+      className="relative w-full min-h-screen bg-white dark:bg-[#060010] py-24 overflow-hidden flex items-center"
     >
       <div className="mx-auto sm:px-6 relative z-10 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 items-center mx-auto sm:px-6 lg:px-6 lg:mx-6 relative z-10 w-full">
