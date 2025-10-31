@@ -29,7 +29,7 @@ export default function About() {
 
           {/* Image à droite */}
           <div className="order-1 lg:order-0 lg:col-span-1 flex justify-center lg:justify-end shrink-0 relative">
-            <div className="w-[300px] h-[300px] relative">
+            <div className="w-full h-full relative">
               {!loaded && (
                 <div className="absolute inset-0">
                   <AboutImageSkeleton />
