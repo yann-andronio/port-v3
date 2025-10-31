@@ -22,7 +22,7 @@ export default function ExperiencePro() {
         <div className="text-center mb-12 md:mb-20">
           <h2 className="mt-2 text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-gray-900 dark:text-white">
             Ma{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-indigo-500 to-indigo-700">
+            <span className="text-transparent bg-clip-text bg-linear-to-r from-sky-400 via-indigo-500 to-indigo-700">
               Trajectoire
             </span>{" "}
             Professionnelle

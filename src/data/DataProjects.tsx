@@ -30,92 +30,88 @@ export interface ProjectI {
 
 
 export const DataProjects: ProjectI[] = [
-  {
-    id: "1", 
-    text: "Super U E-commerce (Mobile)",
-    description: "Conception et développement d'une **application e-commerce mobile** réactive et conviviale, offrant une expérience d'achat complète avec navigation par catégories, gestion de panier interactive et processus de paiement optimisé.",
-    category: "Mobile",
-    projectType: "Collaboratif",
-    mainImage: {
-      url: "https://res.cloudinary.com/desced84j/image/upload/w_800,c_fill,f_auto,q_auto/v1761751037/2_ugdkul.png",
-      alt: "Super U Page d'accueil E-commerce",
-    },
-    images: [
-      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751033/1_y99zma.png", alt: "Vue du panier" },
-      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751019/3_yyglqp.png", alt: "Page produit" },
-      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751022/4_bis3gd.png", alt: "Page de checkout" },
-      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751018/5_mmnf5m.png", alt: "Interface utilisateur" },
-      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751020/6_neqyiq.png", alt: "Vue du panier" },
-    
-    ],
-    collaborators: [ 
-       { name: "brandon", role: "Designer UX/UI", link: "#" },
-      { name: "julio", role: "Dev Backend (Node.js)", link: "#" },
-      { name: "sammy", role: "Designer UX/UI", link: "#" },
-     
-    ],
-    liveLink: "https://superu-ecommerce.com",
-    githubLink: "https://github.com/monprofil/super-u-ecommerce-mobile",
-    langage: ["React Native", "TypeScript", "Redux", "Node.js", "Express.js"],
-    detailPageLink: "/projects/superu-mobile"
+ {
+  id: "1",
+  text: "Magic Auto",
+description: "Conception et développement d'une **application de gestion de lavage et de parking** permettant la réservation de places selon une **date de début et une date de fin**, la réservation en **temps réel** selon l'heure d'entrée et de sortie, ainsi qu'une gestion complète du **lavage automobile**.",
+  category: "Web",
+  projectType: "Collaboratif",
+  mainImage: {
+    url: "https://res.cloudinary.com/desced84j/image/upload/w_800,c_fill,f_auto,q_auto/v1761751037/2_ugdkul.png",
+    alt: "Page d'accueil de Magic Auto"
   },
-  {
-    id: "2",
-    text: "HKB Tech (Plateforme Blog)",
-    description: "Plateforme de contenu et de blog axée sur la technologie. Interface utilisateur moderne et épurée, avec des fonctionnalités d'édition riche et une organisation des articles par catégories pour une navigation intuitive.",
-    category: "Web",
-    projectType: "Collaboratif",
-    mainImage: {
-      url: "https://res.cloudinary.com/desced84j/image/upload/w_800,c_fill,f_auto,q_auto/v1761751015/1_fvo3sj.png",
-      alt: "HKB Tech Blog",
-    },
-    images: [
-      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751013/2_xuk6ns.png", alt: "Vue du panier" },
-      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751012/5_ouyodl.png", alt: "Page produit" },
-      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751011/3_jbk06f.png", alt: "Page de checkout" },
-      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751016/4_hmd36m.png", alt: "Interface utilisateur" },
-    ],
-    collaborators: [ 
-      { name: "brandon", role: "Designer UX/UI", link: "#" },
-      { name: "julio", role: "Dev Backend (Node.js)", link: "#" },
-      { name: "sammy", role: "Designer UX/UI", link: "#" },
-    
-    ],
-    liveLink: "https://hkbtech.com",
-    githubLink: "https://github.com/monprofil/hkb-tech-blog",
-    langage: ["Next.js", "TypeScript", "Tailwind CSS", "Strapi (CMS)", "MongoDB"],
-    detailPageLink: "/projects/hkb-tech"
+  images: [
+    { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751033/1_y99zma.png", alt: "Page de connexion" },
+    { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751019/3_yyglqp.png", alt: "Réservation multi-étapes avec calendrier" },
+    { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751022/4_bis3gd.png", alt: "Section de vérification des informations" },
+    { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751018/5_mmnf5m.png", alt: "Interface / dashboard admin" },
+    { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751020/6_neqyiq.png", alt: "Gestion des parkings en temps réel" }
+  ],
+  collaborators: [
+    { name: "Yann Andronio", role: "Designer UX/UI, développeur frontend et intégrateur", link: "https://github.com/yann-andronio" },
+    { name: "Martino Dora", role: "Développeur Backend (CodeIgniter)", link: "https://github.com/martinorakotomanga" },
+    { name: "Sammy", role: "Designer UX/UI", link: "#" }
+  ],
+  liveLink: "https://superu-ecommerce.com",
+  githubLink: "https://github.com/monprofil/super-u-ecommerce-mobile",
+  langage: ["React.js", "TypeScript", "Tailwind CSS", "CodeIgniter", "MySQL (Laragon)", "API REST"],
+  detailPageLink: "/projects/superu-mobile"
+}
+,
+{
+  id: "2",
+  text: "HKB Tech (Portfolio d'une entreprise)",
+  description: "Développement d'un **portfolio interactif pour une entreprise** mettant en avant ses services, produits et réalisations. Le site inclut une interface utilisateur fluide et des animations modernes pour offrir une expérience agréable aux visiteurs.",
+  category: "Web",
+  projectType: "Collaboratif",
+  mainImage: {
+    url: "https://res.cloudinary.com/desced84j/image/upload/w_800,c_fill,f_auto,q_auto/v1761751015/1_fvo3sj.png",
+    alt: "HKB Tech Page d'accueil"
   },
-  {
-    id: "3",
-    text: "Hiaigny (Site de Services)",
-    description: "Site vitrine professionnel mettant en avant des services avec des sections dédiées (À Propos, Services, Témoignages). Design soigné avec des transitions fluides et un focus sur la conversion et l'accessibilité mobile.",
-    category: "Web",
-    projectType: "Collaboratif",
-    mainImage: {
-      url: "https://res.cloudinary.com/desced84j/image/upload/w_800,c_fill,f_auto,q_auto/v1761751011/1_ktr0p1.png",
-      alt: "Hiaigny site de services",
-    },
-    images: [
-       { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751009/3_ccyxsb.png", alt: "Page produit" },
-        { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751010/2_mfc6pn.png", alt: "Interface utilisateur" },
-            { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751011/1_ktr0p1.png", alt: "Interface utilisateur" },
-      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751011/4_v2w8xf.png", alt: "Vue du panier" },
-     
-      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751011/6_nhfqfb.png", alt: "Page de checkout" },
- 
-      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751009/5_zjlirp.png", alt: "Interface utilisateur" },
-    ],
-    collaborators: [ 
-      { name: "brandon", role: "Designer UX/UI", link: "#" },
-      { name: "julio", role: "Dev Backend (Node.js)", link: "#" },
-      { name: "sammy", role: "Designer UX/UI", link: "#" },
-    ],
-    liveLink: "https://hiaigny.com",
-    githubLink: "https://github.com/monprofil/hiaigny-service-site",
-    langage: ["Astro", "Tailwind CSS", "JavaScript", "GSAP (Animations)"],
-    detailPageLink: "/projects/hiaigny-site"
+  images: [
+    { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751013/2_xuk6ns.png", alt: "Vue de FAQ" },
+    { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751012/5_ouyodl.png", alt: "section info" },
+    { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751011/3_jbk06f.png", alt: "footer" },
+    { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751016/4_hmd36m.png", alt: "Hero section" }
+  ],
+  collaborators: [
+    { name: "Yann Andronio", role: "Designer UX/UI, développeur frontend", link: "https://github.com/yann-andronio" },
+    { name: "Tahina", role: "Ajout de la traduction", link: "https://github.com/TahinaHKB" }
+  ],
+  liveLink: "https://hkb-tech.netlify.app/",
+  githubLink: "https://github.com/monprofil/hkb-tech-blog",
+  langage: ["React.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+  detailPageLink: "https://github.com/yann-andronio/HKB-tech.git"
+}
+,
+{
+  id: "3",
+  text: "Hiaigny",
+  description: "Conception et développement d’un **site intelligent de gestion médicale** destiné à un docteur. L’application intègre un **système de diagnostic basé sur l’IA**, capable d’analyser les symptômes courants (maux de tête, fatigue, etc.) et de **proposer des traitements adaptés** selon les analyses. Elle comprend également la **gestion des rendez-vous**, une **messagerie patient-docteur** et une **interface moderne, fluide et réactive**.",
+  category: "Web",
+  projectType: "Solo",
+  mainImage: {
+    url: "https://res.cloudinary.com/desced84j/image/upload/w_800,c_fill,f_auto,q_auto/v1761751011/1_ktr0p1.png",
+    alt: "Hiaigny – Page d'accueil du site médical intelligent"
   },
+  images: [
+    { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751009/3_ccyxsb.png", alt: "Page de connexion" },
+    { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751010/2_mfc6pn.png", alt: "Page d'inscription utilisateur" },
+    { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751011/1_ktr0p1.png", alt: "Interface d'accueil utilisateur" },
+    { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751011/4_v2w8xf.png", alt: "Page de diagnostic IA" },
+    { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751011/6_nhfqfb.png", alt: "Page de messagerie" },
+    { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751009/5_zjlirp.png", alt: "Page de réservation de rendez-vous" }
+  ],
+  collaborators: [
+    { name: "Yann Andronio", role: "Designer UX/UI, développeur frontend et intégrateur", link: "https://github.com/yann-andronio" },
+  ],
+  liveLink: "https://hiaigny.com",
+  githubLink: "https://github.com/monprofil/hiaigny-service-site",
+  langage: ["React.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Node.js", "Express.js", "MongoDB"],
+  detailPageLink: "/projects/hiaigny-site"
+}
+
+,
  {
     id: "4",
     text: "Portfolio Personnel V2",
@@ -127,50 +123,53 @@ export const DataProjects: ProjectI[] = [
       alt: "Portfolio 2 page d'accueil",
     },
     images: [
-      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751038/4_xaorsm.png", alt: "Vue du panier" },
-      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751033/2_mmk7bl.png", alt: "Page produit" },
-      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751036/5_gupqdc.png", alt: "Page produit" },
-      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751042/6_mh1l5y.png", alt: "Page produit" },
+      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751038/4_xaorsm.png", alt: "page skills" },
+      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751033/2_mmk7bl.png", alt: "Page apropos" },
+      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751036/5_gupqdc.png", alt: "Page project" },
+      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751042/6_mh1l5y.png", alt: "Page map" },
   
     ],
     collaborators: [ 
-       { name: "brandon", role: "Designer UX/UI", link: "#" },
-      { name: "julio", role: "Dev Backend (Node.js)", link: "#" },
-      { name: "sammy", role: "Designer UX/UI", link: "#" },
+         { name: "Yann Andronio", role: "Designer UX/UI, développeur frontend", link: "https://github.com/yann-andronio" },
+
     ],
-    liveLink: "https://portfolio-v2.com",
+    liveLink: "https://yann-portfolio.netlify.app/",
     githubLink: "https://github.com/monprofil/portfolio-v2",
-    langage: ["React.js", "TypeScript", "Styled Components", "Framer Motion"],
+    langage: ["React.js", "TypeScript", "Styled Components", "Framer Motion" , "Tailwind css"],
     detailPageLink: "/projects/portfolio-v2"
   },
 
 
   {
-    id: "5",
-    text: "Super U E-commerce (Web)",
-    description: "Développement d'une plateforme de vente en ligne complète. Inclut des fonctionnalités de filtrage, un moteur de recherche performant et une expérience utilisateur sans rechargement de page pour le panier.",
-    category: "Web",
-    projectType: "Collaboratif",
-    mainImage: {
-      url: "https://res.cloudinary.com/desced84j/image/upload/w_800,c_fill,f_auto,q_auto/v1761751008/1_c5ech9.png", 
-      alt: "Super U Page d'accueil E-commerce",
-    },
-    images: [
-      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751008/2_fmyawe.png", alt: "Vue du panier" }, 
-      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751007/4_t8ntkf.png", alt: "Page produit" }, 
-      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751009/Capture_d_%C3%A9cran_2025-10-26_184944_den3n5.png", alt: "Page de checkout" }, 
-      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751007/3_rlblie.png", alt: "Interface utilisateur" }, 
-    ],
-    collaborators: [ 
-       { name: "brandon", role: "Designer UX/UI", link: "#" },
-      { name: "julio", role: "Dev Backend (Node.js)", link: "#" },
-      { name: "sammy", role: "Designer UX/UI", link: "#" },
-    ],
-    liveLink: "https://superu-ecommerce.com",
-    githubLink: "https://github.com/monprofil/super-u-ecommerce-web",
-    langage: ["React.js", "Redux", "Node.js", "MongoDB", "Tailwind CSS"],
-    detailPageLink: "/projects/superu-web"
+  id: "5",
+  text: "Food Shop Services",
+  description:
+    "Mini projet vitrine réalisé en **HTML, CSS, JavaScript et Bootstrap** durant ma deuxième année de licence. Le site simule un service de restauration en ligne avec un **système d’ajout au panier interactif via un modal** permettant de choisir la quantité. Une alerte confirme ensuite la commande réussie, offrant une **expérience utilisateur fluide et intuitive**.",
+  category: "Web",
+  projectType: "Solo",
+  mainImage: {
+    url: "https://res.cloudinary.com/desced84j/image/upload/w_800,c_fill,f_auto,q_auto/v1761751008/1_c5ech9.png",
+    alt: "Food Shop Services – Page d'accueil",
   },
+  images: [
+    { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751008/2_fmyawe.png", alt: "Section plats du jour" },
+    { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751007/4_t8ntkf.png", alt: "Section fast food" },
+    { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751009/Capture_d_%C3%A9cran_2025-10-26_184944_den3n5.png", alt: "Fenêtre de commande (modal)" },
+    { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751007/3_rlblie.png", alt: "Page d'accueil du site" },
+  ],
+  collaborators: [
+    {
+      name: "Yann Andronio",
+      role: "Designer UX/UI, développeur frontend",
+      link: "https://github.com/yann-andronio",
+    },
+  ],
+  liveLink: "https://superu-ecommerce.com",
+  githubLink: "https://github.com/monprofil/super-u-ecommerce-web",
+  langage: ["HTML", "CSS", "JavaScript", "Bootstrap"],
+  detailPageLink: "/projects/superu-web",
+}
+,
 
   {
     id: "6",
@@ -188,13 +187,12 @@ export const DataProjects: ProjectI[] = [
   
     ],
     collaborators: [ 
-       { name: "brandon", role: "Designer UX/UI", link: "#" },
-      { name: "julio", role: "Dev Backend (Node.js)", link: "#" },
-      { name: "sammy", role: "Designer UX/UI", link: "#" },
+              { name: "Yann Andronio", role: "Designer UX/UI, développeur frontend", link: "https://github.com/yann-andronio" },
+
     ],
     liveLink: "https://portfolio-v1.com",
     githubLink: "https://github.com/monprofil/portfolio-v1",
-    langage: ["HTML", "CSS/SASS", "JavaScript", "JQuery"],
+    langage: ["HTML", "CSS/SASS", "JavaScript"],
     detailPageLink: "/projects/portfolio-v1"
   },
   {
@@ -202,7 +200,7 @@ export const DataProjects: ProjectI[] = [
     text: "QuizLang (App de Quiz Langues)",
     description: "Application interactive de quiz conçue pour l'apprentissage et l'évaluation des compétences linguistiques. Comprend un système de scoring en temps réel et des différents niveaux de difficulté.",
     category: "Web",
-    projectType: "Collaboratif",
+    projectType: "Solo",
     mainImage: {
       url: "https://res.cloudinary.com/desced84j/image/upload/w_800,c_fill,f_auto,q_auto/v1761751047/1_dhtzp7.png",
       alt: "QuizLang Page d'accueil",
@@ -215,42 +213,43 @@ export const DataProjects: ProjectI[] = [
   
     ],
     collaborators: [ 
-       { name: "brandon", role: "Designer UX/UI", link: "#" },
-      { name: "julio", role: "Dev Backend (Node.js)", link: "#" },
-      { name: "sammy", role: "Designer UX/UI", link: "#" },
+             { name: "Yann Andronio", role: "Designer UX/UI, développeur frontend", link: "https://github.com/yann-andronio" },
+
     ],
     liveLink: "https://quizlang.com",
     githubLink: "https://github.com/monprofil/quizlang-app",
-    langage: ["Vue.js", "JavaScript", "SASS", "Firebase (BDD et Auth)"],
+  langage: ["React.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Node.js", "Express.js", "MongoDB"],
     detailPageLink: "/projects/quizlang"
   },
-  {
-    id: "8",
-    text: "Système de Gestion d'École (ERP)",
-    description: "Système de planification des ressources d'entreprise (ERP) pour la gestion scolaire. Tableau de bord administrateur permettant le suivi des étudiants, des cours et la planification des examens.",
-    category: "Web",
-    projectType: "Collaboratif",
-    mainImage: {
-      url: "https://res.cloudinary.com/desced84j/image/upload/w_800,c_fill,f_auto,q_auto/v1761751041/3_zn0jd3.png",
-      alt: "Tableau de bord de gestion d'école",
-    },
-    images: [
-      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751042/2_fohsim.png", alt: "Vue du panier" },
-      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751043/4_sw58dd.png", alt: "Page produit" },
-      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751043/1_vmkduv.png", alt: "Page produit" },
-      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751041/5_iqawdc.png", alt: "Page produit" },
-  
-    ],
-    collaborators: [ 
-       { name: "brandon", role: "Designer UX/UI", link: "#" },
-      { name: "julio", role: "Dev Backend (Node.js)", link: "#" },
-      { name: "sammy", role: "Designer UX/UI", link: "#" },
-    ],
-    liveLink: "https://gestion-ecole.com",
-    githubLink: "https://github.com/monprofil/gestion-ecole-erp",
-    langage: ["Angular", "RxJS", "C# (.NET Core)", "SQL Server"],
-    detailPageLink: "/projects/gestion-ecole"
+{
+  id: "8",
+  text: "Système de Gestion d'École (ERP)",
+  description:
+    "Conception et développement d’un **système ERP scolaire complet** permettant la gestion centralisée des étudiants, cours, enseignants et examens. L’application inclut un **tableau de bord administrateur interactif**, des fonctionnalités de **suivi académique**, ainsi qu’une **interface moderne et fluide** développée avec Electron.js et TypeScript.",
+  category: "Web",
+  projectType: "Collaboratif",
+  mainImage: {
+    url: "https://res.cloudinary.com/desced84j/image/upload/w_800,c_fill,f_auto,q_auto/v1761751041/3_zn0jd3.png",
+    alt: "Tableau de bord du système de gestion d'école (ERP)",
   },
+  images: [
+    { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751042/2_fohsim.png", alt: "Interface de gestion des étudiants" },
+    { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751043/4_sw58dd.png", alt: "Tableau de bord principal" },
+    { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751043/1_vmkduv.png", alt: "Vue des cours et matières" },
+    { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751041/5_iqawdc.png", alt: "Planification des examens" },
+  ],
+  collaborators: [
+    { name: "Yann Andronio", role: "Designer UX/UI, développeur frontend et intégrateur", link: "https://github.com/yann-andronio",
+    },
+    { name: "Julio", role: "Développeur backend (Laravel) et intégrateur", link: "https://github.com/branGitfox",
+    },
+  ],
+  liveLink: "https://gestion-ecole.com",
+  githubLink: "https://github.com/monprofil/gestion-ecole-erp",
+  langage: [ "Electron.js", "TypeScript", "Tailwind CSS", "Redux", "API REST", "MySQL", "Laravel" ],
+  detailPageLink: "/projects/gestion-ecole",
+}
+,
   {
     id: "9",
     text: "Super U (Site d'Entreprise)",

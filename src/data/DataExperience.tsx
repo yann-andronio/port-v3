@@ -45,7 +45,7 @@ export const DataExperience: DataExperienceI[] = [
     duree: "2024",
     icon: Smartphone,
     taches: [
-      "Développement front-end et intégration d’API pour messagerie, notifications et transactions.",
+      "Développement front-end et intégration d’API .",
       "Optimisation UX/UI et performance sur différentes résolutions mobiles.",
       "Application mobile de vente, échange et donation d’objets.",
     ],
@@ -54,7 +54,7 @@ export const DataExperience: DataExperienceI[] = [
   {
     id: "exp-4",
     titre: "Développeur Full-Stack MERN & Electron | Trifako (Gestion du triage des déchets)",
-    type: "Projet Professionnel",
+    type: "Projet Peronnel",
     duree: "2024",
     icon: Database,
     taches: [
