@@ -12,7 +12,7 @@ export default function About() {
   const { theme } = useTheme();
   const isDark = theme === "dark";
   const currentPhoto = isDark ? photoProfil2 : photoProfil1;
-  const [loaded, setLoaded] = useState(true);
+  const [loaded, setLoaded] = useState(false);
 
   return (
     <section
@@ -40,7 +40,7 @@ export default function About() {
       className={`w-full h-full object-cover transform hover:scale-105 transition-transform duration-700 rounded-2xl ${
         loaded ? "opacity-100" : "opacity-0"
       } transition-opacity duration-500`}
-      onLoad={() => setLoaded(false)}
+      onLoad={() => setLoaded(true)}
     />
   </div>
 </div>
