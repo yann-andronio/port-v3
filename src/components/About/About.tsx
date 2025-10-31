@@ -22,12 +22,10 @@ export default function About() {
       <div className="mx-auto sm:px-6 relative z-10 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 items-center mx-auto sm:px-6 lg:px-6 lg:mx-6 relative z-10 w-full">
           
-          {/* Texte à gauche */}
           <div className="lg:col-span-2 lg:order-0 order-2 space-y-6 text-center lg:text-left justify-center md:text-center">
             <AboutText isDark={isDark} />
           </div>
 
-          {/* Image à droite */}
           <div className="order-1 lg:order-0 lg:col-span-1 flex justify-center lg:justify-end shrink-0 relative">
             <div className="w-full h-full relative">
               {!loaded && (
