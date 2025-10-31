@@ -1,5 +1,6 @@
-import { Briefcase, Code2, Monitor, Palette } from "lucide-react";
- export interface DataExperienceI {
+import {  Code2, Monitor, Smartphone, Database } from "lucide-react";
+
+export interface DataExperienceI {
   id: string;
   titre: string;
   type: string;
@@ -8,58 +9,61 @@ import { Briefcase, Code2, Monitor, Palette } from "lucide-react";
   taches: string[];
   langage: string[];
 }
+
 export const DataExperience: DataExperienceI[] = [
   {
     id: "exp-1",
-    titre: "Développeur Front-End React.js | E-commerce Super U",
-    type: "Projet Personnel / Formation",
-    duree: "2024 — 2025",
-    icon: Code2,
-    taches: [
-      "Création d’un site e-commerce complet avec filtrage, recherche et panier.",
-      "Utilisation de React, Headless UI, Framer Motion et React-use-cart.",
-      "Design moderne et responsive basé sur Tailwind CSS.",
-      "Optimisation des performances et de l’expérience utilisateur.",
-    ],
-    langage: ["React.js", "Tailwind CSS", "Framer Motion", "UX/UI", "JavaScript"],
-  },
-  {
-    id: "exp-2",
-    titre: "Développeur MERN Stack | Gestion d’hôtel",
-    type: "Projet Académique",
+    titre: "Développeur Front-End & Intégrateur | La Rosette, Mananara",
+    type: "Projet Professionnel",
     duree: "2023 — 2024",
     icon: Monitor,
     taches: [
-      "Application MERN complète avec gestion des réservations et comptes utilisateurs.",
-      "Création d’une API sécurisée et intégration front-end.",
-      "Affichage météo en temps réel sur les destinations.",
+      "Développement du front-end et intégration pour la gestion complète d’un établissement scolaire.",
+      "Modules avancés : gestion des élèves, écolage, notes, factures (conversion PDF et impression).",
+      "Gestion des employés, dashboard dynamique avec charts de bénéfice et perte mensuels.",
+      "Utilisation de filtres avancés et d’un design responsive pour toutes les interfaces.",
     ],
-    langage: ["MongoDB", "Express.js", "React.js", "Node.js", "API REST"],
+    langage: ["Electron.js", "TypeScript", "Tailwind CSS", "Front-End", "UI/UX Design"],
+  },
+  {
+    id: "exp-2",
+    titre: "Développeur Front-End | Magic Lavage, Mananara",
+    type: "Projet Professionnel",
+    duree: "2023",
+    icon: Code2,
+    taches: [
+      "Création d’une application web pour la gestion complète d’un centre de lavage et du personnel.",
+      "Suivi des commandes, planning, historique des clients et employés.",
+      "Déploiement frontend sur Netlify et intégration Firebase pour base de données et authentification.",
+    ],
+    langage: ["React.js", "TypeScript", "Tailwind CSS", "Firebase", "Netlify"],
   },
   {
     id: "exp-3",
-    titre: "Responsable Design & Interface | Portfolio Pro",
-    type: "Projet Personnel",
+    titre: "Développeur Front-End & Intégrateur | Application mobile Itakalo",
+    type: "Projet Personnel / Professionnel",
     duree: "2024",
-    icon: Palette,
+    icon: Smartphone,
     taches: [
-      "Création d’un portfolio moderne et immersif.",
-      "Sections fluides avec animations Framer Motion.",
-      "Optimisation UX/UI et identité visuelle.",
+      "Développement front-end et intégration d’API pour messagerie, notifications et transactions.",
+      "Optimisation UX/UI et performance sur différentes résolutions mobiles.",
+      "Application mobile de vente, échange et donation d’objets.",
     ],
-    langage: ["Figma", "Framer Motion", "UI/UX Design", "Responsive Design"],
+    langage: ["React Native", "TypeScript", "API REST", "UX/UI Design", "Performance Mobile"],
   },
   {
     id: "exp-4",
-    titre: "Développeur Front-End | Site de commande de repas",
-    type: "Projet Personnel",
-    duree: "2023",
-    icon: Briefcase,
+    titre: "Développeur Full-Stack MERN & Electron | Trifako (Gestion du triage des déchets)",
+    type: "Projet Professionnel",
+    duree: "2024",
+    icon: Database,
     taches: [
-      "Développement d’un site web pour commandes de plats en ligne.",
-      "Design attractif avec HTML, CSS et Bootstrap.",
-      "Mise en avant des produits et catégories.",
+      "Développement full-stack : backend en Express.js et MongoDB, front-end en Electron.js, TypeScript, Tailwind CSS et Framer Motion.",
+      "Création de dashboard dynamique avec charts et filtres avancés.",
+      "Manipulation de la carte de Madagascar pour suivi des zones de tri (bibliothèque map type OpenMap/Leaflet).",
+      "Fonctionnalités avancées de recherche et intégration d’API météo.",
     ],
-    langage: ["HTML", "CSS", "Bootstrap", "Responsive Web Design"],
+    langage: ["MongoDB", "Express.js", "Electron.js", "TypeScript", "Tailwind CSS", "Framer Motion", "API REST"],
   },
+
 ];
