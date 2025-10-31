@@ -9,7 +9,7 @@ activeSkill:DataSkillsI
 export default function AboutSkillsCard({ activeSkill }:AboutSkillsCardPropsI) {
   return (
     <motion.div
-      className="lg:col-span-2 relative min-h-[350px] flex flex-col justify-start p-8 rounded-3xl border border-gray-200 dark:border-gray-700 bg-linear-to-br from-white to-gray-50 
+      className="lg:col-span-2 relative min-h-[350px] flex flex-col justify-start p-5 rounded-3xl border border-gray-200 dark:border-gray-700 bg-linear-to-br from-white to-gray-50 
                  dark:from-gray-800/80 dark:to-gray-900/80 
                  shadow-lg dark:shadow-black/50"
       initial={{ opacity: 0, scale: 0.9 }}

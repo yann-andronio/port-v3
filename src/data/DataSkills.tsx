@@ -19,10 +19,11 @@ export const DataSkills: DataSkillsI[] = [
       "React.js",
       "TypeScript",
       "Tailwind CSS",
+      "Electron.js",
       "Framer Motion",
-       "React Native", "Electron.js",
-      "Design Responsive",
-      "Intégration API"
+      "React Native",
+      "Intégration API",
+       "Design Responsive",
     ],
     color: "cyan",
     iconBg: "bg-cyan-600",
@@ -47,7 +48,7 @@ export const DataSkills: DataSkillsI[] = [
   {
     icon: Figma,
     title: "Design & Collaboration",
-    items: ["Figma", "Photoshop" ,"github projects", "jira" ],
+    items: ["Figma", "Photoshop", "github projects", "jira"],
     color: "orange",
     iconBg: "bg-orange-600",
     textHover: "hover:bg-orange-700",
