@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import type { ProjectCategory } from "../../data/DataProjects";
 import type { RefObject } from "react"; 
 
@@ -15,6 +16,8 @@ export const ProjectCategoryFilters = ({
   categoryFilters,
   projectsContainerRef, 
 }: ProjectCategoryFiltersProps) => {
+
+    const { t } = useTranslation();
 
   const handleFilterClick = (category: ProjectCategory | "Tous") => {
     setActiveCategory(category); 
@@ -57,7 +60,7 @@ export const ProjectCategoryFilters = ({
             }
           `}
         >
-          {category}
+          {t(category)}
         </button>
       ))}
     </div>

@@ -135,5 +135,18 @@
   "footer": {
     "all_rights": "All rights reserved.",
     "quote": "Code is the poetry we write for the future."
-  }
+  },
+
+  "projectsTitle": "My Memorable Projects",
+  "projectsSubtitle": "Take a look at concrete proof of my skills.",
+
+  "Oups": "Oops",
+  "Aucun projet classé dans cette catégorie": "No project in this category",
+  "Revenez à \"Tous\" pour voir l'ensemble des réalisations ou découvrez mes autres expertises.": "Go back to \"All\" to see all projects or explore my other skills.",
+  "Tous": "All",
+  "Web": "Web",
+  "Mobile": "Mobile",
+  "Desktop": "Desktop",
+  "Jeux Vidéo": "Video Games",
+  "Outil": "Tool"
 }

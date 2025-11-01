@@ -135,5 +135,18 @@
   "footer": {
     "all_rights": "Tous droits réservés.",
     "quote": "Le code est la poésie que nous écrivons pour l'avenir."
-  }
+  },
+
+  "projectsTitle": "Mes Projets Mémorables",
+  "projectsSubtitle": "Jetez un œil aux preuves concrètes de mon savoir-faire.",
+
+  "Oups": "Oups",
+  "Aucun projet classé dans cette catégorie": "Aucun projet classé dans cette catégorie",
+  "Revenez à \"Tous\" pour voir l'ensemble des réalisations ou découvrez mes autres expertises.": "Revenez à \"Tous\" pour voir l'ensemble des réalisations ou découvrez mes autres expertises.",
+  "Tous": "Tous",
+  "Web": "Web",
+  "Mobile": "Mobile",
+  "Desktop": "Bureau",
+  "Jeux Vidéo": "Jeux Vidéo",
+  "Outil": "Outil"
 }
