@@ -33,5 +33,22 @@
 
   "experience_months": "Ans d'Expérience",
   "personal_projects": "Projets Personnels",
-  "client_projects": "Projets Clients"
+  "client_projects": "Projets Clients",
+
+  "skills_title_part1": "Mon Arsenal",
+  "skills_title_part2": "Technologique",
+  "skills_intro": "Explorez mes expertises.",
+  "skills_hover": "Survolez une catégorie",
+  "skills_reveal": "pour révéler les technologies clés.",
+
+   "Frontend & UI/UX": "Frontend & UI/UX",
+  "Backend & Base de Données": "Backend & Base de Données",
+  "Outils & Workflow": "Outils & Workflow",
+  "Design & Collaboration": "Design & Collaboration",
+
+  "skills_desc_frontend": "Je crée des interfaces web et mobiles fluides, intuitives et accessibles, en mettant l'accent sur l'expérience utilisateur et l'esthétique.",
+  "skills_desc_backend": "Je développe l'architecture côté serveur, les APIs RESTful et gère les bases de données (NoSQL/SQL) pour assurer la performance.",
+  "skills_desc_tools": "Maîtrise des outils de collaboration, de la gestion de version (Git) et des processus de déploiement continu pour un workflow professionnel.",
+  "skills_desc_design": "Je conçois des prototypes visuels et collabore étroitement avec les équipes produit/design pour transformer les idées en réalité.",
+  "skills_desc_default": "Détails techniques de l'expertise."
 }

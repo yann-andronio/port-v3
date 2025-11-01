@@ -2,9 +2,11 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { DataSkills } from "../../data/DataSkills";
 import AboutSkillsCard from "./AboutSkillsCard";
+import { useTranslation } from "react-i18next";
 
 export default function AboutSkills() {
   const [activeSkill, setActiveSkill] = useState(DataSkills[0]);
+  const { t } = useTranslation();
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -23,9 +25,9 @@ export default function AboutSkills() {
           transition={{ duration: 0.5 }}
           className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold leading-tight tracking-tighter text-gray-900 dark:text-white"
         >
-          Mon Arsenal{" "}
+          {t("skills_title_part1")}{" "}
           <span className="text-transparent bg-clip-text bg-linear-to-r from-cyan-400 to-indigo-500">
-            Technologique
+            {t("skills_title_part2")}
           </span>
         </motion.h2>
 
@@ -35,8 +37,8 @@ export default function AboutSkills() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="mt-4 text-xl md:text-2xl text-gray-600 dark:text-gray-400 font-medium"
         >
-          Explorez mes expertises. <strong>Survolez une catégorie</strong> pour
-          révéler les technologies clés.
+          {t("skills_intro")} <strong>{t("skills_hover")}</strong>{" "}
+          {t("skills_reveal")}
         </motion.p>
       </div>
 
@@ -71,7 +73,7 @@ export default function AboutSkills() {
                 `}
               >
                 <IconComponent className="w-6 h-6 mr-4" />
-                <h3 className="text-lg font-semibold">{skill.title}</h3>
+                <h3 className="text-lg font-semibold">{t(skill.title)}</h3>
               </motion.div>
             );
           })}
