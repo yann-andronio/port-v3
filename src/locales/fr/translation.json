@@ -95,5 +95,32 @@
       "task3": "Manipulation de la carte de Madagascar pour suivi des zones de tri (bibliothèque map type OpenMap/Leaflet).",
       "task4": "Fonctionnalités avancées de recherche et intégration d’API météo."
     }
+  } , 
+
+
+   "parcoursAcademic": {
+    "title1": "Mon",
+    "title2": "Parcours",
+    "title3": "Académique",
+    "description": "Un chemin d’apprentissage progressif, entre curiosité, rigueur et passion pour le numérique — retraçant les étapes qui ont forgé ma vision et mes compétences d’aujourd’hui."
+  },
+
+
+    "parcoursAcademicInfoCard": {
+    "bac": {
+      "titre": "Baccalauréat Série D",
+      "etablissement": "Lycée Saint Joseph de Cluny, Antananarivo",
+      "description": "Obtention du baccalauréat scientifique."
+    },
+    "delf": {
+      "titre": "DELF & DALF B1 - B2",
+      "etablissement": "Alliance Française de Madagascar",
+      "description": "Certifications officielles en langue française, niveaux B1 et B2."
+    },
+    "licence": {
+      "titre": "Licence en Informatique (L3 en cours)",
+      "etablissement": "Université d’Antananarivo",
+      "description": "Préparation de la licence en informatique, spécialisation en développement web et technologies modernes."
+    }
   }
 }

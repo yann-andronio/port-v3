@@ -57,8 +57,7 @@
   "experience_title_part3": "Journey",
   "experience_intro": "Tracing my path, from training to concrete achievements.",
 
-
-   "experience": {
+  "experience": {
     "exp1": {
       "title": "Front-End Developer & Integrator | La Rosette, Mananara",
       "type": "Professional Project",
@@ -92,6 +91,32 @@
       "task2": "Created a dynamic dashboard with charts and advanced filters.",
       "task3": "Integrated a Madagascar map for zone tracking (OpenMap/Leaflet).",
       "task4": "Advanced search and weather API integration."
+    }
+  },
+
+  "parcoursAcademic": {
+    "title1": "My",
+    "title2": "Academic",
+    "title3": "Journey",
+    "description": "A progressive learning path shaped by curiosity, discipline, and a passion for technology — retracing the milestones that have forged my current vision and skills."
+  } , 
+
+
+   "parcoursAcademicInfoCard": {
+    "bac": {
+      "titre": "Baccalaureate Series D",
+      "etablissement": "Saint Joseph de Cluny High School, Antananarivo",
+      "description": "Obtained a scientific baccalaureate."
+    },
+    "delf": {
+      "titre": "DELF & DALF B1 - B2",
+      "etablissement": "French Alliance of Madagascar",
+      "description": "Official French language certifications, levels B1 and B2."
+    },
+    "licence": {
+      "titre": "Bachelor in Computer Science (L3 in progress)",
+      "etablissement": "University of Antananarivo",
+      "description": "Pursuing a degree in computer science with a specialization in web development and modern technologies."
     }
   }
 }

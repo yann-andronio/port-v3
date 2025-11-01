@@ -1,13 +1,14 @@
 import { motion } from "framer-motion";
 import type { DataParcoursI } from "../../data/DataParcours";
-
+import { useTranslation } from "react-i18next";
 
 interface ParcoursCardProps {
   item: DataParcoursI;
 }
 
-export default function ParcoursCard({ item }:ParcoursCardProps) {
+export default function ParcoursCard({ item }: ParcoursCardProps) {
   const Icon = item.icon;
+  const { t } = useTranslation();
 
   return (
     <motion.div
@@ -20,13 +21,13 @@ export default function ParcoursCard({ item }:ParcoursCardProps) {
 
       <div className="mt-4">
         <h3 className="text-lg font-bold text-gray-900 dark:text-white">
-          {item.titre}
+          {t(item.titre)}
         </h3>
         <p className="text-sm text-gray-600 dark:text-gray-400 font-medium mb-2">
-          {item.etablissement}
+          {t(item.etablissement)}
         </p>
         <p className="text-gray-700 dark:text-gray-300 text-sm leading-relaxed">
-          {item.description}
+          {t(item.description)}
         </p>
         <span className="text-sm text-indigo-600 dark:text-cyan-400 font-semibold mt-3 block">
           {item.annee}
