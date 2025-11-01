@@ -51,7 +51,7 @@ export default function HeroSection() {
       <motion.img
         src={isDark ? moon : sun}
         alt={isDark ? "Moon illustration" : "Sun illustration"}
-        className="absolute hidden lg:block top-8 left-4 sm:top-10 sm:left-10 md:top-20 md:left-20 w-12 h-12 md:w-24 md:h-24 lg:w-32 lg:h-32 z-10 opacity-70 dark:opacity-30"
+        className="absolute hidden lg:block top-8 left-4 sm:top-10 sm:left-10 md:top-40 md:left-20 w-12 h-12 md:w-24 md:h-24 lg:w-32 lg:h-32 z-10 opacity-70 dark:opacity-30"
         initial={{ opacity: 0, scale: 0.8 }}
         animate={
           isDark
