@@ -43,7 +43,7 @@ export const ProjectCardContent: React.FC<ProjectCardContentProps> = ({ project,
           {project.text}
         </h3>
 
-        <p className="text-sm text-gray-600 dark:text-gray-400 line-clamp-2 mt-1 min-h-[40px]">
+        <p className="text-sm text-gray-600 dark:text-gray-400 line-clamp-2 mt-1 min-h-10">
           {project.description}
         </p>
 

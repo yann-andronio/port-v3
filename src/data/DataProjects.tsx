@@ -23,7 +23,6 @@ export interface ProjectI {
   collaborators?: CollaboratorI[];
   liveLink?: string;
   githubLink?: string;
-  detailPageLink?: string;
   langage: string[];
   // isFeatured?: boolean;
 }
@@ -52,10 +51,9 @@ description: "Conception et développement d'une **application de gestion de lav
     { name: "Martino Dora", role: "Développeur Backend (CodeIgniter)", link: "https://github.com/martinorakotomanga" },
     { name: "Sammy", role: "Designer UX/UI", link: "#" }
   ],
-/*   liveLink: "https://superu-ecommerce.com",
-  githubLink: "https://github.com/monprofil/super-u-ecommerce-mobile", */
+/*   liveLink: "https://superu-ecommerce.com",*/ 
+ githubLink: "https://github.com/monprofil/super-u-ecommerce-mobile",
   langage: ["React.js", "TypeScript", "Tailwind CSS", "CodeIgniter", "MySQL (Laragon)", "API REST"],
-  detailPageLink: "/projects/superu-mobile"
 }
 ,
 {
@@ -79,9 +77,8 @@ description: "Conception et développement d'une **application de gestion de lav
     { name: "Tahina", role: "Ajout de la traduction", link: "https://github.com/TahinaHKB" }
   ],
   liveLink: "https://hkb-tech.netlify.app/",
-  githubLink: "https://github.com/monprofil/hkb-tech-blog",
+githubLink: "https://github.com/yann-andronio/HKB-tech",
   langage: ["React.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
-  detailPageLink: "https://github.com/yann-andronio/HKB-tech.git"
 }
 ,
 {
@@ -108,7 +105,6 @@ description: "Conception et développement d'une **application de gestion de lav
   liveLink: "https://hiaigny.com",
   githubLink: "https://github.com/monprofil/hiaigny-service-site",
   langage: ["React.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Node.js", "Express.js", "MongoDB"],
-  detailPageLink: "/projects/hiaigny-site"
 }
 
 ,
@@ -136,7 +132,6 @@ description: "Conception et développement d'une **application de gestion de lav
     liveLink: "https://yann-portfolio.netlify.app/",
     githubLink: "https://github.com/monprofil/portfolio-v2",
     langage: ["React.js", "TypeScript", "Styled Components", "Framer Motion" , "Tailwind css"],
-    detailPageLink: "/projects/portfolio-v2"
   },
 
 
@@ -167,7 +162,6 @@ description: "Conception et développement d'une **application de gestion de lav
   liveLink: "https://superu-ecommerce.com",
   githubLink: "https://github.com/monprofil/super-u-ecommerce-web",
   langage: ["HTML", "CSS", "JavaScript", "Bootstrap"],
-  detailPageLink: "/projects/superu-web",
 }
 ,
 
@@ -193,7 +187,6 @@ description: "Conception et développement d'une **application de gestion de lav
     liveLink: "https://portfolio-v1.com",
     githubLink: "https://github.com/monprofil/portfolio-v1",
     langage: ["HTML", "CSS/SASS", "JavaScript"],
-    detailPageLink: "/projects/portfolio-v1"
   },
   {
     id: "7",
@@ -219,7 +212,6 @@ description: "Conception et développement d'une **application de gestion de lav
     liveLink: "https://quizlang.com",
     githubLink: "https://github.com/monprofil/quizlang-app",
   langage: ["React.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Node.js", "Express.js", "MongoDB"],
-    detailPageLink: "/projects/quizlang"
   },
 {
   id: "8",
@@ -245,7 +237,6 @@ description: "Conception et développement d'une **application de gestion de lav
   liveLink: "https://gestion-ecole.com",
   githubLink: "https://github.com/monprofil/gestion-ecole-erp",
   langage: [ "Electron.js", "TypeScript", "Tailwind CSS", "Redux", "API REST", "MySQL", "Laravel" ],
-  detailPageLink: "/projects/gestion-ecole",
 }
 ,
 {
@@ -272,7 +263,6 @@ description: "Conception et développement d'une **application de gestion de lav
   liveLink: "https://superu-corporate.com",
   githubLink: "https://github.com/monprofil/super-u-corporate",
   langage: ["React.js", "TypeScript", "Tailwind CSS", "Librairies React diverses"],
-  detailPageLink: "/projects/superu-corporate",
 }
 ,
   {
@@ -296,7 +286,6 @@ description: "Conception et développement d'une **application de gestion de lav
   liveLink: "https://timer-engine.com",
   githubLink: "https://github.com/monprofil/timer-engine",
   langage: ["React.js", "TypeScript", "Tailwind CSS"],
-  detailPageLink: "/projects/timer-engine",
 }
 ,
   {
@@ -321,7 +310,6 @@ description: "Conception et développement d'une **application de gestion de lav
   liveLink: "https://trifako.com",
   githubLink: "https://github.com/monprofil/trifako-news-site",
   langage: ["Electron.js", "TypeScript", "Tailwind CSS", "Express.js", "MongoDB"],
-  detailPageLink: "/projects/trifako",
 },
 
   {
@@ -345,7 +333,6 @@ description: "Conception et développement d'une **application de gestion de lav
   liveLink: "https://webster-landing.com",
   githubLink: "https://github.com/monprofil/webster-landing-page",
   langage: ["React.js", "TypeScript", "Tailwind CSS"],
-  detailPageLink: "/projects/webster-landing",
 }
 ,
   {
@@ -372,7 +359,6 @@ description: "Conception et développement d'une **application de gestion de lav
   liveLink: "https://vahoaka-miteny.com",
   githubLink: "https://github.com/monprofil/vahoaka-miteny-forum",
   langage: ["React.js", "TypeScript", "Ruby on Rails", "PostgreSQL", "ActionCable (temps réel)"],
-  detailPageLink: "/projects/vahoaka-miteny",
 }
 
 ];
