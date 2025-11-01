@@ -50,5 +50,50 @@
   "skills_desc_backend": "Je développe l'architecture côté serveur, les APIs RESTful et gère les bases de données (NoSQL/SQL) pour assurer la performance.",
   "skills_desc_tools": "Maîtrise des outils de collaboration, de la gestion de version (Git) et des processus de déploiement continu pour un workflow professionnel.",
   "skills_desc_design": "Je conçois des prototypes visuels et collabore étroitement avec les équipes produit/design pour transformer les idées en réalité.",
-  "skills_desc_default": "Détails techniques de l'expertise."
+  "skills_desc_default": "Détails techniques de l'expertise.",
+
+
+    "experience_title_part1": "Ma",
+  "experience_title_part2": "Trajectoire",
+  "experience_title_part3": "Professionnelle",
+  "experience_intro": "Tracer mon parcours, de la formation aux réalisations concrètes.",
+
+
+
+   "experience": {
+    "exp1": {
+      "title": "Développeur Front-End & Intégrateur | La Rosette, Mananara",
+      "type": "Projet Professionnel",
+      "duration": "2023 — 2024",
+      "task1": "Développement du front-end et intégration pour la gestion complète d’un établissement scolaire.",
+      "task2": "Modules avancés : gestion des élèves, écolage, notes, factures (conversion PDF et impression).",
+      "task3": "Gestion des employés, dashboard dynamique avec charts de bénéfice et perte mensuels.",
+      "task4": "Utilisation de filtres avancés et d’un design responsive pour toutes les interfaces."
+    },
+    "exp2": {
+      "title": "Développeur Front-End | Magic Lavage, Mananara",
+      "type": "Projet Professionnel",
+      "duration": "2023",
+      "task1": "Création d’une application web pour la gestion complète d’un centre de lavage et du personnel.",
+      "task2": "Suivi des commandes, planning, historique des clients et employés.",
+      "task3": "Déploiement frontend sur Netlify et intégration Firebase pour base de données et authentification."
+    },
+    "exp3": {
+      "title": "Développeur Front-End & Intégrateur | Application mobile Itakalo",
+      "type": "Projet Personnel / Professionnel",
+      "duration": "2024",
+      "task1": "Développement front-end et intégration d’API.",
+      "task2": "Optimisation UX/UI et performance sur différentes résolutions mobiles.",
+      "task3": "Application mobile de vente, échange et donation d’objets."
+    },
+    "exp4": {
+      "title": "Développeur Full-Stack MERN & Electron | Trifako (Gestion du triage des déchets)",
+      "type": "Projet Personnel",
+      "duration": "2024",
+      "task1": "Développement full-stack : backend en Express.js et MongoDB, front-end en Electron.js, TypeScript, Tailwind CSS et Framer Motion.",
+      "task2": "Création de dashboard dynamique avec charts et filtres avancés.",
+      "task3": "Manipulation de la carte de Madagascar pour suivi des zones de tri (bibliothèque map type OpenMap/Leaflet).",
+      "task4": "Fonctionnalités avancées de recherche et intégration d’API météo."
+    }
+  }
 }

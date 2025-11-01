@@ -50,5 +50,48 @@
   "skills_desc_backend": "I develop server-side architecture, RESTful APIs, and manage databases (NoSQL/SQL) to ensure performance.",
   "skills_desc_tools": "Mastery of collaboration tools, version control (Git), and continuous deployment workflows for a professional process.",
   "skills_desc_design": "I design visual prototypes and closely collaborate with product/design teams to turn ideas into reality.",
-  "skills_desc_default": "Technical details of the expertise."
+  "skills_desc_default": "Technical details of the expertise.",
+
+  "experience_title_part1": "My",
+  "experience_title_part2": "Professional",
+  "experience_title_part3": "Journey",
+  "experience_intro": "Tracing my path, from training to concrete achievements.",
+
+
+   "experience": {
+    "exp1": {
+      "title": "Front-End Developer & Integrator | La Rosette, Mananara",
+      "type": "Professional Project",
+      "duration": "2023 — 2024",
+      "task1": "Front-end development and integration for complete school management.",
+      "task2": "Advanced modules: student management, tuition, grades, invoices (PDF conversion and printing).",
+      "task3": "Employee management, dynamic dashboard with monthly profit/loss charts.",
+      "task4": "Use of advanced filters and responsive design for all interfaces."
+    },
+    "exp2": {
+      "title": "Front-End Developer | Magic Lavage, Mananara",
+      "type": "Professional Project",
+      "duration": "2023",
+      "task1": "Created a web app for full management of a car wash center and staff.",
+      "task2": "Order tracking, scheduling, and client/employee history.",
+      "task3": "Frontend deployment on Netlify with Firebase for database and authentication."
+    },
+    "exp3": {
+      "title": "Front-End Developer & Integrator | Itakalo Mobile App",
+      "type": "Personal / Professional Project",
+      "duration": "2024",
+      "task1": "Frontend development and API integration.",
+      "task2": "UX/UI optimization and performance tuning for different mobile resolutions.",
+      "task3": "Mobile app for selling, exchanging, and donating items."
+    },
+    "exp4": {
+      "title": "Full-Stack MERN & Electron Developer | Trifako (Waste Sorting Management)",
+      "type": "Personal Project",
+      "duration": "2024",
+      "task1": "Full-stack development: backend with Express.js & MongoDB, frontend with Electron.js, TypeScript, Tailwind CSS, and Framer Motion.",
+      "task2": "Created a dynamic dashboard with charts and advanced filters.",
+      "task3": "Integrated a Madagascar map for zone tracking (OpenMap/Leaflet).",
+      "task4": "Advanced search and weather API integration."
+    }
+  }
 }

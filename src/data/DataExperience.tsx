@@ -1,4 +1,4 @@
-import {  Code2, Monitor, Smartphone, Database } from "lucide-react";
+import { Code2, Monitor, Smartphone, Database } from "lucide-react";
 
 export interface DataExperienceI {
   id: string;
@@ -13,57 +13,64 @@ export interface DataExperienceI {
 export const DataExperience: DataExperienceI[] = [
   {
     id: "exp-1",
-    titre: "Développeur Front-End & Intégrateur | La Rosette, Mananara",
-    type: "Projet Professionnel",
-    duree: "2023 — 2024",
+    titre: "experience.exp1.title",
+    type: "experience.exp1.type",
+    duree: "experience.exp1.duration",
     icon: Monitor,
     taches: [
-      "Développement du front-end et intégration pour la gestion complète d’un établissement scolaire.",
-      "Modules avancés : gestion des élèves, écolage, notes, factures (conversion PDF et impression).",
-      "Gestion des employés, dashboard dynamique avec charts de bénéfice et perte mensuels.",
-      "Utilisation de filtres avancés et d’un design responsive pour toutes les interfaces.",
+      "experience.exp1.task1",
+      "experience.exp1.task2",
+      "experience.exp1.task3",
+      "experience.exp1.task4",
     ],
     langage: ["Electron.js", "TypeScript", "Tailwind CSS", "Front-End", "UI/UX Design"],
   },
   {
     id: "exp-2",
-    titre: "Développeur Front-End | Magic Lavage, Mananara",
-    type: "Projet Professionnel",
-    duree: "2023",
+    titre: "experience.exp2.title",
+    type: "experience.exp2.type",
+    duree: "experience.exp2.duration",
     icon: Code2,
     taches: [
-      "Création d’une application web pour la gestion complète d’un centre de lavage et du personnel.",
-      "Suivi des commandes, planning, historique des clients et employés.",
-      "Déploiement frontend sur Netlify et intégration Firebase pour base de données et authentification.",
+      "experience.exp2.task1",
+      "experience.exp2.task2",
+      "experience.exp2.task3",
     ],
     langage: ["React.js", "TypeScript", "Tailwind CSS", "Firebase", "Netlify"],
   },
   {
     id: "exp-3",
-    titre: "Développeur Front-End & Intégrateur | Application mobile Itakalo",
-    type: "Projet Personnel / Professionnel",
-    duree: "2024",
+    titre: "experience.exp3.title",
+    type: "experience.exp3.type",
+    duree: "experience.exp3.duration",
     icon: Smartphone,
     taches: [
-      "Développement front-end et intégration d’API .",
-      "Optimisation UX/UI et performance sur différentes résolutions mobiles.",
-      "Application mobile de vente, échange et donation d’objets.",
+      "experience.exp3.task1",
+      "experience.exp3.task2",
+      "experience.exp3.task3",
     ],
     langage: ["React Native", "TypeScript", "API REST", "UX/UI Design", "Performance Mobile"],
   },
   {
     id: "exp-4",
-    titre: "Développeur Full-Stack MERN & Electron | Trifako (Gestion du triage des déchets)",
-    type: "Projet Peronnel",
-    duree: "2024",
+    titre: "experience.exp4.title",
+    type: "experience.exp4.type",
+    duree: "experience.exp4.duration",
     icon: Database,
     taches: [
-      "Développement full-stack : backend en Express.js et MongoDB, front-end en Electron.js, TypeScript, Tailwind CSS et Framer Motion.",
-      "Création de dashboard dynamique avec charts et filtres avancés.",
-      "Manipulation de la carte de Madagascar pour suivi des zones de tri (bibliothèque map type OpenMap/Leaflet).",
-      "Fonctionnalités avancées de recherche et intégration d’API météo.",
+      "experience.exp4.task1",
+      "experience.exp4.task2",
+      "experience.exp4.task3",
+      "experience.exp4.task4",
     ],
-    langage: ["MongoDB", "Express.js", "Electron.js", "TypeScript", "Tailwind CSS", "Framer Motion", "API REST"],
+    langage: [
+      "MongoDB",
+      "Express.js",
+      "Electron.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Framer Motion",
+      "API REST",
+    ],
   },
-
 ];
