@@ -276,108 +276,103 @@ description: "Conception et développement d'une **application de gestion de lav
 }
 ,
   {
-    id: "10",
-    text: "Timer Engine (Outil de Productivité)",
-    description: "Développement d'un outil de productivité simple basé sur un système de minuterie (pomodoro ou autre). Interface utilisateur claire avec contrôle facile du temps et notifications.",
-    category: "Outil",
-    projectType: "Solo",
-    mainImage: {
-      url: "https://res.cloudinary.com/desced84j/image/upload/w_800,c_fill,f_auto,q_auto/v1761751048/1_haxrwu.png",
-      alt: "Timer Engine application de minuterie",
-    },
-    images: [
-      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751047/2_tv4z0e.png", alt: "Vue du panier" },
-      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751047/3_b4crca.png", alt: "Page produit" }
-  
-    ],
-    collaborators: [ 
-       { name: "brandon", role: "Designer UX/UI", link: "#" },
-      { name: "julio", role: "Dev Backend (Node.js)", link: "#" },
-      { name: "sammy", role: "Designer UX/UI", link: "#" },
-    ],
-    liveLink: "https://timer-engine.com",
-    githubLink: "https://github.com/monprofil/timer-engine",
-    langage: ["Vanilla JavaScript", "HTML5", "CSS3"],
-    detailPageLink: "/projects/timer-engine"
+  id: "10",
+  text: "Timer Engine (Outil de Productivité)",
+  description:
+    "Conception et développement d’un **outil de gestion du temps** destiné aux postes de travail d’un **cybercafé**. L’application permet de **suivre le temps d’utilisation de chaque poste**, de **calculer automatiquement le montant à payer** selon la durée, et d’afficher des **notifications en temps réel**. Elle intègre une interface moderne, fluide et intuitive pour faciliter la gestion du personnel et des clients.",
+  category: "Outil",
+  projectType: "Solo",
+  mainImage: {
+    url: "https://res.cloudinary.com/desced84j/image/upload/w_800,c_fill,f_auto,q_auto/v1761751048/1_haxrwu.png",
+    alt: "Timer Engine – Application de gestion du temps en cybercafé",
   },
+  images: [
+    { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751047/2_tv4z0e.png", alt: "Interface de suivi du temps des postes" },
+    { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751047/3_b4crca.png", alt: "Vue du tableau de contrôle du gestionnaire" },
+  ],
+  collaborators: [
+    { name: "Yann Andronio", role: "Designer UX/UI, développeur frontend et intégrateur", link: "https://github.com/yann-andronio"},
+  ],
+  liveLink: "https://timer-engine.com",
+  githubLink: "https://github.com/monprofil/timer-engine",
+  langage: ["React.js", "TypeScript", "Tailwind CSS"],
+  detailPageLink: "/projects/timer-engine",
+}
+,
   {
-    id: "11",
-    text: "Trifako (Site de Presse/Actualités)",
-    description: "Plateforme d'actualités et de presse avec une mise en page style magazine. Comprend une gestion des rubriques, des articles en vedette et une section de commentaires modérée.",
-    category: "Web",
-    projectType: "Collaboratif",
-    mainImage: {
-      url: "https://res.cloudinary.com/desced84j/image/upload/w_800,c_fill,f_auto,q_auto/v1761751050/1_ohe2mu.png",
-      alt: "Trifako site d'actualités",
-    },
-    images: [
-      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751050/2_rxjxgh.png", alt: "Vue du panier" },
-      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751050/4_avmscw.png", alt: "Page produit" },
-      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751048/5_dg0rcc.png", alt: "Page produit" },
-  
-    ],
-    collaborators: [ 
-       { name: "brandon", role: "Designer UX/UI", link: "#" },
-      { name: "julio", role: "Dev Backend (Node.js)", link: "#" },
-      { name: "sammy", role: "Designer UX/UI", link: "#" },
-    ],
-    liveLink: "https://trifako.com",
-    githubLink: "https://github.com/monprofil/trifako-news-site",
-    langage: ["Django (Python)", "PostgreSQL", "JavaScript (Vanilla)"],
-    detailPageLink: "/projects/trifako-news"
+  id: "11",
+  text: "Trifako",
+  description:
+    "Logiciel multiplateforme de gestion des déchets plastiques, organiques et métalliques. Conçu avec Electron.js, Trifako facilite le tri, la collecte et le suivi des déchets grâce à un tableau de bord interactif, des statistiques en temps réel et une carte dynamique de Madagascar.",
+  category: "Desktop",
+  projectType: "Solo",
+  mainImage: {
+    url: "https://res.cloudinary.com/desced84j/image/upload/w_800,c_fill,f_auto,q_auto/v1761751050/1_ohe2mu.png",
+    alt: "Interface principale du logiciel Trifako",
   },
+  images: [
+    { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751050/2_rxjxgh.png", alt: "Tableau de bord du logiciel Trifako",},
+    { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751050/4_avmscw.png", alt: "Carte interactive de Madagascar intégrée dans Trifako",},
+    { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751048/5_dg0rcc.png", alt: "Page de gestion et suivi des déchets",},
+  ],
+  collaborators: [
+    { name: "Yann Andronio", role: "Concepteur UX/UI, développeur frontend et backend du logiciel", link: "https://github.com/yann-andronio"},
+  ],
+  liveLink: "https://trifako.com",
+  githubLink: "https://github.com/monprofil/trifako-news-site",
+  langage: ["Electron.js", "TypeScript", "Tailwind CSS", "Express.js", "MongoDB"],
+  detailPageLink: "/projects/trifako",
+},
+
   {
-    id: "12",
-    text: "Webster (Landing Page Marketing)",
-    description: "Landing page minimaliste et hautement optimisée pour la conversion. Conception en une seule page pour présenter un produit ou un service avec un appel à l'action clair et des visuels impactants.",
-    category: "Web",
-    projectType: "Collaboratif",
-    mainImage: {
-      url: "https://res.cloudinary.com/desced84j/image/upload/w_800,c_fill,f_auto,q_auto/v1761751052/1_v5jbzp.png",
-      alt: "Webster landing page",
-    },
-    images: [
-      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751051/2_puikwh.png", alt: "Vue du panier" },
-  
-    ],
-    collaborators: [ 
-       { name: "brandon", role: "Designer UX/UI", link: "#" },
-      { name: "julio", role: "Dev Backend (Node.js)", link: "#" },
-      { name: "sammy", role: "Designer UX/UI", link: "#" },
-    ],
-    liveLink: "https://webster-landing.com",
-    githubLink: "https://github.com/monprofil/webster-landing-page",
-    langage: ["Gatsby", "GraphQL", "Tailwind CSS"],
-    detailPageLink: "/projects/webster-landing"
+  id: "12",
+  text: "Webster",
+  description:"Landing page moderne et dynamique conçue pour une entreprise de services. Le site met en avant les offres clés avec un design épuré, un appel à l’action clair et des visuels percutants, optimisés pour l’engagement utilisateur.",
+  category: "Web",
+  projectType: "Collaboratif",
+  mainImage: {
+    url: "https://res.cloudinary.com/desced84j/image/upload/w_800,c_fill,f_auto,q_auto/v1761751052/1_v5jbzp.png",
+    alt: "Page d’accueil de la landing page Webster",
   },
+  images: [
+    {url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751051/2_puikwh.png",alt: "Section de présentation de Webster"},
+  ],
+  collaborators: [
+    { name: "Yann Andronio", role: "Concepteur UX/UI et développeur frontend", link: "https://github.com/yann-andronio",},
+    { name: "Iannis", role: "Développeur frontend", link: "https://github.com/IannisG10",},
+    { name: "Sammy", role: "Designer UX/UI", link: "#",},
+  ],
+  liveLink: "https://webster-landing.com",
+  githubLink: "https://github.com/monprofil/webster-landing-page",
+  langage: ["React.js", "TypeScript", "Tailwind CSS"],
+  detailPageLink: "/projects/webster-landing",
+}
+,
   {
-    id: "13",
-    text: "Vahoaka Miteny (Plateforme Communautaire)",
-    description: "Forum de discussion et plateforme communautaire permettant aux utilisateurs de créer des fils de discussion, de commenter et de noter le contenu. Forte insistance sur la modération et la gestion des utilisateurs.",
-    category: "Web",
-    projectType: "Collaboratif",
-    mainImage: {
-      url: "https://res.cloudinary.com/desced84j/image/upload/w_800,c_fill,f_auto,q_auto/v1761751060/1_ix47l9.png",
-      alt: "Vahoaka Miteny forum",
-    },
-    images: [
-      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751060/1_ix47l9.png", alt: "Vue du panier" },
-      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751056/2_jxjoa4.png", alt: "Vue du panier" },
-      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751054/3_dkix5l.png", alt: "Vue du panier" },
-      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751054/4_syqzpn.png", alt: "Vue du panier" },
-   
-  
-    ],
-    collaborators: [ 
-       { name: "brandon", role: "Designer UX/UI", link: "#" },
-      { name: "julio", role: "Dev Backend (Node.js)", link: "#" },
-      { name: "sammy", role: "Designer UX/UI", link: "#" },
-    ],
-    liveLink: "https://vahoaka-miteny.com",
-    githubLink: "https://github.com/monprofil/vahoaka-miteny-forum",
-    langage: ["Ruby on Rails", "React.js", "PostgreSQL", "ActionCable (Real-time)"],
-    detailPageLink: "/projects/vahoaka-miteny"
+  id: "13",
+  text: "Vahoaka Miteny (Plateforme Communautaire)",
+  description:
+    "Plateforme communautaire interactive permettant aux utilisateurs de consulter et de discuter autour des lois malgaches. Développée en React.js et TypeScript dans un but d’entraînement et d’expérimentation d’un environnement temps réel.",
+  category: "Web",
+  projectType: "Solo",
+  mainImage: {
+    url: "https://res.cloudinary.com/desced84j/image/upload/w_800,c_fill,f_auto,q_auto/v1761751060/1_ix47l9.png",
+    alt: "Page d’accueil de la plateforme Vahoaka Miteny",
   },
- 
- 
+  images: [
+    {url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751060/1_ix47l9.png",alt: "Interface principale de la plateforme",},
+    {url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751056/2_jxjoa4.png",alt: "Vue d’un article de loi",},
+    {url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751054/3_dkix5l.png",alt: "Espace de discussion communautaire",},
+    {url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751054/4_syqzpn.png",alt: "Section utilisateur de Vahoaka Miteny",},
+  ],
+  collaborators: [
+    { name: "Yann Andronio", role: "Développeur frontend et intégrateur", link: "https://github.com/yann-andronio"},
+    
+  ],
+  liveLink: "https://vahoaka-miteny.com",
+  githubLink: "https://github.com/monprofil/vahoaka-miteny-forum",
+  langage: ["React.js", "TypeScript", "Ruby on Rails", "PostgreSQL", "ActionCable (temps réel)"],
+  detailPageLink: "/projects/vahoaka-miteny",
+}
+
 ];
