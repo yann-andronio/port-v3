@@ -218,7 +218,7 @@ githubLink: "https://github.com/yann-andronio/HKB-tech",
   text: "Système de Gestion d'École (ERP)",
   description:
     "Conception et développement d’un **système ERP scolaire complet** permettant la gestion centralisée des étudiants, cours, enseignants et examens. L’application inclut un **tableau de bord administrateur interactif**, des fonctionnalités de **suivi académique**, ainsi qu’une **interface moderne et fluide** développée avec Electron.js et TypeScript.",
-  category: "Web",
+  category: "Desktop",
   projectType: "Collaboratif",
   mainImage: {
     url: "https://res.cloudinary.com/desced84j/image/upload/w_800,c_fill,f_auto,q_auto/v1761751041/3_zn0jd3.png",
@@ -232,10 +232,10 @@ githubLink: "https://github.com/yann-andronio/HKB-tech",
   ],
   collaborators: [
     { name: "Yann Andronio", role: "Designer UX/UI, développeur frontend et intégrateur", link: "https://github.com/yann-andronio",},
-    { name: "Julio", role: "Développeur backend (Laravel) et intégrateur", link: "https://github.com/branGitfox",},
+    { name: "Brandon Fidelin", role: "Développeur backend (Laravel) et intégrateur", link: "https://github.com/branGitfox"},
   ],
-  liveLink: "https://gestion-ecole.com",
-  githubLink: "https://github.com/monprofil/gestion-ecole-erp",
+ /*  liveLink: "https://gestion-ecole.com",
+  githubLink: "https://github.com/monprofil/gestion-ecole-erp", */
   langage: [ "Electron.js", "TypeScript", "Tailwind CSS", "Redux", "API REST", "MySQL", "Laravel" ],
 }
 ,
