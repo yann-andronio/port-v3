@@ -10,7 +10,7 @@ export default function ParcoursTimeline({ data }:ParcoursTimelineProps) {
   return (
     <div className="relative mt-16">
       {/* Ligne center */}
-      <div className="absolute left-1/2 transform -translate-x-1/2 w-[2px] h-full bg-gradient-to-b from-indigo-400 via-purple-400 to-cyan-400 opacity-60 rounded-full" />
+      <div className="absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full bg-linear-to-b from-indigo-400 via-purple-400 to-cyan-400 opacity-60 rounded-full" />
 
       <div className="space-y-20">
         {data.map((item, index) => {
@@ -27,7 +27,7 @@ export default function ParcoursTimeline({ data }:ParcoursTimelineProps) {
               }`}
             >
               {/* Point center */}
-              <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-gradient-to-r from-indigo-500 via-purple-500 to-cyan-500 rounded-full border-4 border-white dark:border-[#060010] shadow-md z-10" />
+              <div className="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-linear-to-r from-indigo-500 via-purple-500 to-cyan-500 rounded-full border-4 border-white dark:border-[#060010] shadow-md z-10" />
 
              
               <div className={`w-full sm:w-1/2 mt-10 sm:mt-0 ${isLeft ? "sm:pr-14" : "sm:pl-14"}`}>

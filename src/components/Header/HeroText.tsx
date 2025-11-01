@@ -24,8 +24,8 @@ export default function HeroText({ isDark }: HeroTextProps): JSX.Element {
         <span
           className={`block text-transparent bg-clip-text mb-2 sm:mb-3 ${
             isDark
-              ? "bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-500"
-              : "bg-gradient-to-r from-blue-600 via-indigo-500 to-pink-500"
+              ? "bg-linear-to-r from-indigo-400 via-purple-400 to-pink-500"
+              : "bg-linear-to-r from-blue-600 via-indigo-500 to-pink-500"
           }`}
         >
           {t("hero_greeting")}{" "} 

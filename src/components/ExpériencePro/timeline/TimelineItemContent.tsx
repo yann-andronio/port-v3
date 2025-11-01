@@ -10,7 +10,7 @@ export const TimelineItemContent = ({ item }: { item: DataExperienceI }) => {
       <div className="space-y-3">
         {item.taches.map((tache, i) => (
           <div key={i} className="flex items-start gap-3">
-            <div className="w-2 h-2 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full mt-2 flex-shrink-0" />
+            <div className="w-2 h-2 bg-linear-to-r from-indigo-500 to-purple-500 rounded-full mt-2 shrink-0" />
             <p className="text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
               {t(tache)}
             </p>

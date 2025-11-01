@@ -15,7 +15,7 @@ export default function ParcoursCard({ item }: ParcoursCardProps) {
       whileHover={{ y: -5 }}
       className="relative bg-white dark:bg-[#0A0016] border border-gray-200 dark:border-gray-800 rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all"
     >
-      <div className="absolute -top-6 left-6 w-12 h-12 bg-gradient-to-r from-indigo-500 via-purple-500 to-cyan-500 rounded-xl flex items-center justify-center shadow-md">
+      <div className="absolute -top-6 left-6 w-12 h-12 bg-linear-to-r from-indigo-500 via-purple-500 to-cyan-500 rounded-xl flex items-center justify-center shadow-md">
         <Icon className="w-6 h-6 text-white" />
       </div>
 

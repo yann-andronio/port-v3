@@ -7,7 +7,7 @@ export default function ParcoursTitle() {
     <div className="text-center mb-20">
       <h2 className="mt-2 text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-gray-900 dark:text-white">
         {t("parcoursAcademic.title1")}{" "}
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 via-indigo-500 to-purple-600 dark:from-cyan-400 dark:via-indigo-400 dark:to-purple-500">
+        <span className="text-transparent bg-clip-text bg-linear-to-r from-sky-400 via-indigo-500 to-purple-600 dark:from-cyan-400 dark:via-indigo-400 dark:to-purple-500">
           {t("parcoursAcademic.title2")}
         </span>{" "}
         {t("parcoursAcademic.title3")}
