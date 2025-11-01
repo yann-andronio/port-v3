@@ -239,10 +239,8 @@ description: "Conception et développement d'une **application de gestion de lav
     { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751041/5_iqawdc.png", alt: "Planification des examens" },
   ],
   collaborators: [
-    { name: "Yann Andronio", role: "Designer UX/UI, développeur frontend et intégrateur", link: "https://github.com/yann-andronio",
-    },
-    { name: "Julio", role: "Développeur backend (Laravel) et intégrateur", link: "https://github.com/branGitfox",
-    },
+    { name: "Yann Andronio", role: "Designer UX/UI, développeur frontend et intégrateur", link: "https://github.com/yann-andronio",},
+    { name: "Julio", role: "Développeur backend (Laravel) et intégrateur", link: "https://github.com/branGitfox",},
   ],
   liveLink: "https://gestion-ecole.com",
   githubLink: "https://github.com/monprofil/gestion-ecole-erp",
@@ -250,34 +248,33 @@ description: "Conception et développement d'une **application de gestion de lav
   detailPageLink: "/projects/gestion-ecole",
 }
 ,
-  {
-    id: "9",
-    text: "Super U (Site d'Entreprise)",
-    description: "Refonte du site vitrine institutionnel de l'entreprise. Présentation des valeurs, de l'équipe, des actualités et des points de vente via une carte interactive. Design axé sur l'identité de marque.",
-    category: "Web",
-    projectType: "Collaboratif",
-    mainImage: {
-      url: "https://res.cloudinary.com/desced84j/image/upload/w_800,c_fill,f_auto,q_auto/v1761751048/1_t9qvbq.png",
-      alt: "Super U Page d'accueil vitrine",
-    },
-    images: [
-      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751047/5_icwno2.png", alt: "Vue du panier" },
-      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751046/2_hb2chu.png", alt: "Page produit" },
-      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751047/6_yocrxq.png", alt: "Page produit" },
-      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751044/3_off8lh.png", alt: "Page produit" },
-      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751046/4_qnv1pq.png", alt: "Page produit" },
-  
-    ],
-    collaborators: [ 
-       { name: "brandon", role: "Designer UX/UI", link: "#" },
-      { name: "julio", role: "Dev Backend (Node.js)", link: "#" },
-      { name: "sammy", role: "Designer UX/UI", link: "#" },
-    ],
-    liveLink: "https://superu-corporate.com",
-    githubLink: "https://github.com/monprofil/super-u-corporate",
-    langage: ["PHP (Laravel)", "Blade Template Engine", "MySQL", "Bootstrap"],
-    detailPageLink: "/projects/superu-corporate"
+{
+  id: "9",
+  text: "Super U",
+  description:
+    "Développement d’un **mini projet e-commerce local** servant d’exercice pratique pour la maîtrise du **CRUD complet** (création, lecture, mise à jour, suppression). Le site inclut la **gestion du panier**, la **confirmation d’achat simulée**, ainsi que le **filtrage dynamique des produits par catégorie**. L’objectif du projet était de perfectionner les bases du développement front-end avec React et TypeScript.",
+  category: "Web",
+  projectType: "Solo",
+  mainImage: {
+    url: "https://res.cloudinary.com/desced84j/image/upload/w_800,c_fill,f_auto,q_auto/v1761751048/1_t9qvbq.png",
+    alt: "Super U – Page d'accueil e-commerce",
   },
+  images: [
+    { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751047/5_icwno2.png", alt: "Section publicitaire" },
+    { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751046/2_hb2chu.png", alt: "Filtrage des produits par catégorie" },
+    { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751047/6_yocrxq.png", alt: "Section produits du site" },
+    { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751044/3_off8lh.png", alt: "Page du panier" },
+    { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751046/4_qnv1pq.png", alt: "Page de confirmation d’achat et paiement" },
+  ],
+  collaborators: [
+    { name: "Yann Andronio", role: "Designer UX/UI, développeur frontend et intégrateur", link: "https://github.com/yann-andronio",},
+  ],
+  liveLink: "https://superu-corporate.com",
+  githubLink: "https://github.com/monprofil/super-u-corporate",
+  langage: ["React.js", "TypeScript", "Tailwind CSS", "Librairies React diverses"],
+  detailPageLink: "/projects/superu-corporate",
+}
+,
   {
     id: "10",
     text: "Timer Engine (Outil de Productivité)",
