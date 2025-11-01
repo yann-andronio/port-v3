@@ -1,3 +1,5 @@
+import { useTranslation } from "react-i18next";
+
 interface ContactCardProps {
   label: string;
   value: string;
@@ -6,6 +8,7 @@ interface ContactCardProps {
 }
 
 function ContactCard({ label, value, icon: Icon, link }: ContactCardProps) {
+  const { t } = useTranslation();
   const isClickable = link && link !== "#";
 
   return (
@@ -24,7 +27,7 @@ function ContactCard({ label, value, icon: Icon, link }: ContactCardProps) {
       </div>
       <div className="flex flex-col overflow-hidden">
         <span className="text-sm font-semibold uppercase tracking-wide text-gray-500 dark:text-gray-400">
-          {label}
+          {t(label)}
         </span>
         <span className={`mt-1 text-base font-medium break-words max-w-full truncate ${isClickable ? "text-indigo-500 dark:text-indigo-400 hover:underline" : "text-gray-900 dark:text-white"}`}>
           {value}

@@ -41,7 +41,7 @@
   "skills_hover": "Survolez une catégorie",
   "skills_reveal": "pour révéler les technologies clés.",
 
-   "Frontend & UI/UX": "Frontend & UI/UX",
+  "Frontend & UI/UX": "Frontend & UI/UX",
   "Backend & Base de Données": "Backend & Base de Données",
   "Outils & Workflow": "Outils & Workflow",
   "Design & Collaboration": "Design & Collaboration",
@@ -52,15 +52,12 @@
   "skills_desc_design": "Je conçois des prototypes visuels et collabore étroitement avec les équipes produit/design pour transformer les idées en réalité.",
   "skills_desc_default": "Détails techniques de l'expertise.",
 
-
-    "experience_title_part1": "Ma",
+  "experience_title_part1": "Ma",
   "experience_title_part2": "Trajectoire",
   "experience_title_part3": "Professionnelle",
   "experience_intro": "Tracer mon parcours, de la formation aux réalisations concrètes.",
 
-
-
-   "experience": {
+  "experience": {
     "exp1": {
       "title": "Développeur Front-End & Intégrateur | La Rosette, Mananara",
       "type": "Projet Professionnel",
@@ -95,18 +92,16 @@
       "task3": "Manipulation de la carte de Madagascar pour suivi des zones de tri (bibliothèque map type OpenMap/Leaflet).",
       "task4": "Fonctionnalités avancées de recherche et intégration d’API météo."
     }
-  } , 
+  },
 
-
-   "parcoursAcademic": {
+  "parcoursAcademic": {
     "title1": "Mon",
     "title2": "Parcours",
     "title3": "Académique",
     "description": "Un chemin d’apprentissage progressif, entre curiosité, rigueur et passion pour le numérique — retraçant les étapes qui ont forgé ma vision et mes compétences d’aujourd’hui."
   },
 
-
-    "parcoursAcademicInfoCard": {
+  "parcoursAcademicInfoCard": {
     "bac": {
       "titre": "Baccalauréat Série D",
       "etablissement": "Lycée Saint Joseph de Cluny, Antananarivo",
@@ -122,5 +117,23 @@
       "etablissement": "Université d’Antananarivo",
       "description": "Préparation de la licence en informatique, spécialisation en développement web et technologies modernes."
     }
+  },
+
+  "contactes": {
+    "title": "Contact & Réseaux",
+    "idea": "Une idée de projet ? Discutons-en !",
+    "quick_actions": "Actions Rapides",
+    "send_email": "Envoyer un Email",
+    "whatsapp": "Contacter via WhatsApp",
+    "Email": "Email",
+    "Téléphone": "Téléphone",
+    "GitHub": "GitHub",
+    "LinkedIn": "LinkedIn",
+    "Localisation": "Localisation"
+  },
+
+  "footer": {
+    "all_rights": "Tous droits réservés.",
+    "quote": "Le code est la poésie que nous écrivons pour l'avenir."
   }
 }

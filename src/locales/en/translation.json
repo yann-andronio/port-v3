@@ -99,10 +99,9 @@
     "title2": "Academic",
     "title3": "Journey",
     "description": "A progressive learning path shaped by curiosity, discipline, and a passion for technology — retracing the milestones that have forged my current vision and skills."
-  } , 
+  },
 
-
-   "parcoursAcademicInfoCard": {
+  "parcoursAcademicInfoCard": {
     "bac": {
       "titre": "Baccalaureate Series D",
       "etablissement": "Saint Joseph de Cluny High School, Antananarivo",
@@ -118,5 +117,23 @@
       "etablissement": "University of Antananarivo",
       "description": "Pursuing a degree in computer science with a specialization in web development and modern technologies."
     }
+  },
+
+  "contactes": {
+    "title": "Contact & Socials",
+    "idea": "Got a project idea? Let's talk!",
+    "quick_actions": "Quick Actions",
+    "send_email": "Send an Email",
+    "whatsapp": "Contact via WhatsApp",
+    "Email": "Email",
+    "Téléphone": "Phone",
+    "GitHub": "GitHub",
+    "LinkedIn": "LinkedIn",
+    "Localisation": "Location"
+  },
+
+  "footer": {
+    "all_rights": "All rights reserved.",
+    "quote": "Code is the poetry we write for the future."
   }
 }

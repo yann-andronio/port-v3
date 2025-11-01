@@ -1,10 +1,13 @@
 import { ArrowRight, Mail, MessageSquare } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export function ContactActionsBtn() {
+  const { t } = useTranslation();
+
   return (
     <div className="text-center mb-20 px-4 sm:px-0">
       <h3 className="text-xl font-semibold mb-6 text-gray-900 dark:text-white">
-        Actions Rapides
+        {t("contactes.quick_actions")}
       </h3>
 
       <div className="flex flex-col sm:flex-row justify-center items-center gap-3 sm:gap-4 w-full">
@@ -14,7 +17,7 @@ export function ContactActionsBtn() {
             bg-indigo-500 text-white shadow-md hover:bg-indigo-600 hover:shadow-lg transition-all duration-300"
         >
           <Mail className="w-5 h-5" />
-          Envoyer un Email
+          {t("contactes.send_email")}
           <ArrowRight className="w-5 h-5 ml-1 transition-transform group-hover:translate-x-1" />
         </a>
 
@@ -28,7 +31,7 @@ export function ContactActionsBtn() {
         >
           <MessageSquare className="w-5 h-5" />
           <span className="truncate sm:whitespace-normal">
-            Contacter via WhatsApp
+            {t("contactes.whatsapp")}
           </span>
         </a>
       </div>
