@@ -52,8 +52,8 @@ description: "Conception et développement d'une **application de gestion de lav
     { name: "Martino Dora", role: "Développeur Backend (CodeIgniter)", link: "https://github.com/martinorakotomanga" },
     { name: "Sammy", role: "Designer UX/UI", link: "#" }
   ],
-  liveLink: "https://superu-ecommerce.com",
-  githubLink: "https://github.com/monprofil/super-u-ecommerce-mobile",
+/*   liveLink: "https://superu-ecommerce.com",
+  githubLink: "https://github.com/monprofil/super-u-ecommerce-mobile", */
   langage: ["React.js", "TypeScript", "Tailwind CSS", "CodeIgniter", "MySQL (Laragon)", "API REST"],
   detailPageLink: "/projects/superu-mobile"
 }
