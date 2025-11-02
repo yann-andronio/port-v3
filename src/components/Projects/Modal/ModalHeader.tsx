@@ -1,6 +1,7 @@
 import { X, Users,Code } from "lucide-react";
 import type { ProjectI } from "../../../data/DataProjects";
 import { colorMap } from "./ProjectModal"; 
+import { useTranslation } from "react-i18next";
 
 interface ModalHeaderProps {
   project: ProjectI;
@@ -9,6 +10,19 @@ interface ModalHeaderProps {
 }
 
 export const ModalHeader = ({ project, onClose, accent }: ModalHeaderProps) => {
+
+
+    const { t } = useTranslation();
+
+  // Récupération du projet traduit
+  const translatedProject = t(`AllProjects.${Number(project.id) - 1}`, {
+    returnObjects: true,
+  }) as {
+    text: string;
+    category: string;
+    description: string;
+    projectType:string
+  };
   const { categoryIcon: CategoryIcon } = colorMap[project.category] || colorMap.gray;
 
   const headerGradientClass = `from-${accent}-700 to-${accent}-900 dark:from-${accent}-300 dark:to-${accent}-500`;
@@ -33,14 +47,14 @@ export const ModalHeader = ({ project, onClose, accent }: ModalHeaderProps) => {
             dark:text-white  
           `}
         >
-          {project.text}
+           {translatedProject.text}
         </h2>
         <div className="flex flex-wrap items-center gap-x-4 text-xs sm:text-sm text-gray-600 dark:text-gray-400 font-medium">
           <span className="flex items-center gap-1">
-            <CategoryIcon className="w-4 h-4" /> {project.category}
+            <CategoryIcon className="w-4 h-4" /> {translatedProject.category}
           </span>
           <span className="flex items-center gap-1">
-            <ProjectTypeIcon className="w-4 h-4" /> {project.projectType}
+            <ProjectTypeIcon className="w-4 h-4" /> {translatedProject.projectType}
           </span>
         </div>
       </div>

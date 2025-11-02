@@ -4,6 +4,7 @@ import type { ProjectI } from "../../../data/DataProjects";
 import { ModalHeader } from "./ModalHeader";
 import { ModalContentSection } from "./ModalContentSection";
 import { ModalInfoSection } from "./ModalInfoSection";
+import { useTranslation } from "react-i18next";
 
 interface ProjectModalProps {
   project: ProjectI;
@@ -21,6 +22,8 @@ export const colorMap = {
 
 export default function ProjectModal({ project, onClose }: ProjectModalProps) {
   const { accent } = colorMap[project.category] || colorMap.gray;
+    const { t } = useTranslation();
+  
 
   const handleBackdropClick = (e: React.MouseEvent<HTMLDivElement>) => {
     if (e.target === e.currentTarget) {
@@ -82,7 +85,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
               rel="noopener noreferrer"
               className="flex items-center gap-2 px-6 py-3 bg-cyan-600 text-white rounded-xl shadow-lg hover:bg-cyan-500 transition-all font-semibold"
             >
-              <ExternalLink className="w-5 h-5" /> Voir la Démo
+              <ExternalLink className="w-5 h-5" />{t("project.viewDemo")}
             </a>
           )}
 
@@ -93,7 +96,7 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
               rel="noopener noreferrer"
               className={`flex items-center gap-2 px-6 py-3 border border-purple-500 ${accentText} rounded-xl hover:bg-purple-500/10 transition-all font-semibold dark:hover:bg-purple-500/20`}
             >
-              <Github className="w-5 h-5" /> Code Source
+              <Github className="w-5 h-5" /> {t("project.sourceCode")}
             </a>
           )}
         </div>

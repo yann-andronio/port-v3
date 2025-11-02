@@ -148,5 +148,112 @@
   "Mobile": "Mobile",
   "Desktop": "Desktop",
   "Jeux Vidéo": "Video Games",
-  "Outil": "Tool"
+  "Outil": "Tool",
+
+  "AllProjects": [
+    {
+      "id": "1",
+      "text": "Magic Auto",
+      "description": "Design and development of a **car wash and parking management application** allowing users to reserve spots by **start and end dates**, make **real-time bookings** based on entry and exit times, and manage the **car wash process** efficiently.",
+      "category": "Web",
+      "projectType": "Collaborative"
+    },
+    {
+      "id": "2",
+      "text": "HKB Tech (Company Portfolio)",
+      "description": "Development of an **interactive portfolio for a company** showcasing its services, products, and achievements, with a smooth interface and modern animations.",
+      "category": "Web",
+      "projectType": "Collaborative"
+    },
+    {
+      "id": "3",
+      "text": "Hiaigny",
+      "description": "Design and development of an **intelligent medical management site** integrating an **AI-based diagnostic system**, appointment management, patient-doctor messaging, and a modern, responsive interface.",
+      "category": "Web",
+      "projectType": "Solo"
+    },
+    {
+      "id": "4",
+      "text": "Personal Portfolio V2",
+      "description": "Second version of a portfolio focusing on clarity and project presentation, using dynamic and responsive cards and galleries.",
+      "category": "Web",
+      "projectType": "Solo"
+    },
+    {
+      "id": "5",
+      "text": "Food Shop Services",
+      "description": "Mini showcase project made with **HTML, CSS, JavaScript and Bootstrap**, simulating an online food service with an **interactive add-to-cart modal** and a confirmation alert.",
+      "category": "Web",
+      "projectType": "Solo"
+    },
+    {
+      "id": "6",
+      "text": "Personal Portfolio V1",
+      "description": "First iteration of a minimalist personal portfolio, clear presentation of skills and experiences, static site with media integration.",
+      "category": "Web",
+      "projectType": "Solo"
+    },
+    {
+      "id": "7",
+      "text": "QuizLang (Language Quiz App)",
+      "description": "Interactive quiz application for learning and evaluating language skills, with real-time scoring and multiple difficulty levels.",
+      "category": "Web",
+      "projectType": "Solo"
+    },
+    {
+      "id": "8",
+      "text": "School Management System (ERP)",
+      "description": "Design and development of a **complete school ERP system** for centralized management of students, courses, teachers, and exams, featuring an interactive dashboard and modern interface.",
+      "category": "Desktop",
+      "projectType": "Collaborative"
+    },
+    {
+      "id": "9",
+      "text": "Super U",
+      "description": "Local mini e-commerce project for practicing **full CRUD**, including cart management, simulated purchase confirmation, and dynamic product filtering.",
+      "category": "Web",
+      "projectType": "Solo"
+    },
+    {
+      "id": "10",
+      "text": "Timer Engine (Productivity Tool)",
+      "description": "Time management tool for cybercafés allowing to **track each workstation usage**, automatically calculate the amount to pay, and display real-time notifications.",
+      "category": "Tool",
+      "projectType": "Solo"
+    },
+    {
+      "id": "11",
+      "text": "Trifako",
+      "description": "Cross-platform waste management software for plastic, organic, and metal waste, featuring an interactive dashboard, real-time statistics, and a dynamic map of Madagascar.",
+      "category": "Desktop",
+      "projectType": "Solo"
+    },
+    {
+      "id": "12",
+      "text": "Webster",
+      "description": "Modern and dynamic landing page for a service company, highlighting key offers with a clean design and visuals optimized for user engagement.",
+      "category": "Web",
+      "projectType": "Collaborative"
+    },
+    {
+      "id": "13",
+      "text": "Vahoaka Miteny (Community Platform)",
+      "description": "Interactive community platform allowing users to consult and discuss Malagasy laws, developed to experiment with a real-time environment.",
+      "category": "Web",
+      "projectType": "Solo"
+    }
+  ],
+
+
+    "project": {
+    "about": "About the Project",
+    "additionalScreenshots": "Additional Screenshots",
+     "team": "Project Team",
+    "keyTechnologies": "Key Technologies",
+    "actions": "Actions",
+    "viewDemo": "View Demo",
+    "sourceCode": "Source Code"
+  }
+
+
 }

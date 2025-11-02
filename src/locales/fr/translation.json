@@ -148,5 +148,109 @@
   "Mobile": "Mobile",
   "Desktop": "Bureau",
   "Jeux Vidéo": "Jeux Vidéo",
-  "Outil": "Outil"
+  "Outil": "Outil",
+
+  "AllProjects": [
+    {
+      "id": "1",
+      "text": "Magic Auto",
+      "description": "Conception et développement d'une **application de gestion de lavage et de parking** permettant la réservation de places selon une **date de début et une date de fin**, la réservation en **temps réel** selon l'heure d'entrée et de sortie, ainsi qu'une gestion complète du **lavage automobile**.",
+      "category": "Web",
+      "projectType": "Collaboratif"
+    },
+    {
+      "id": "2",
+      "text": "HKB Tech (Portfolio d'une entreprise)",
+      "description": "Développement d'un **portfolio interactif pour une entreprise** mettant en avant ses services, produits et réalisations, avec une interface fluide et des animations modernes.",
+      "category": "Web",
+      "projectType": "Collaboratif"
+    },
+    {
+      "id": "3",
+      "text": "Hiaigny",
+      "description": "Conception et développement d’un **site intelligent de gestion médicale** intégrant un **système de diagnostic basé sur l’IA**, la gestion des rendez-vous, une messagerie patient-docteur et une interface moderne et réactive.",
+      "category": "Web",
+      "projectType": "Solo"
+    },
+    {
+      "id": "4",
+      "text": "Portfolio Personnel V2",
+      "description": "Seconde version d'un portfolio mettant l'accent sur la clarté et la présentation des projets avec des cartes et galeries dynamiques et responsive.",
+      "category": "Web",
+      "projectType": "Solo"
+    },
+    {
+      "id": "5",
+      "text": "Food Shop Services",
+      "description": "Mini projet vitrine réalisé en **HTML, CSS, JavaScript et Bootstrap** simulant un service de restauration en ligne avec un **système d’ajout au panier interactif via un modal** et une alerte de confirmation de commande.",
+      "category": "Web",
+      "projectType": "Solo"
+    },
+    {
+      "id": "6",
+      "text": "Portfolio Personnel V1",
+      "description": "Première version d'un portfolio personnel minimaliste, avec présentation claire des compétences et expériences, site statique avec intégration de médias.",
+      "category": "Web",
+      "projectType": "Solo"
+    },
+    {
+      "id": "7",
+      "text": "QuizLang (App de Quiz Langues)",
+      "description": "Application interactive de quiz pour l'apprentissage et l'évaluation des compétences linguistiques, avec scoring en temps réel et différents niveaux de difficulté.",
+      "category": "Web",
+      "projectType": "Solo"
+    },
+    {
+      "id": "8",
+      "text": "Système de Gestion d'École (ERP)",
+      "description": "Conception et développement d’un **système ERP scolaire complet** permettant la gestion centralisée des étudiants, cours, enseignants et examens avec un tableau de bord interactif et une interface moderne.",
+      "category": "Desktop",
+      "projectType": "Collaboratif"
+    },
+    {
+      "id": "9",
+      "text": "Super U",
+      "description": "Mini projet e-commerce local servant d’exercice pratique pour la maîtrise du **CRUD complet**, incluant gestion du panier, confirmation d’achat simulée et filtrage dynamique des produits.",
+      "category": "Web",
+      "projectType": "Solo"
+    },
+    {
+      "id": "10",
+      "text": "Timer Engine (Outil de Productivité)",
+      "description": "Outil de gestion du temps pour cybercafé permettant de **suivre le temps d’utilisation de chaque poste**, calculer automatiquement le montant à payer et afficher des notifications en temps réel.",
+      "category": "Outil",
+      "projectType": "Solo"
+    },
+    {
+      "id": "11",
+      "text": "Trifako",
+      "description": "Logiciel multiplateforme de gestion des déchets plastiques, organiques et métalliques, avec tableau de bord interactif, statistiques en temps réel et carte dynamique de Madagascar.",
+      "category": "Desktop",
+      "projectType": "Solo"
+    },
+    {
+      "id": "12",
+      "text": "Webster",
+      "description": "Landing page moderne et dynamique pour une entreprise de services, mettant en avant les offres clés avec design épuré et visuels optimisés pour l’engagement utilisateur.",
+      "category": "Web",
+      "projectType": "Collaboratif"
+    },
+    {
+      "id": "13",
+      "text": "Vahoaka Miteny (Plateforme Communautaire)",
+      "description": "Plateforme communautaire interactive permettant de consulter et discuter autour des lois malgaches, développée pour expérimenter un environnement temps réel.",
+      "category": "Web",
+      "projectType": "Solo"
+    }
+  ],
+
+  "project": {
+    "about": "À Propos du Projet",
+    "additionalScreenshots": "Captures Additionnelles",
+    "team": "Équipe de Projet",
+    "keyTechnologies": "Technologies Clés",
+    "actions": "Actions",
+    "viewDemo": "Voir la Démo",
+    "sourceCode": "Code Source"
+  }
 }

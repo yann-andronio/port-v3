@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { Monitor, ExternalLink, Code, Info } from "lucide-react";
 import type { ProjectI } from "../../../data/DataProjects";
-import { LinkUnavailableModal } from "../Modal/LinkUnavailableModal"; 
+import { LinkUnavailableModal } from "../Modal/LinkUnavailableModal";
+import { useTranslation } from "react-i18next";
 
 interface ProjectCardContentProps {
   project: ProjectI;
@@ -9,44 +10,61 @@ interface ProjectCardContentProps {
 }
 
 export const ProjectCardContent: React.FC<ProjectCardContentProps> = ({ project, accentTextColor }) => {
+  
   const [isLiveModalOpen, setIsLiveModalOpen] = useState(false);
   const [isCodeModalOpen, setIsCodeModalOpen] = useState(false);
+  const { t } = useTranslation();
 
- const handleLinkClick = (e: React.MouseEvent,type: "live" | "code") => {
-  e.stopPropagation();
-  const hasLink = type === "live" ? project.liveLink : project.githubLink;
-  const setModalOpen = type === "live" ? setIsLiveModalOpen : setIsCodeModalOpen;
-
-  if (!hasLink) {
-    e.preventDefault();
-    setModalOpen(true);
-  }
+  // 🔹 Récupération des traductions à partir de l’ID du projet
+const translatedProject = t(`AllProjects.${Number(project.id) - 1}`, {
+  returnObjects: true,
+}) as {
+  text: string;
+  category: string;
+  description: string;
 };
 
 
-  const commonLinkClasses = "inline-flex items-center gap-1 text-sm font-semibold hover:opacity-80 transition-opacity";
-  
+
+  const handleLinkClick = (e: React.MouseEvent, type: "live" | "code") => {
+    e.stopPropagation();
+    const hasLink = type === "live" ? project.liveLink : project.githubLink;
+    const setModalOpen = type === "live" ? setIsLiveModalOpen : setIsCodeModalOpen;
+
+    if (!hasLink) {
+      e.preventDefault();
+      setModalOpen(true);
+    }
+  };
+
+  const commonLinkClasses =
+    "inline-flex items-center gap-1 text-sm font-semibold hover:opacity-80 transition-opacity";
+
   const availableLiveClasses = `${commonLinkClasses} ${accentTextColor}`;
-  const unavailableLiveClasses = `${commonLinkClasses} text-gray-400 dark:text-gray-600 cursor-pointer`; 
+  const unavailableLiveClasses = `${commonLinkClasses} text-gray-400 dark:text-gray-600 cursor-pointer`;
 
   const availableCodeClasses = `${commonLinkClasses} text-gray-600 dark:text-gray-400`;
-  const unavailableCodeClasses = `${commonLinkClasses} text-gray-400 dark:text-gray-600 cursor-pointer`; 
+  const unavailableCodeClasses = `${commonLinkClasses} text-gray-400 dark:text-gray-600 cursor-pointer`;
 
   return (
     <>
       <div className="p-6 flex flex-col gap-2">
+        {/* Catégorie */}
         <div className={`flex items-center gap-1 text-sm font-medium ${accentTextColor}`}>
-          <Monitor className="w-4 h-4" /> {project.category}
+          <Monitor className="w-4 h-4" /> {translatedProject.category}
         </div>
 
-        <h3 className={`text-xl font-extrabold text-gray-900 dark:text-gray-100 truncate`}>
-          {project.text}
+        {/* Titre */}
+        <h3 className="text-xl font-extrabold text-gray-900 dark:text-gray-100 truncate">
+          {translatedProject.text}
         </h3>
 
+        {/* Description */}
         <p className="text-sm text-gray-600 dark:text-gray-400 line-clamp-2 mt-1 min-h-10">
-          {project.description}
+          {translatedProject.description}
         </p>
 
+        {/* Langages */}
         <div className="flex flex-wrap gap-2 mt-4 pt-3 border-t border-gray-100 dark:border-gray-700/50">
           {project.langage.slice(0, 3).map((lang, i) => (
             <span
@@ -63,8 +81,9 @@ export const ProjectCardContent: React.FC<ProjectCardContentProps> = ({ project,
           )}
         </div>
 
+        {/* Liens */}
         <div className="flex items-center gap-4 mt-4">
-          {/* lien live */}
+          {/* Lien live */}
           <a
             href={project.liveLink || "#"}
             target={project.liveLink ? "_blank" : "_self"}
@@ -74,8 +93,8 @@ export const ProjectCardContent: React.FC<ProjectCardContentProps> = ({ project,
           >
             {project.liveLink ? <ExternalLink className="w-4 h-4" /> : <Info className="w-4 h-4" />} Live
           </a>
-          
-          {/* LIEN CODE */}
+
+          {/* Lien code */}
           <a
             href={project.githubLink || "#"}
             target={project.githubLink ? "_blank" : "_self"}
@@ -87,18 +106,19 @@ export const ProjectCardContent: React.FC<ProjectCardContentProps> = ({ project,
           </a>
         </div>
       </div>
-      
-      <LinkUnavailableModal 
-        isOpen={isLiveModalOpen} 
-        onClose={() => setIsLiveModalOpen(false)} 
+
+      {/* Modales */}
+      <LinkUnavailableModal
+        isOpen={isLiveModalOpen}
+        onClose={() => setIsLiveModalOpen(false)}
         type="live"
-        projectText={project.text}
+        projectText={translatedProject.text}
       />
-      <LinkUnavailableModal 
-        isOpen={isCodeModalOpen} 
-        onClose={() => setIsCodeModalOpen(false)} 
+      <LinkUnavailableModal
+        isOpen={isCodeModalOpen}
+        onClose={() => setIsCodeModalOpen(false)}
         type="code"
-        projectText={project.text}
+        projectText={translatedProject.text}
       />
     </>
   );
