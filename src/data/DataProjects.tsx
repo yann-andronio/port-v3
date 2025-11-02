@@ -52,7 +52,7 @@ description: "Conception et développement d'une **application de gestion de lav
     { name: "Sammy", role: "Designer UX/UI", link: "#" }
   ],
 /*   liveLink: "https://superu-ecommerce.com",*/ 
- githubLink: "https://github.com/monprofil/super-u-ecommerce-mobile",
+ githubLink: "https://github.com/yann-andronio/Magic-Auto-Admin",
   langage: ["React.js", "TypeScript", "Tailwind CSS", "CodeIgniter", "MySQL (Laragon)", "API REST"],
 }
 ,
@@ -159,8 +159,8 @@ githubLink: "https://github.com/yann-andronio/HKB-tech",
       link: "https://github.com/yann-andronio",
     },
   ],
-  liveLink: "https://superu-ecommerce.com",
-  githubLink: "https://github.com/monprofil/super-u-ecommerce-web",
+  liveLink: "https://food-shop-service.netlify.app/",
+  githubLink: "https://github.com/yann-andronio/food-shop-service",
   langage: ["HTML", "CSS", "JavaScript", "Bootstrap"],
 }
 ,
