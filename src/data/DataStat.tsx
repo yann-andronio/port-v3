@@ -15,7 +15,7 @@ export const DataStat: StatItemType[] = [
   },
   {
     icon: FaCodeBranch,
-    main: 15,
+    main: 11,
     unit: "personal_projects",
   },
   {

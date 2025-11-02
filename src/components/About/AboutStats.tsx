@@ -20,7 +20,7 @@ export default function AboutStats({ isDark }: AboutStatsPropsI) {
         <div className="text-center mb-16 lg:mb-20 max-w-4xl mx-auto">
           <h2
             className={`font-extrabold text-4xl sm:text-6xl lg:text-7xl tracking-tighter mb-4 
-              bg-clip-text text-transparent bg-gradient-to-r ${titleGradientClass}`}
+              bg-clip-text text-transparent bg-linear-to-r ${titleGradientClass}`}
           >
              {t("my_expertise_universe")}
           </h2>

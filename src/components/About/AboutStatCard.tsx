@@ -37,7 +37,7 @@ export default function AboutStatCard({ stat, isDark, ind }: AboutStatCardI) {
       data-aos-easing="ease-out"
       className={`${cardBaseClass} ${cardBgClass} ${hoverGlow}`}
     >
-      <div className="absolute inset-0 rounded-3xl bg-gradient-to-br from-cyan-500/10 via-purple-600/10 to-pink-500/10 opacity-0 group-hover:opacity-100 blur-2xl transition-opacity duration-700 pointer-events-none"></div>
+      <div className="absolute inset-0 rounded-3xl bg-linear-to-br from-cyan-500/10 via-purple-600/10 to-pink-500/10 opacity-0 group-hover:opacity-100 blur-2xl transition-opacity duration-700 pointer-events-none"></div>
 
       <div
         className={`w-16 h-16 mx-auto mb-5 rounded-full flex items-center justify-center ${iconWrapper} transition-transform duration-500 group-hover:scale-110`}
