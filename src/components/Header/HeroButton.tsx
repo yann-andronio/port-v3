@@ -31,7 +31,7 @@ export default function HeroButton({ isDark }: HeroButtonProps): JSX.Element {
         {t("cta_projects")}
       </ScrollLink>
       <a
-        href="/Yann_Andronio_CV.pdf"
+        href="/TODIVELO-Yann-Andronio-FullStackJavaScript-CV.pdf"
         download
         className={`px-8 py-3 sm:px-10 sm:py-4 text-lg sm:text-xl font-semibold rounded-full border-2 flex items-center justify-center transform hover:scale-105 active:scale-95 whitespace-nowrap transition-all duration-300 ${
           isDark
