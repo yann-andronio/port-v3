@@ -31,6 +31,30 @@ export interface ProjectI {
 export const DataProjects: ProjectI[] = [
  {
   id: "1",
+  text: "Portfolio Version 3",
+description: " Chaque année universitaire, je conçois une nouvelle version de mon portfolio afin de refléter l’évolution de mes compétences, de mon expérience et de mon savoir-faire. Ce projet représente mon parcours en constante amélioration, avec une attention particulière portée à l’UX/UI, à la fluidité de navigation et à la qualité du design.",
+  category: "Web",
+  projectType: "Solo",
+  mainImage: {
+    url: "https://res.cloudinary.com/desced84j/image/upload/w_800,c_fill,f_auto,q_auto/v1762598692/1_qyneqm.png",
+    alt: "hero section de mon portfolio"
+  },
+  images: [
+    { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1762598693/2_pnpppo.png", alt: "section apropos" },
+    { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1762598685/3_q6e5jz.png", alt: "section compétences" },
+    { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1762598689/4_mq43op.png", alt: "Section projets" },
+    { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1762599463/5_u5fpne.png", alt: "section formations" },
+  ],
+  collaborators: [
+    { name: "Yann Andronio", role: "Designer UX/UI, développeur frontend et intégrateur", link: "https://github.com/yann-andronio" },
+ 
+  ],
+/*   liveLink: "https://superu-ecommerce.com",*/ 
+ githubLink: "https://github.com/yann-andronio/Magic-Auto-Admin",
+  langage: ["React.js", "TypeScript", "Tailwind CSS"],
+},
+ {
+  id: "1",
   text: "Magic Auto",
 description: "Conception et développement d'une **application de gestion de lavage et de parking** permettant la réservation de places selon une **date de début et une date de fin**, la réservation en **temps réel** selon l'heure d'entrée et de sortie, ainsi qu'une gestion complète du **lavage automobile**.",
   category: "Web",
@@ -82,6 +106,79 @@ githubLink: "https://github.com/yann-andronio/HKB-tech",
 }
 ,
 {
+  id: "8",
+  text: "Système de Gestion d'École (ERP)",
+  description:
+    "Conception et développement d’un **système ERP scolaire complet** permettant la gestion centralisée des étudiants, cours, enseignants et examens. L’application inclut un **tableau de bord administrateur interactif**, des fonctionnalités de **suivi académique**, ainsi qu’une **interface moderne et fluide** développée avec Electron.js et TypeScript.",
+  category: "Desktop",
+  projectType: "Collaboratif",
+  mainImage: {
+    url: "https://res.cloudinary.com/desced84j/image/upload/w_800,c_fill,f_auto,q_auto/v1761751041/3_zn0jd3.png",
+    alt: "Tableau de bord du système de gestion d'école (ERP)",
+  },
+  images: [
+    { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751042/2_fohsim.png", alt: "Interface de gestion des étudiants" },
+    { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751043/4_sw58dd.png", alt: "Tableau de bord principal" },
+    { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751043/1_vmkduv.png", alt: "Vue des cours et matières" },
+    { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751041/5_iqawdc.png", alt: "Planification des examens" },
+  ],
+  collaborators: [
+    { name: "Yann Andronio", role: "Designer UX/UI, développeur frontend et intégrateur", link: "https://github.com/yann-andronio",},
+    { name: "Brandon Fidelin", role: "Développeur backend (Laravel) et intégrateur", link: "https://github.com/branGitfox"},
+  ],
+ /*  liveLink: "https://gestion-ecole.com",
+  githubLink: "https://github.com/monprofil/gestion-ecole-erp", */
+  langage: [ "Electron.js", "TypeScript", "Tailwind CSS", "Redux", "API REST", "MySQL", "Laravel" ],
+},
+  {
+  id: "11",
+  text: "Trifako",
+  description:
+    "Logiciel multiplateforme de gestion des déchets plastiques, organiques et métalliques. Conçu avec Electron.js, Trifako facilite le tri, la collecte et le suivi des déchets grâce à un tableau de bord interactif, des statistiques en temps réel et une carte dynamique de Madagascar.",
+  category: "Desktop",
+  projectType: "Solo",
+  mainImage: {
+    url: "https://res.cloudinary.com/desced84j/image/upload/w_800,c_fill,f_auto,q_auto/v1761751050/1_ohe2mu.png",
+    alt: "Interface principale du logiciel Trifako",
+  },
+  images: [
+    { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751050/2_rxjxgh.png", alt: "Tableau de bord du logiciel Trifako",},
+    { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751050/4_avmscw.png", alt: "Carte interactive de Madagascar intégrée dans Trifako",},
+    { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751048/5_dg0rcc.png", alt: "Page de gestion et suivi des déchets",},
+  ],
+  collaborators: [
+    { name: "Yann Andronio", role: "Concepteur UX/UI, développeur frontend et backend du logiciel", link: "https://github.com/yann-andronio"},
+  ],
+  liveLink: "https://trifako.com",
+  githubLink: "https://github.com/monprofil/trifako-news-site",
+  langage: ["Electron.js", "TypeScript", "Tailwind CSS", "Express.js", "MongoDB"],
+},
+  {
+    id: "7",
+    text: "QuizLang (App de Quiz Langues)",
+    description: "Application interactive de quiz conçue pour l'apprentissage et l'évaluation des compétences linguistiques. Comprend un système de scoring en temps réel et des différents niveaux de difficulté.",
+    category: "Web",
+    projectType: "Solo",
+    mainImage: {
+      url: "https://res.cloudinary.com/desced84j/image/upload/w_800,c_fill,f_auto,q_auto/v1761751047/1_dhtzp7.png",
+      alt: "QuizLang Page d'accueil",
+    },
+    images: [
+      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751042/2_s68bvz.png", alt: "Vue du panier" },
+      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751039/3_hkkrgn.png", alt: "Page produit" },
+      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751039/4_wii4uv.png", alt: "Page produit" },
+      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751040/5_qyfohs.png", alt: "Page produit" },
+  
+    ],
+    collaborators: [ 
+             { name: "Yann Andronio", role: "Designer UX/UI, développeur frontend", link: "https://github.com/yann-andronio" },
+
+    ],
+    liveLink: "https://quizlang.com",
+    githubLink: "https://github.com/monprofil/quizlang-app",
+  langage: ["React.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Node.js", "Express.js", "MongoDB"],
+  },
+{
   id: "3",
   text: "Hiaigny",
   description: "Conception et développement d’un **site intelligent de gestion médicale** destiné à un docteur. L’application intègre un **système de diagnostic basé sur l’IA**, capable d’analyser les symptômes courants (maux de tête, fatigue, etc.) et de **proposer des traitements adaptés** selon les analyses. Elle comprend également la **gestion des rendez-vous**, une **messagerie patient-docteur** et une **interface moderne, fluide et réactive**.",
@@ -108,6 +205,7 @@ githubLink: "https://github.com/yann-andronio/HKB-tech",
 }
 
 ,
+
  {
     id: "4",
     text: "Portfolio Personnel V2",
@@ -188,57 +286,9 @@ githubLink: "https://github.com/yann-andronio/HKB-tech",
     githubLink: "https://github.com/monprofil/portfolio-v1",
     langage: ["HTML", "CSS/SASS", "JavaScript"],
   },
-  {
-    id: "7",
-    text: "QuizLang (App de Quiz Langues)",
-    description: "Application interactive de quiz conçue pour l'apprentissage et l'évaluation des compétences linguistiques. Comprend un système de scoring en temps réel et des différents niveaux de difficulté.",
-    category: "Web",
-    projectType: "Solo",
-    mainImage: {
-      url: "https://res.cloudinary.com/desced84j/image/upload/w_800,c_fill,f_auto,q_auto/v1761751047/1_dhtzp7.png",
-      alt: "QuizLang Page d'accueil",
-    },
-    images: [
-      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751042/2_s68bvz.png", alt: "Vue du panier" },
-      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751039/3_hkkrgn.png", alt: "Page produit" },
-      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751039/4_wii4uv.png", alt: "Page produit" },
-      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751040/5_qyfohs.png", alt: "Page produit" },
-  
-    ],
-    collaborators: [ 
-             { name: "Yann Andronio", role: "Designer UX/UI, développeur frontend", link: "https://github.com/yann-andronio" },
 
-    ],
-    liveLink: "https://quizlang.com",
-    githubLink: "https://github.com/monprofil/quizlang-app",
-  langage: ["React.js", "TypeScript", "Tailwind CSS", "Framer Motion", "Node.js", "Express.js", "MongoDB"],
-  },
-{
-  id: "8",
-  text: "Système de Gestion d'École (ERP)",
-  description:
-    "Conception et développement d’un **système ERP scolaire complet** permettant la gestion centralisée des étudiants, cours, enseignants et examens. L’application inclut un **tableau de bord administrateur interactif**, des fonctionnalités de **suivi académique**, ainsi qu’une **interface moderne et fluide** développée avec Electron.js et TypeScript.",
-  category: "Desktop",
-  projectType: "Collaboratif",
-  mainImage: {
-    url: "https://res.cloudinary.com/desced84j/image/upload/w_800,c_fill,f_auto,q_auto/v1761751041/3_zn0jd3.png",
-    alt: "Tableau de bord du système de gestion d'école (ERP)",
-  },
-  images: [
-    { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751042/2_fohsim.png", alt: "Interface de gestion des étudiants" },
-    { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751043/4_sw58dd.png", alt: "Tableau de bord principal" },
-    { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751043/1_vmkduv.png", alt: "Vue des cours et matières" },
-    { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751041/5_iqawdc.png", alt: "Planification des examens" },
-  ],
-  collaborators: [
-    { name: "Yann Andronio", role: "Designer UX/UI, développeur frontend et intégrateur", link: "https://github.com/yann-andronio",},
-    { name: "Brandon Fidelin", role: "Développeur backend (Laravel) et intégrateur", link: "https://github.com/branGitfox"},
-  ],
- /*  liveLink: "https://gestion-ecole.com",
-  githubLink: "https://github.com/monprofil/gestion-ecole-erp", */
-  langage: [ "Electron.js", "TypeScript", "Tailwind CSS", "Redux", "API REST", "MySQL", "Laravel" ],
-}
-,
+
+
 {
   id: "9",
   text: "Super U",
@@ -288,29 +338,7 @@ githubLink: "https://github.com/yann-andronio/HKB-tech",
   langage: ["React.js", "TypeScript", "Tailwind CSS"],
 }
 ,
-  {
-  id: "11",
-  text: "Trifako",
-  description:
-    "Logiciel multiplateforme de gestion des déchets plastiques, organiques et métalliques. Conçu avec Electron.js, Trifako facilite le tri, la collecte et le suivi des déchets grâce à un tableau de bord interactif, des statistiques en temps réel et une carte dynamique de Madagascar.",
-  category: "Desktop",
-  projectType: "Solo",
-  mainImage: {
-    url: "https://res.cloudinary.com/desced84j/image/upload/w_800,c_fill,f_auto,q_auto/v1761751050/1_ohe2mu.png",
-    alt: "Interface principale du logiciel Trifako",
-  },
-  images: [
-    { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751050/2_rxjxgh.png", alt: "Tableau de bord du logiciel Trifako",},
-    { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751050/4_avmscw.png", alt: "Carte interactive de Madagascar intégrée dans Trifako",},
-    { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1761751048/5_dg0rcc.png", alt: "Page de gestion et suivi des déchets",},
-  ],
-  collaborators: [
-    { name: "Yann Andronio", role: "Concepteur UX/UI, développeur frontend et backend du logiciel", link: "https://github.com/yann-andronio"},
-  ],
-  liveLink: "https://trifako.com",
-  githubLink: "https://github.com/monprofil/trifako-news-site",
-  langage: ["Electron.js", "TypeScript", "Tailwind CSS", "Express.js", "MongoDB"],
-},
+
 
   {
   id: "12",
