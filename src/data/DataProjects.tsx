@@ -47,12 +47,12 @@ export const DataProjects: ProjectI[] = [
     ],
     collaborators: [ 
         { name: "Yann Andronio", role: "développeur frontend et intégrateur", link: "https://github.com/yann-andronio" },
-        { name: "Faralahy julio", role: "Developpeur backend (Django) et intégrateur", link: "https://github.com/yann-andronio" },
+        { name: "Faralahy julio", role: "Developpeur backend (Django) et intégrateur", link: "https://github.com/Julio23F" },
         { name: "Mario eupraim", role: "Designer UX/UI", link: "https://github.com/yann-andronio" },
 
     ],
-    liveLink: "https://gaming-sector.netlify.app/",
-    githubLink: "https://github.com/yann-andronio/gaming-sector",
+  /*   liveLink: "https://gaming-sector.netlify.app/",
+    githubLink: "https://github.com/yann-andronio/gaming-sector", */
     langage: ["react native cli", "tailwind css", "Typescript", "Django" , "postgreSQL"],
   },
  {
