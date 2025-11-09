@@ -273,5 +273,12 @@
     "actions": "Actions",
     "viewDemo": "View Demo",
     "sourceCode": "Source Code"
-  }
+  },
+  "modal": {
+  "live_title": "Project Not Hosted (Live)",
+  "code_title": "Private or Unavailable Code",
+  "live_message": "The project **{{project}}** is not currently hosted online. You can check the code if available.",
+  "code_message": "The source code of **{{project}}** is private or not publicly available on GitHub.",
+  "close": "Close"
+}
 }

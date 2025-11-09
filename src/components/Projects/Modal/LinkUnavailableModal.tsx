@@ -1,6 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Info } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 interface LinkUnavailableModalProps {
   isOpen: boolean;
@@ -15,16 +16,19 @@ export const LinkUnavailableModal: React.FC<LinkUnavailableModalProps> = ({
   type,
   projectText,
 }) => {
+  const { t } = useTranslation();
+
   if (!isOpen) return null;
 
   const title =
     type === "live"
-      ? "Projet non hébergé (Live)"
-      : "Code Privé ou Indisponible";
+      ? t("modal.live_title")
+      : t("modal.code_title");
+
   const message =
     type === "live"
-      ? `Le projet **${projectText}** n'est pas actuellement hébergé en ligne. Vous pouvez consulter le code si disponible.`
-      : `Le code source de **${projectText}** est privé ou non disponible publiquement sur GitHub.`;
+      ? t("modal.live_message", { project: projectText })
+      : t("modal.code_message", { project: projectText });
 
   const modalContent = (
     <div
@@ -45,12 +49,11 @@ export const LinkUnavailableModal: React.FC<LinkUnavailableModalProps> = ({
           onClick={onClose}
           className="mt-5 w-full py-2.5 px-4 rounded-lg font-semibold bg-linear-to-r from-blue-600 to-indigo-600 text-white hover:opacity-90 transition-all"
         >
-          Fermer
+          {t("modal.close")}
         </button>
       </div>
     </div>
   );
 
-  // Rend le modal directement dans le <body> (et non dans la carte)
   return ReactDOM.createPortal(modalContent, document.body);
 };

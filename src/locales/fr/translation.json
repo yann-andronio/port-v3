@@ -273,5 +273,13 @@
     "actions": "Actions",
     "viewDemo": "Voir la Démo",
     "sourceCode": "Code Source"
-  }
+  },
+  "modal": {
+  "live_title": "Projet non hébergé (Live)",
+  "code_title": "Code privé ou indisponible",
+  "live_message": "Le projet **{{project}}** n'est pas actuellement hébergé en ligne. Vous pouvez consulter le code s'il est disponible.",
+  "code_message": "Le code source de **{{project}}** est privé ou non disponible publiquement sur GitHub.",
+  "close": "Fermer"
+}
+
 }
