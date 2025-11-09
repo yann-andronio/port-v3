@@ -255,6 +255,13 @@
       "description": "Il s’agit de mon tout premier site vitrine réalisé avec HTML, CSS et JavaScript — un mini projet consacré à l’univers du jeu vidéo, que j’ai développé durant ma première année universitaire (L1). Ce projet m’a permis de renforcer mes bases en développement front-end, d’améliorer ma maîtrise du HTML/CSS, et d’explorer mes premières interactions dynamiques en JavaScript.",
       "category": "Web",
       "projectType": "Solo"
+    },
+    {
+      "id": "16",
+      "text": "Itakalo",
+      "description": "Application mobile d’échange, de vente et de don d’objets, intégrant la publication d’annonces, un chat en temps réel et une visualisation en réalité augmentée, avec une interface moderne et intuitive.",
+      "category": "Mobile",
+      "projectType": "Collaboratif"
     }
   ],
 

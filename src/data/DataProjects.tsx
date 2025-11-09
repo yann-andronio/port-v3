@@ -29,6 +29,30 @@ export interface ProjectI {
 
 
 export const DataProjects: ProjectI[] = [
+
+  {
+    id: "16",
+    text: "Itakalo",
+    description: "Application mobile d’échange, de vente et de don d’objets, intégrant la publication d’annonces, un chat en temps réel et une visualisation en réalité augmentée, avec une interface moderne et intuitive.",
+    category: "Mobile",
+    projectType: "Collaboratif",
+    mainImage: {
+      url: "https://res.cloudinary.com/desced84j/image/upload/w_800,c_fill,f_auto,q_auto/v1762603083/8_h3gvky.png",
+      alt: "gaming sector hero page",
+    },
+    images: [
+      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1762660008/Capture_d_%C3%A9cran_du_2025-11-09_06-45-33_swlhas.png", alt: "" },
+      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1762660005/Capture_d_%C3%A9cran_du_2025-11-09_06-45-43_r8f1lh.png", alt: "" },
+  
+    ],
+    collaborators: [ 
+        { name: "Yann Andronio", role: "Designer UX/UI, développeur frontend", link: "https://github.com/yann-andronio" },
+
+    ],
+    liveLink: "https://gaming-sector.netlify.app/",
+    githubLink: "https://github.com/yann-andronio/gaming-sector",
+    langage: ["HTML", "CSS", "JavaScript"],
+  },
  {
   id: "14",
   text: "Portfolio Version 3",
@@ -415,6 +439,7 @@ githubLink: "https://github.com/yann-andronio/HKB-tech",
     githubLink: "https://github.com/yann-andronio/gaming-sector",
     langage: ["HTML", "CSS", "JavaScript"],
   },
+
 
 
 ];

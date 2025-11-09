@@ -255,6 +255,13 @@
       "description": "This is my very first website built with HTML, CSS, and JavaScript — a small project focused on the gaming sector, developed during my first university year (L1). It helped me strengthen my front-end foundations, improve my HTML/CSS skills, and explore my first dynamic interactions using JavaScript.",
       "category": "Web",
       "projectType": "Solo"
+    },
+       {
+      "id": "16",
+      "text": "Itakalo",
+      "description": "A mobile app for item exchange, sale, and donation, featuring real-time chat, post creation, and AR visualization, with a modern and user-friendly interface.",
+      "category": "Mobile",
+      "projectType": "Collaboratif"
     }
   ],
 
