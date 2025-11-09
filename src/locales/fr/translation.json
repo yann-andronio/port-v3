@@ -241,6 +241,20 @@
       "description": "Plateforme communautaire interactive permettant de consulter et discuter autour des lois malgaches, développée pour expérimenter un environnement temps réel.",
       "category": "Web",
       "projectType": "Solo"
+    },
+    {
+      "id": "14",
+      "text": "Portfolio Personnel V3",
+      "description": "Chaque année universitaire, je conçois une nouvelle version de mon **portfolio** afin de refléter l’évolution de mes **compétences**, de mon **expérience** et de mon **savoir-faire**. Ce projet représente mon **parcours en constante amélioration**, avec une attention particulière portée à l’**UX/UI**, à la **fluidité de navigation** et à la **qualité du design**.",
+      "category": "Web",
+      "projectType": "Solo"
+    },
+    {
+      "id": "15",
+      "text": "Gaming sector",
+      "description": "Il s’agit de mon tout premier site vitrine réalisé avec HTML, CSS et JavaScript — un mini projet consacré à l’univers du jeu vidéo, que j’ai développé durant ma première année universitaire (L1). Ce projet m’a permis de renforcer mes bases en développement front-end, d’améliorer ma maîtrise du HTML/CSS, et d’explorer mes premières interactions dynamiques en JavaScript.",
+      "category": "Web",
+      "projectType": "Solo"
     }
   ],
 

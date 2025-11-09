@@ -241,19 +241,30 @@
       "description": "Interactive community platform allowing users to consult and discuss Malagasy laws, developed to experiment with a real-time environment.",
       "category": "Web",
       "projectType": "Solo"
+    },
+    {
+      "id": "14",
+      "text": "Personal Portfolio V3",
+      "description": "Each academic year, I design a new version of my **portfolio** to reflect the evolution of my **skills**, **experience**, and **expertise**. This project represents my **constant growth**, with a particular focus on **UX/UI**, **smooth navigation**, and **high-quality design**.",
+      "category": "Web",
+      "projectType": "Solo"
+    },
+    {
+      "id": "15",
+      "text": "Gaming sector",
+      "description": "This is my very first website built with HTML, CSS, and JavaScript — a small project focused on the gaming sector, developed during my first university year (L1). It helped me strengthen my front-end foundations, improve my HTML/CSS skills, and explore my first dynamic interactions using JavaScript.",
+      "category": "Web",
+      "projectType": "Solo"
     }
   ],
 
-
-    "project": {
+  "project": {
     "about": "About the Project",
     "additionalScreenshots": "Additional Screenshots",
-     "team": "Project Team",
+    "team": "Project Team",
     "keyTechnologies": "Key Technologies",
     "actions": "Actions",
     "viewDemo": "View Demo",
     "sourceCode": "Source Code"
   }
-
-
 }
