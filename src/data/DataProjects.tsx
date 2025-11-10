@@ -37,18 +37,20 @@ export const DataProjects: ProjectI[] = [
     category: "Mobile",
     projectType: "Collaboratif",
     mainImage: {
-      url: "https://res.cloudinary.com/desced84j/image/upload/w_800,c_fill,f_auto,q_auto/v1762603083/8_h3gvky.png",
+      url: "https://res.cloudinary.com/desced84j/image/upload/w_800,c_fill,f_auto,q_auto/v1762800962/1_yurpnd.png",
       alt: "gaming sector hero page",
     },
     images: [
-      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1762660008/Capture_d_%C3%A9cran_du_2025-11-09_06-45-33_swlhas.png", alt: "" },
-      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1762660005/Capture_d_%C3%A9cran_du_2025-11-09_06-45-43_r8f1lh.png", alt: "" },
+      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1762800960/2_szzpia.png", alt: "" },
+      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1762800960/3_vlz3aa.png", alt: "" },
+      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1762800965/4_b2wzm6.png", alt: "" },
+      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1762800962/1_yurpnd.png", alt: "" },
   
     ],
     collaborators: [ 
         { name: "Yann Andronio", role: "développeur frontend et intégrateur", link: "https://github.com/yann-andronio" },
         { name: "Faralahy julio", role: "Developpeur backend (Django) et intégrateur", link: "https://github.com/Julio23F" },
-        { name: "Mario eupraim", role: "Designer UX/UI", link: "https://github.com/yann-andronio" },
+        { name: "Mario eupraim", role: "Designer UX/UI", link: "https://github.com/marioralison" },
 
     ],
   /*   liveLink: "https://gaming-sector.netlify.app/",
