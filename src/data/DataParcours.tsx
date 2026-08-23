@@ -25,7 +25,7 @@ export const DataParcours: DataParcoursI[] = [
     icon: Globe2,
   },
   {
-    annee: "2023 - présent",
+    annee: "2023 - 2025",
     titre: "parcoursAcademicInfoCard.licence.titre",
     etablissement: "parcoursAcademicInfoCard.licence.etablissement",
     description: "parcoursAcademicInfoCard.licence.description",

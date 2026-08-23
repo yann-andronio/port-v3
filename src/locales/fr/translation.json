@@ -108,14 +108,14 @@
       "description": "Obtention du baccalauréat scientifique."
     },
     "delf": {
-      "titre": "DELF & DALF B1 - B2",
+      "titre": "DELF  B1 - B2",
       "etablissement": "Alliance Française de Madagascar",
       "description": "Certifications officielles en langue française, niveaux B1 et B2."
     },
     "licence": {
-      "titre": "Licence en Informatique (L3 en cours)",
-      "etablissement": "Université d’Antananarivo",
-      "description": "Préparation de la licence en informatique, spécialisation en développement web et technologies modernes."
+      "titre": "Licence en Informatique et Télécommunications",
+        "etablissement": "Institut Supérieur Polytechnique de Madagascar (ISPM)",
+      "description": "Formation en Informatique de Gestion, Génie Logiciel et Intelligence Artificielle (IGGLIA), avec une spécialisation en développement logiciel, technologies web et conception d’applications."
     }
   },
 
