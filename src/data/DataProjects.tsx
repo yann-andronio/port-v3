@@ -29,6 +29,30 @@ export interface ProjectI {
 
 
 export const DataProjects: ProjectI[] = [
+    {
+    id: "17",
+    text: "ikaly",
+    description:  "Plateforme SaaS de gestion et de commande pour restaurants, permettant aux clients de consulter les menus, passer des commandes et suivre leurs achats, avec des espaces dédiés aux restaurateurs, livreurs et administrateurs.",
+    category: "Web",
+    projectType: "Solo",
+    mainImage: {
+      url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1787480701/landingpage_odtwj2.png",
+      alt: "iKaly restaurant management and ordering platform",
+    },
+    images: [
+      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1787481003/Capture_d_%C3%A9cran_du_2026-05-28_08-02-21_zsb9vw.png", alt: "" },
+      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1787481004/Capture_d_%C3%A9cran_du_2026-05-28_08-07-45_so8cjj.png", alt: "" },
+      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1787481347/Capture_d_%C3%A9cran_du_2026-08-23_13-32-33_xse8tn.png", alt: "" },
+      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1787481776/Capture_d_%C3%A9cran_du_2026-08-23_13-41-34_l75kjp.png", alt: "" },
+      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1787481775/Capture_d_%C3%A9cran_du_2026-08-23_13-41-15_udbdfi.png", alt: "" },
+      { url: "https://res.cloudinary.com/desced84j/image/upload/w_400,c_fill,f_auto,q_auto/v1787481775/Capture_d_%C3%A9cran_du_2026-08-23_13-42-17_babny4.png", alt: "" },
+  
+    ],
+   
+  /*   liveLink: "https://gaming-sector.netlify.app/",
+    githubLink: "https://github.com/yann-andronio/gaming-sector", */
+     langage: ["React", "TypeScript", "Tailwind CSS", "Node.js", "Express.js", "Prisma", "PostgreSQL", "Docker",],
+  },
 
   {
     id: "16",
