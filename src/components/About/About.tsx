@@ -4,9 +4,11 @@ import AboutStats from "./AboutStats";
 import AboutSkills from "./AboutSkills";
 import { useState } from "react";
 import AboutImageSkeleton from "../skeleton/AboutImageSkeleton";
+import photoProfil1 from "../../assets/images/photoCV/fin.webp";
+import photoProfil2 from "../../assets/images/photoCV/fin2b.webp";
 
-const photoProfil1 = "/images/fin.png";
-const photoProfil2 = "/images/fin2b.png";
+/* const photoProfil1 = "/images/fin.webp";
+const photoProfil2 = "/images/fin2b.webp"; */
 
 export default function About() {
   const { theme } = useTheme();

@@ -61,7 +61,7 @@ export const DataProjects: ProjectI[] = [
     category: "Mobile",
     projectType: "Collaboratif",
     mainImage: {
-      url: "https://res.cloudinary.com/desced84j/image/upload/w_800,c_fill,f_auto,q_auto/v1762800962/1_yurpnd.png",
+      url: "https://res.cloudinary.com/desced84j/image/upload/w_500,c_fill,f_auto,q_auto/v1762800962/1_yurpnd.png",
       alt: "gaming sector hero page",
     },
     images: [
@@ -88,7 +88,7 @@ export const DataProjects: ProjectI[] = [
   category: "Web",
   projectType: "Solo",
   mainImage: {
-    url: "https://res.cloudinary.com/desced84j/image/upload/w_800,c_fill,f_auto,q_auto/v1762598692/1_qyneqm.png",
+    url: "https://res.cloudinary.com/desced84j/image/upload/w_500,c_fill,f_auto,q_auto/v1762598692/1_qyneqm.png",
     alt: "hero section de mon portfolio"
   },
   images: [
@@ -112,7 +112,7 @@ description: "Conception et développement d'une **application de gestion de lav
   category: "Web",
   projectType: "Collaboratif",
   mainImage: {
-    url: "https://res.cloudinary.com/desced84j/image/upload/w_800,c_fill,f_auto,q_auto/v1761751037/2_ugdkul.png",
+    url: "https://res.cloudinary.com/desced84j/image/upload/w_500,c_fill,f_auto,q_auto/v1761751037/2_ugdkul.png",
     alt: "Page d'accueil de Magic Auto"
   },
   images: [
@@ -139,7 +139,7 @@ description: "Conception et développement d'une **application de gestion de lav
   category: "Desktop",
   projectType: "Collaboratif",
   mainImage: {
-    url: "https://res.cloudinary.com/desced84j/image/upload/w_800,c_fill,f_auto,q_auto/v1761751041/3_zn0jd3.png",
+    url: "https://res.cloudinary.com/desced84j/image/upload/w_500,c_fill,f_auto,q_auto/v1761751041/3_zn0jd3.png",
     alt: "Tableau de bord du système de gestion d'école (ERP)",
   },
   images: [
@@ -164,7 +164,7 @@ description: "Conception et développement d'une **application de gestion de lav
   category: "Web",
   projectType: "Collaboratif",
   mainImage: {
-    url: "https://res.cloudinary.com/desced84j/image/upload/w_800,c_fill,f_auto,q_auto/v1761751015/1_fvo3sj.png",
+    url: "https://res.cloudinary.com/desced84j/image/upload/w_500,c_fill,f_auto,q_auto/v1761751015/1_fvo3sj.png",
     alt: "HKB Tech Page d'accueil"
   },
   images: [
@@ -191,7 +191,7 @@ githubLink: "https://github.com/yann-andronio/HKB-tech",
   category: "Desktop",
   projectType: "Solo",
   mainImage: {
-    url: "https://res.cloudinary.com/desced84j/image/upload/w_800,c_fill,f_auto,q_auto/v1761751050/1_ohe2mu.png",
+    url: "https://res.cloudinary.com/desced84j/image/upload/w_500,c_fill,f_auto,q_auto/v1761751050/1_ohe2mu.png",
     alt: "Interface principale du logiciel Trifako",
   },
   images: [
@@ -213,7 +213,7 @@ githubLink: "https://github.com/yann-andronio/HKB-tech",
     category: "Web",
     projectType: "Solo",
     mainImage: {
-      url: "https://res.cloudinary.com/desced84j/image/upload/w_800,c_fill,f_auto,q_auto/v1761751047/1_dhtzp7.png",
+      url: "https://res.cloudinary.com/desced84j/image/upload/w_500,c_fill,f_auto,q_auto/v1761751047/1_dhtzp7.png",
       alt: "QuizLang Page d'accueil",
     },
     images: [
@@ -238,7 +238,7 @@ githubLink: "https://github.com/yann-andronio/HKB-tech",
   category: "Web",
   projectType: "Solo",
   mainImage: {
-    url: "https://res.cloudinary.com/desced84j/image/upload/w_800,c_fill,f_auto,q_auto/v1761751011/1_ktr0p1.png",
+    url: "https://res.cloudinary.com/desced84j/image/upload/w_500,c_fill,f_auto,q_auto/v1761751011/1_ktr0p1.png",
     alt: "Hiaigny – Page d'accueil du site médical intelligent"
   },
   images: [
@@ -266,7 +266,7 @@ githubLink: "https://github.com/yann-andronio/HKB-tech",
     category: "Web",
     projectType: "Solo",
     mainImage: {
-      url: "https://res.cloudinary.com/desced84j/image/upload/w_800,c_fill,f_auto,q_auto/v1761751038/1_yfkp36.png",
+      url: "https://res.cloudinary.com/desced84j/image/upload/w_500,c_fill,f_auto,q_auto/v1761751038/1_yfkp36.png",
       alt: "Portfolio 2 page d'accueil",
     },
     images: [
@@ -300,7 +300,7 @@ githubLink: "https://github.com/yann-andronio/HKB-tech",
   category: "Web",
   projectType: "Solo",
   mainImage: {
-    url: "https://res.cloudinary.com/desced84j/image/upload/w_800,c_fill,f_auto,q_auto/v1761751048/1_t9qvbq.png",
+    url: "https://res.cloudinary.com/desced84j/image/upload/w_500,c_fill,f_auto,q_auto/v1761751048/1_t9qvbq.png",
     alt: "Super U – Page d'accueil e-commerce",
   },
   images: [
@@ -328,7 +328,7 @@ githubLink: "https://github.com/yann-andronio/HKB-tech",
   category: "Web",
   projectType: "Collaboratif",
   mainImage: {
-    url: "https://res.cloudinary.com/desced84j/image/upload/w_800,c_fill,f_auto,q_auto/v1761751052/1_v5jbzp.png",
+    url: "https://res.cloudinary.com/desced84j/image/upload/w_500,c_fill,f_auto,q_auto/v1761751052/1_v5jbzp.png",
     alt: "Page d’accueil de la landing page Webster",
   },
   images: [
@@ -352,7 +352,7 @@ githubLink: "https://github.com/yann-andronio/HKB-tech",
   category: "Web",
   projectType: "Solo",
   mainImage: {
-    url: "https://res.cloudinary.com/desced84j/image/upload/w_800,c_fill,f_auto,q_auto/v1761751060/1_ix47l9.png",
+    url: "https://res.cloudinary.com/desced84j/image/upload/w_500,c_fill,f_auto,q_auto/v1761751060/1_ix47l9.png",
     alt: "Page d’accueil de la plateforme Vahoaka Miteny",
   },
   images: [
@@ -377,7 +377,7 @@ githubLink: "https://github.com/yann-andronio/HKB-tech",
   category: "Outil",
   projectType: "Solo",
   mainImage: {
-    url: "https://res.cloudinary.com/desced84j/image/upload/w_800,c_fill,f_auto,q_auto/v1761751048/1_haxrwu.png",
+    url: "https://res.cloudinary.com/desced84j/image/upload/w_500,c_fill,f_auto,q_auto/v1761751048/1_haxrwu.png",
     alt: "Timer Engine – Application de gestion du temps en cybercafé",
   },
   images: [
@@ -400,7 +400,7 @@ githubLink: "https://github.com/yann-andronio/HKB-tech",
   category: "Web",
   projectType: "Solo",
   mainImage: {
-    url: "https://res.cloudinary.com/desced84j/image/upload/w_800,c_fill,f_auto,q_auto/v1761751008/1_c5ech9.png",
+    url: "https://res.cloudinary.com/desced84j/image/upload/w_500,c_fill,f_auto,q_auto/v1761751008/1_c5ech9.png",
     alt: "Food Shop Services – Page d'accueil",
   },
   images: [
@@ -428,7 +428,7 @@ githubLink: "https://github.com/yann-andronio/HKB-tech",
     category: "Web",
     projectType: "Solo",
     mainImage: {
-      url: "https://res.cloudinary.com/desced84j/image/upload/w_800,c_fill,f_auto,q_auto/v1761751038/1_aoeu3k.png",
+      url: "https://res.cloudinary.com/desced84j/image/upload/w_500,c_fill,f_auto,q_auto/v1761751038/1_aoeu3k.png",
       alt: "Portfolio 1 page d'accueil",
     },
     images: [
@@ -451,7 +451,7 @@ githubLink: "https://github.com/yann-andronio/HKB-tech",
     category: "Web",
     projectType: "Solo",
     mainImage: {
-      url: "https://res.cloudinary.com/desced84j/image/upload/w_800,c_fill,f_auto,q_auto/v1762603083/8_h3gvky.png",
+      url: "https://res.cloudinary.com/desced84j/image/upload/w_500,c_fill,f_auto,q_auto/v1762603083/8_h3gvky.png",
       alt: "gaming sector hero page",
     },
     images: [

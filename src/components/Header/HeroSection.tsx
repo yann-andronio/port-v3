@@ -1,8 +1,8 @@
 import LightRays from "../../components/LightRays/LightRays";
 import { useTheme } from "../../context/ThemeContext";
-import fuse from "../../assets/images/fusé.png";
-import moon from "../../assets/images/moon.png";
-import sun from "../../assets/images/sun.png";
+import fuse from "../../assets/images/fusé.webp";
+import moon from "../../assets/images/moon.webp";
+import sun from "../../assets/images/sun.webp";
 import { motion } from "framer-motion";
 import {
   heroContainerVariants,
