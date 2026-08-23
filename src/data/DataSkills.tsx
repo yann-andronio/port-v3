@@ -32,7 +32,7 @@ export const DataSkills: DataSkillsI[] = [
   {
     icon: Server,
     title: "Backend & Base de Données",
-    items: ["Node.js", "Express.js", "MongoDB", "PostgreSQL"],
+    items: ["Node.js", "Express.js", "MongoDB", "PostgreSQL", "Prisma"],
     color: "emerald",
     iconBg: "bg-emerald-600",
     textHover: "hover:bg-emerald-700",
@@ -48,7 +48,7 @@ export const DataSkills: DataSkillsI[] = [
   {
     icon: Figma,
     title: "Design & Collaboration",
-    items: ["Figma", "Photoshop", "github projects", "jira"],
+    items: ["Figma", "Photoshop", "github projects", "jira", "Trello"],
     color: "orange",
     iconBg: "bg-orange-600",
     textHover: "hover:bg-orange-700",

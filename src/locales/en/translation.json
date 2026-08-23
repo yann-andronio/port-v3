@@ -256,12 +256,19 @@
       "category": "Web",
       "projectType": "Solo"
     },
-       {
+    {
       "id": "16",
       "text": "Itakalo",
       "description": "A mobile app for item exchange, sale, and donation, featuring real-time chat, post creation, and AR visualization, with a modern and user-friendly interface.",
       "category": "Mobile",
       "projectType": "Collaboratif"
+    },
+    {
+      "id": "17",
+      "text": "Ikaly",
+      "description": "SaaS platform for restaurant management and online ordering, allowing customers to browse menus, place orders, and track their purchases, with dedicated spaces for restaurant owners, delivery drivers, and administrators.",
+      "category": "Web",
+      "projectType": "Solo"
     }
   ],
 
@@ -275,10 +282,10 @@
     "sourceCode": "Source Code"
   },
   "modal": {
-  "live_title": "Project Not Hosted (Live)",
-  "code_title": "Private or Unavailable Code",
-  "live_message": "The project **{{project}}** is not currently hosted online. You can check the code if available.",
-  "code_message": "The source code of **{{project}}** is private or not publicly available on GitHub.",
-  "close": "Close"
-}
+    "live_title": "Project Not Hosted (Live)",
+    "code_title": "Private or Unavailable Code",
+    "live_message": "The project **{{project}}** is not currently hosted online. You can check the code if available.",
+    "code_message": "The source code of **{{project}}** is private or not publicly available on GitHub.",
+    "close": "Close"
+  }
 }
